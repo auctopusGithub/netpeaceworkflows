@@ -1,0 +1,1344 @@
+{
+  "name": "cisco_ios-xe_add_tacacs_server",
+  "description": [
+    {
+      "name": "tacacs_ip",
+      "type": "String",
+      "label": "TACACS Server"
+    },
+    {
+      "name": "changeNumber",
+      "type": "String",
+      "label": "Change Number"
+    }
+  ],
+  "workflow_data": {
+    "edges": [
+      {
+        "id": "99d6c1ba-f658-4a89-8c4a-e13df22616d7",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "ed7c970d-b5ca-46d3-815c-52a08998f434",
+        "target": "e4caf1b7-67e2-430e-8eea-560a27c7bb16",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "991ca3bc-390a-426c-9cfe-efd7411708c5",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "e4caf1b7-67e2-430e-8eea-560a27c7bb16",
+        "target": "41b85001-baee-4bc3-bc64-da14f8a44a1e",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "98ac2319-06ae-4c36-a541-0bf208a08d23",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "aded9d1e-e7eb-4dfb-a8ee-049c0240e699",
+        "target": "c54fafd5-57a8-4361-88ec-aa4ebc70139e",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "yes",
+        "targetHandle": "target"
+      },
+      {
+        "id": "129afc72-0f88-42ee-b8ca-bcb141d31bad",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "aded9d1e-e7eb-4dfb-a8ee-049c0240e699",
+        "target": "31ee425a-981d-41c9-87ca-52549fdb22c8",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "no",
+        "targetHandle": "target"
+      },
+      {
+        "id": "cc4f5c1a-c88e-45c8-a505-90764c69eb52",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "31ee425a-981d-41c9-87ca-52549fdb22c8",
+        "target": "0b581b13-2a51-417d-90dc-35d96f2c7761",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "start-end"
+      },
+      {
+        "id": "6477e1be-ef19-4248-b501-a0dfea1961b0",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "c54fafd5-57a8-4361-88ec-aa4ebc70139e",
+        "target": "40fbac92-082f-4e4d-b498-21bfd9106a61",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "bea1fc9b-ad49-462f-b0e7-d41a367dbb76",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "40fbac92-082f-4e4d-b498-21bfd9106a61",
+        "target": "00a51ac2-281a-4f17-92d9-824debc475bc",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "c9c8d79f-98ec-405a-ad70-c49c35290ded",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "00a51ac2-281a-4f17-92d9-824debc475bc",
+        "target": "9b4b3c11-d034-4689-ac43-83fd4c519c92",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "yes",
+        "targetHandle": "target"
+      },
+      {
+        "id": "df9f97ef-294d-497e-a78d-734aeadce289",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "00a51ac2-281a-4f17-92d9-824debc475bc",
+        "target": "fec25c12-2c3c-4d17-a920-8e0282c17e92",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "no",
+        "targetHandle": "start-end"
+      },
+      {
+        "id": "1e5bb06a-834a-4499-8a38-c0b891e2a168",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "9b4b3c11-d034-4689-ac43-83fd4c519c92",
+        "target": "a033b6dd-4b63-444c-82db-6328fb2137d9",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "3e3e804d-6c1a-4c8e-9d7c-5d5723502174",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "a033b6dd-4b63-444c-82db-6328fb2137d9",
+        "target": "1dc325ba-af88-432e-8881-bccf3f8b5992",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "no",
+        "targetHandle": "target"
+      },
+      {
+        "id": "c06e25ae-8046-409d-9e13-e77e864b2b95",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "a033b6dd-4b63-444c-82db-6328fb2137d9",
+        "target": "bed3d2b5-094b-41dc-b2e0-cda46e0f2a31",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "yes",
+        "targetHandle": "target"
+      },
+      {
+        "id": "81011c76-22be-4063-9bb4-fa475ee031c2",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "bed3d2b5-094b-41dc-b2e0-cda46e0f2a31",
+        "target": "612f5f0f-208e-4b08-ad27-77a61e3f75a2",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "f1bd26ea-8835-4db0-9695-06bd8339908b",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "612f5f0f-208e-4b08-ad27-77a61e3f75a2",
+        "target": "f244d022-f4ac-41ea-bbe2-521d72ad8ee7",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "7dad125b-f35e-4275-8650-4e2e01a8bffc",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "f244d022-f4ac-41ea-bbe2-521d72ad8ee7",
+        "target": "14c7199a-ead5-4c0d-b987-9c3d59cab774",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "start-end"
+      },
+      {
+        "id": "ac906fa9-1092-452e-be94-48f29d7a3550",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "1dc325ba-af88-432e-8881-bccf3f8b5992",
+        "target": "64c024fd-fd46-43e9-9ff3-91f24d39c025",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "366abdca-f537-494e-86ea-8a2929f0e4ab",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "64c024fd-fd46-43e9-9ff3-91f24d39c025",
+        "target": "e6895ea4-0e76-4396-bcd2-b0756856705a",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "start-end"
+      },
+      {
+        "id": "ddbb11fc-81a5-4804-81fb-85cc49fafc1b",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "41b85001-baee-4bc3-bc64-da14f8a44a1e",
+        "target": "aded9d1e-e7eb-4dfb-a8ee-049c0240e699",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "f2ec78d4-3c78-4f2d-b7ee-b0929fbcde02",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "start",
+        "target": "ed7c970d-b5ca-46d3-815c-52a08998f434",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "start-end",
+        "targetHandle": "target"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "e4caf1b7-67e2-430e-8eea-560a27c7bb16",
+        "data": {
+          "type": "show-commands",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "show-commands",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 474.08333333333326,
+          "y": -68.20833079020181
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "41b85001-baee-4bc3-bc64-da14f8a44a1e",
+        "data": {
+          "type": "job-report",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "reportData": [
+            {
+              "id": "8fd4ee5c-3255-4ef8-8f65-cd9da924e84d",
+              "job_id": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "jobName": "job_28/5/2025 11:16:12 am",
+              "hostname": "cisco_cat8k_016.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "ip_address": "192.168.85.16",
+              "date_created": "Wed 28, May 2025, 11:16 AM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11"
+                  ],
+                  "command_name": "sh run | in tacacs",
+                  "command_output": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "b65f3984-8cf4-4351-a01f-eccb8db50846",
+              "job_id": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "jobName": "job_28/5/2025 11:16:12 am",
+              "hostname": "iosv-01.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "ip_address": "192.168.85.51",
+              "date_created": "Wed 28, May 2025, 11:16 AM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.185.52\ntacacs server 120.120.120.122\ntacacs server 192.168.67.11"
+                  ],
+                  "command_name": "sh run | in tacacs",
+                  "command_output": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.185.52\ntacacs server 120.120.120.122\ntacacs server 192.168.67.11",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "2d3c571b-68c5-460a-907d-0ceda87cc183",
+              "job_id": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "jobName": "job_28/5/2025 11:16:12 am",
+              "hostname": "cisco_cat8k_014.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "ip_address": "192.168.85.14",
+              "date_created": "Wed 28, May 2025, 11:16 AM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11"
+                  ],
+                  "command_name": "sh run | in tacacs",
+                  "command_output": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "a333a3ed-ec64-4216-8e76-26168bf46f18",
+              "job_id": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "jobName": "job_28/5/2025 11:16:12 am",
+              "hostname": "cisco_cat8k_015.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "ip_address": "192.168.85.15",
+              "date_created": "Wed 28, May 2025, 11:16 AM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11"
+                  ],
+                  "command_name": "sh run | in tacacs",
+                  "command_output": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "5688dde4-fd20-4e78-95e6-a78b772d9e1a",
+              "job_id": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "jobName": "job_28/5/2025 11:16:12 am",
+              "hostname": "cisco_cat8k_017.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "ip_address": "192.168.85.17",
+              "date_created": "Wed 28, May 2025, 11:16 AM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11"
+                  ],
+                  "command_name": "sh run | in tacacs",
+                  "command_output": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "da7cca28-1715-4be7-9b2c-32d39cf3b494",
+              "job_id": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "jobName": "job_28/5/2025 11:16:12 am",
+              "hostname": "cisco_cat8k_013.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "ip_address": "192.168.85.13",
+              "date_created": "Wed 28, May 2025, 11:16 AM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11"
+                  ],
+                  "command_name": "sh run | in tacacs",
+                  "command_output": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "405fd2ea-810f-4a70-91c0-42a47460d62b",
+              "job_id": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "jobName": "job_28/5/2025 11:16:12 am",
+              "hostname": "cisco_cat8k_018.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "ip_address": "192.168.85.18",
+              "date_created": "Wed 28, May 2025, 11:16 AM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11"
+                  ],
+                  "command_name": "sh run | in tacacs",
+                  "command_output": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "7f33a4e7-fbc1-42a1-a6a7-af19743c0eb3",
+              "job_id": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "jobName": "job_28/5/2025 11:16:12 am",
+              "hostname": "iosvl2-01.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "ip_address": "192.168.85.154",
+              "date_created": "Wed 28, May 2025, 11:16 AM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 120.120.120.12\ntacacs server 120.120.120.121\ntacacs server 123.120.120.12\ntacacs server 120.120.180.121\ntacacs server 192.168.67.11"
+                  ],
+                  "command_name": "sh run | in tacacs",
+                  "command_output": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 120.120.120.12\ntacacs server 120.120.120.121\ntacacs server 123.120.120.12\ntacacs server 120.120.180.121\ntacacs server 192.168.67.11",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "fc479102-1562-4eb8-a647-2babbd3b52dc",
+              "job_id": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "jobName": "job_28/5/2025 11:16:12 am",
+              "hostname": "cisco_cat8k_012.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "ip_address": "192.168.85.12",
+              "date_created": "Wed 28, May 2025, 11:16 AM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11"
+                  ],
+                  "command_name": "sh run | in tacacs",
+                  "command_output": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "ad3b486d-3832-4081-9bf0-954365c443e9",
+              "job_id": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "jobName": "job_28/5/2025 11:16:12 am",
+              "hostname": "iosv-02.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "ip_address": "192.168.85.52",
+              "date_created": "Wed 28, May 2025, 11:16 AM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11"
+                  ],
+                  "command_name": "sh run | in tacacs",
+                  "command_output": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "9ceacbf4-f874-4532-9b83-110878033f21",
+              "job_id": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "jobName": "job_28/5/2025 11:16:12 am",
+              "hostname": "cisco_cat8k_011.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "9d8eb353-f4af-4111-bd0e-ff429c80deb4",
+              "ip_address": "192.168.85.11",
+              "date_created": "Wed 28, May 2025, 11:16 AM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11"
+                  ],
+                  "command_name": "sh run | in tacacs",
+                  "command_output": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecretkey\ntacacs server 192.168.67.11",
+                  "command_status": "Success"
+                }
+              ]
+            }
+          ]
+        },
+        "type": "job-report",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 477.97222222222223,
+          "y": 22.29166920979818
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "ed7c970d-b5ca-46d3-815c-52a08998f434",
+        "data": {
+          "type": "commands",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "show_steps": [
+            "sh run | in tacacs"
+          ],
+          "config_steps": [
+            "aaa authentication login default group tacacs+ local",
+            "aaa authentication enable default group tacacs+ enable",
+            "aaa authorization exec default group tacacs+ local",
+            "aaa accounting exec default start-stop group tacacs+",
+            "tacacs server {{tacacs_ip}}",
+            "tacacs-server key mysecretkey"
+          ]
+        },
+        "type": "commands",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 473.69444444444446,
+          "y": -158.8749974568685
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "aded9d1e-e7eb-4dfb-a8ee-049c0240e699",
+        "data": {
+          "type": "decision",
+          "error": false,
+          "value": "",
+          "script": "const configCommand = getVariable(\"configCommands\");\nconst showCommands = getVariable(\"showCommands\");\nconst tacacs_ip = getVariable(\"tacacs_ip\");\nconst jobReportJsonData = getVariable(\"rawShowOutput\");\n\n// Replace vars with actual values\nconst configCommandOutput = configCommand.replace(/{{(.*?)}}/g, (_, varName) => getVariable(varName));\n\nconsole.log(\"Config Command: \", configCommandOutput);\nconsole.log(\"Show Commands: \", showCommands);\nconsole.log(\"Tacacs Ip: \", tacacs_ip);\nconsole.log(\"Job Report JSON Data: \", jobReportJsonData);\n\nlet devicesToConfigure = {};\nlet allDevices = {};\nlet reportAvailable = true;\nlet resultList = {};\nlet errorList = {};\nerrorList.errors = [];\n\nif (\n    !jobReportJsonData ||\n    !jobReportJsonData ||\n    !Array.isArray(jobReportJsonData)\n) {\n    reportAvailable = false;\n    errorList.errors = [\"No report available\"];\n    console.error(\"Invalid JSON data format.\");\n} else {\n    jobReportJsonData.forEach((dataItem) => {\n        if (!dataItem) {\n            reportAvailable = false;\n            errorList.errors = [\"No data available\"];\n            return;\n        }\n\n        const deviceIP = dataItem.ip_address;\n        const reachability_status = dataItem.device_status === \"Reachable\";\n        let change_required = true;\n        let current_config = \"\";\n        let authentication = false;\n\n        if (dataItem.device_status === \"Reachable\") {\n            authentication = true;\n        }\n\n        allDevices[deviceIP] = true;\n\n        if (\n            !dataItem.data_dump_show_commands ||\n            !Array.isArray(dataItem.data_dump_show_commands) ||\n            dataItem.data_dump_show_commands.length < 1\n        ) {\n            change_required = null;\n            current_config = \"NA\";\n\n            resultList[deviceIP] = {\n                reachability_status,\n                authentication,\n                change_required,\n                current_config,\n            };\n\n            reportAvailable = false;\n            errorList.errors = [`No data available for ${deviceIP}`];\n            return;\n        }\n\n        let data_found = false;\n        let jobOutputNotAvailable = false;\n\n        dataItem.data_dump_show_commands.forEach((command) => {\n            if (\n                command &&\n                command.json_output &&\n                Array.isArray(command.json_output) &&\n                command.command_name === `${showCommands}`\n            ) {\n                const array = command.json_output;\n\n                for (let i = 0; i < array.length; i++) {\n                    if (array[i].includes(tacacs_ip)) {\n                        change_required = false;\n                        data_found = true;\n                        break;\n                    }\n                }\n                current_config = command.command_output;\n            } else if (\n                command &&\n                command.error === \"False\" &&\n                command.command_status === \"Success\" &&\n                command.command_output === \"No output received\" &&\n                command.command_name === `${showCommands}`\n            ) {\n                change_required = true;\n                data_found = false;\n                current_config = command.command_output;\n            } else {\n                jobOutputNotAvailable = true;\n                change_required = null;\n                current_config = \"No output available\";\n                errorList.errors.push(`No output available for ${deviceIP}`);\n            }\n        });\n\n        resultList[deviceIP] = {\n            reachability_status,\n            authentication,\n            change_required,\n            current_config,\n        };\n\n        if (!data_found && !jobOutputNotAvailable) {\n            devicesToConfigure[deviceIP] = true;\n            resultList[deviceIP][\"config_command\"] = configCommandOutput;\n            resultList[deviceIP][\"show_command\"] = showCommands;\n        } else {\n            resultList[deviceIP][\"config_command\"] = \"NA\";\n        }\n    });\n}\n\nsetVariable(\"expectedConfigData\", resultList);\n\nconsole.log(\"Devices to configure: \", devicesToConfigure);\nconsole.log(\"Report available: \", reportAvailable);\nconsole.log(\"Result list: \", resultList);\nconsole.log(\"Error list: \", errorList);\nconsole.log(\"Move Further: \", Object.keys(devicesToConfigure).length > 0);\n\nObject.entries(resultList).forEach(([ip, device]) => {\n    console.log(`Device ${ip} current_config:`, JSON.stringify(device.current_config));\n});\n\n// Check if all resultList entries have \"No output received\"\nconst allNoOutput = Object.values(resultList).every(device =>\n    device.current_config?.trim().toLowerCase() === \"no output received\"\n);\n\nsetVariable(\"allNoOutput\", allNoOutput);\nconsole.log(\"All devices in resultList have 'No output received':\", allNoOutput);\n\nif (allNoOutput) {\n    console.log(\"Halting flow due to all devices having 'No output received'\");\n    return false;\n}\n\n// Otherwise, use the original logic\nreturn Object.keys(devicesToConfigure).length > 0;\n\n",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "decision",
+        "dragging": false,
+        "measured": {
+          "width": 48,
+          "height": 48
+        },
+        "position": {
+          "x": 533.6666666666666,
+          "y": 131.19522052341043
+        },
+        "selected": true,
+        "resizable": false
+      },
+      {
+        "id": "c54fafd5-57a8-4361-88ec-aa4ebc70139e",
+        "data": {
+          "type": "ai-opinion",
+          "error": false,
+          "value": "",
+          "success": false,
+          "aiOpinion": "{\"Problem_Found\":\"Potential issue with TACACS+ server availability leading to authentication failures if the server is unreachable.\",\"Category\":\"Authentication Configuration\",\"Outage_Potentials\":{\"Data_Plane\":false,\"Control_Plane\":true},\"Possible_Solution\":\"Ensure TACACS+ server is reachable and consider adding backup authentication methods to avoid downtime.\"}",
+          "isLoading": false
+        },
+        "type": "ai-opinion",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 307.27777777777777,
+          "y": 211.75077607896594
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "40fbac92-082f-4e4d-b498-21bfd9106a61",
+        "data": {
+          "type": "expected-config",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "expected-config",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 308.6666666666667,
+          "y": 320.79301526811395
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "31ee425a-981d-41c9-87ca-52549fdb22c8",
+        "data": {
+          "type": "process",
+          "error": false,
+          "value": "",
+          "script": "handleError(\"Configuration already exists.\");",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "process",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 683.6666666666667,
+          "y": 197.86188719007708
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "0b581b13-2a51-417d-90dc-35d96f2c7761",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 48
+        },
+        "position": {
+          "x": 742.0000000000001,
+          "y": 317.3063316345215
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "00a51ac2-281a-4f17-92d9-824debc475bc",
+        "data": {
+          "type": "boolean-box",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "variableNodeType": "expected-config"
+        },
+        "type": "boolean-box",
+        "measured": {
+          "width": 48,
+          "height": 48
+        },
+        "position": {
+          "x": 387.83333333333337,
+          "y": 459.6819041570028
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "fec25c12-2c3c-4d17-a920-8e0282c17e92",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 48
+        },
+        "position": {
+          "x": 558.6666666666667,
+          "y": 566.6263486014471
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "9b4b3c11-d034-4689-ac43-83fd4c519c92",
+        "data": {
+          "type": "multi-config",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "multi-config",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 165.61111111111114,
+          "y": 569.404126379225
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "bed3d2b5-094b-41dc-b2e0-cda46e0f2a31",
+        "data": {
+          "type": "configuration-output",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "reportData": {
+            "192.168.85.11": {
+              "device_ip": "192.168.85.11",
+              "job_report": [
+                {
+                  "id": "a3b6c61d-9bdb-49a3-a662-74faae3f565b",
+                  "job_id": "e8d8596f-9196-4768-a6d0-43cae2d8e7d1",
+                  "jobName": "CHG0030002_26/5/2025 6:06:24 pm_config",
+                  "hostname": "cisco_cat8k_011.cml.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "e8d8596f-9196-4768-a6d0-43cae2d8e7d1",
+                  "ip_address": "192.168.85.11",
+                  "date_created": "Mon 26, May 2025, 06:06 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecrtekey\ntacacs server {{tacacs_ip}}"
+                      ],
+                      "command_name": "sh run | in tacacs",
+                      "command_output": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecrtekey\ntacacs server {{tacacs_ip}}",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecrtekey\ntacacs server {{tacacs_ip}}"
+                      ],
+                      "command_name": "sh run | in tacacs",
+                      "command_output": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecrtekey\ntacacs server {{tacacs_ip}}",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": [
+                        "aaa authentication login default group tacacs+ local",
+                        "aaa authentication enable default group tacacs+ enable",
+                        "aaa authorization exec default group tacacs+ local",
+                        "aaa accounting exec default start-stop group tacacs+",
+                        "tacacs server {{tacacs_ip}}",
+                        "tacacs-server key mysecrtekey"
+                      ],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_011(config)#aaa authentication login default group tacacs+ local\ncisco_cat8k_011(config)#aaa authentication enable default group tacacs+ enable\ncisco_cat8k_011(config)#aaa authorization exec default group tacacs+ local\ncisco_cat8k_011(config)#aaa accounting exec default start-stop group tacacs+\ncisco_cat8k_011(config)#tacacs server {{tacacs_ip}}\ncisco_cat8k_011(config-server-tacacs)#tacacs-server key mysecrtekey\ncisco_cat8k_011(config)#end\ncisco_cat8k_011#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "sh run | in tacacs",
+              "authentication": true,
+              "config_command": "aaa authentication login default group tacacs+ local;aaa authentication enable default group tacacs+ enable;aaa authorization exec default group tacacs+ local;aaa accounting exec default start-stop group tacacs+;tacacs server {{tacacs_ip}};tacacs-server key mysecrtekey",
+              "current_config": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecrtekey\ntacacs server {{tacacs_ip}}",
+              "change_required": true,
+              "device_group_id": "354326a5-65cc-43c9-aef4-aa77651cc492",
+              "config_template_id": "5a359206-b0b8-470e-a328-c0fb74da1f79",
+              "reachability_status": true
+            },
+            "192.168.85.15": {
+              "device_ip": "192.168.85.15",
+              "job_report": [
+                {
+                  "id": "847e3386-5ca1-4d5c-9b47-cf4ef5c21d3b",
+                  "job_id": "43764ae9-76e9-4405-8cc1-42271233ef3b",
+                  "jobName": "CHG0030002_26/5/2025 6:06:24 pm_config",
+                  "hostname": "cisco_cat8k_015.cml.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "43764ae9-76e9-4405-8cc1-42271233ef3b",
+                  "ip_address": "192.168.85.15",
+                  "date_created": "Mon 26, May 2025, 06:06 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecrtekey\ntacacs server {{tacacs_ip}}"
+                      ],
+                      "command_name": "sh run | in tacacs",
+                      "command_output": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecrtekey\ntacacs server {{tacacs_ip}}",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecrtekey\ntacacs server {{tacacs_ip}}"
+                      ],
+                      "command_name": "sh run | in tacacs",
+                      "command_output": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecrtekey\ntacacs server {{tacacs_ip}}",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": [
+                        "aaa authentication login default group tacacs+ local",
+                        "aaa authentication enable default group tacacs+ enable",
+                        "aaa authorization exec default group tacacs+ local",
+                        "aaa accounting exec default start-stop group tacacs+",
+                        "tacacs server {{tacacs_ip}}",
+                        "tacacs-server key mysecrtekey"
+                      ],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_015(config)#aaa authentication login default group tacacs+ local\ncisco_cat8k_015(config)#aaa authentication enable default group tacacs+ enable\ncisco_cat8k_015(config)#aaa authorization exec default group tacacs+ local\ncisco_cat8k_015(config)#aaa accounting exec default start-stop group tacacs+\ncisco_cat8k_015(config)#tacacs server {{tacacs_ip}}\ncisco_cat8k_015(config-server-tacacs)#tacacs-server key mysecrtekey\ncisco_cat8k_015(config)#end\ncisco_cat8k_015#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "sh run | in tacacs",
+              "authentication": true,
+              "config_command": "aaa authentication login default group tacacs+ local;aaa authentication enable default group tacacs+ enable;aaa authorization exec default group tacacs+ local;aaa accounting exec default start-stop group tacacs+;tacacs server {{tacacs_ip}};tacacs-server key mysecrtekey",
+              "current_config": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecrtekey\ntacacs server {{tacacs_ip}}",
+              "change_required": true,
+              "device_group_id": "f1566496-c584-4536-a5b3-5cb7106ab1c9",
+              "config_template_id": "b0ed2be7-26ca-4920-8bfd-435376bfc0cc",
+              "reachability_status": true
+            },
+            "192.168.85.51": {
+              "device_ip": "192.168.85.51",
+              "job_report": [
+                {
+                  "id": "1245cf4b-c302-47aa-8847-ec6a233f4025",
+                  "job_id": "bcc1399a-a45b-4b0c-bd76-06c09082082f",
+                  "jobName": "CHG0030002_26/5/2025 6:06:23 pm_config",
+                  "hostname": "iosv-01.cml.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "bcc1399a-a45b-4b0c-bd76-06c09082082f",
+                  "ip_address": "192.168.85.51",
+                  "date_created": "Mon 26, May 2025, 06:06 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecrtekey\ntacacs server 192.168.185.52\ntacacs server 120.120.120.122\ntacacs server {{tacacs_ip}}"
+                      ],
+                      "command_name": "sh run | in tacacs",
+                      "command_output": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecrtekey\ntacacs server 192.168.185.52\ntacacs server 120.120.120.122\ntacacs server {{tacacs_ip}}",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecrtekey\ntacacs server 192.168.185.52\ntacacs server 120.120.120.122\ntacacs server {{tacacs_ip}}"
+                      ],
+                      "command_name": "sh run | in tacacs",
+                      "command_output": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecrtekey\ntacacs server 192.168.185.52\ntacacs server 120.120.120.122\ntacacs server {{tacacs_ip}}",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": [
+                        "aaa authentication login default group tacacs+ local",
+                        "aaa authentication enable default group tacacs+ enable",
+                        "aaa authorization exec default group tacacs+ local",
+                        "aaa accounting exec default start-stop group tacacs+",
+                        "tacacs server {{tacacs_ip}}",
+                        "tacacs-server key mysecrtekey"
+                      ],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\niosv-01(config)#aaa authentication login default group tacacs+ local\niosv-01(config)#aaa authentication enable default group tacacs+ enable\niosv-01(config)#aaa authorization exec default group tacacs+ local\niosv-01(config)#aaa accounting exec default start-stop group tacacs+\niosv-01(config)#tacacs server {{tacacs_ip}}\niosv-01(config-server-tacacs)#tacacs-server key mysecrtekey\n WARNING: Command has been added to the configuration using a type 0 password. However, type 0 passwords will soon be deprecated. Migrate to a supported password type\niosv-01(config)#end\niosv-01#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "sh run | in tacacs",
+              "authentication": true,
+              "config_command": "aaa authentication login default group tacacs+ local;aaa authentication enable default group tacacs+ enable;aaa authorization exec default group tacacs+ local;aaa accounting exec default start-stop group tacacs+;tacacs server {{tacacs_ip}};tacacs-server key mysecrtekey",
+              "current_config": "aaa authentication login default group tacacs+ local\naaa authentication enable default group tacacs+ enable\naaa authorization exec default group tacacs+ local \naaa accounting exec default start-stop group tacacs+\ntacacs-server key mysecrtekey\ntacacs server 192.168.185.52\ntacacs server 120.120.120.122\ntacacs server {{tacacs_ip}}",
+              "change_required": true,
+              "device_group_id": "477fc989-20cb-431b-a8fb-2488d82ef5dc",
+              "config_template_id": "f7fa870b-3208-4005-9c8c-ccc8697f5a98",
+              "reachability_status": true
+            }
+          }
+        },
+        "type": "configuration-output",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": -9.388888888888872,
+          "y": 801.3485708236693
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "612f5f0f-208e-4b08-ad27-77a61e3f75a2",
+        "data": {
+          "type": "mail",
+          "error": false,
+          "value": "",
+          "message": "{{ plainTextOutput }}",
+          "payload": {
+            "message": "{{ plainTextOutput }}",
+            "subject": "Cisco IOS add TACACS Server Workflow Report",
+            "email_group": "5f8d4b50-3b66-4c0e-ba1d-e06b1edb3519"
+          },
+          "subject": "Cisco IOS add TACACS Server Workflow Report",
+          "success": false,
+          "isLoading": false,
+          "email_group": {
+            "id": "5f8d4b50-3b66-4c0e-ba1d-e06b1edb3519",
+            "group_name": "Default",
+            "is_deleted": false
+          }
+        },
+        "type": "mail",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": -14.944444444444429,
+          "y": 919.4041263792251
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "f244d022-f4ac-41ea-bbe2-521d72ad8ee7",
+        "data": {
+          "type": "itsm-worknotes",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "event_type": "Change",
+          "work_notes": "{{itsmWorknotesOutput}}"
+        },
+        "type": "itsm-worknotes",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": -16.333333333333314,
+          "y": 1034.681904157003
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "14c7199a-ead5-4c0d-b987-9c3d59cab774",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 48
+        },
+        "position": {
+          "x": 48.94444444444446,
+          "y": 1147.1819041570027
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "1dc325ba-af88-432e-8881-bccf3f8b5992",
+        "data": {
+          "type": "mail",
+          "error": false,
+          "value": "",
+          "message": "{{ plainTextOutput }}",
+          "payload": {
+            "message": "{{ plainTextOutput }}",
+            "subject": "Cisco IOS add TACACS Server Workflow Report",
+            "email_group": "5f8d4b50-3b66-4c0e-ba1d-e06b1edb3519"
+          },
+          "subject": "Cisco IOS add TACACS Server Workflow Report",
+          "success": false,
+          "isLoading": false,
+          "email_group": {
+            "id": "5f8d4b50-3b66-4c0e-ba1d-e06b1edb3519",
+            "group_name": "Default",
+            "is_deleted": false
+          }
+        },
+        "type": "mail",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 355.88888888888886,
+          "y": 794.4041263792249
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "64c024fd-fd46-43e9-9ff3-91f24d39c025",
+        "data": {
+          "type": "itsm-worknotes",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "event_type": "Change",
+          "work_notes": "{{itsmWorknotesOutput}}"
+        },
+        "type": "itsm-worknotes",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 361.4444444444445,
+          "y": 913.8485708236693
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "e6895ea4-0e76-4396-bcd2-b0756856705a",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 48
+        },
+        "position": {
+          "x": 415.61111111111114,
+          "y": 1037.4596819347803
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "a033b6dd-4b63-444c-82db-6328fb2137d9",
+        "data": {
+          "type": "decision",
+          "error": false,
+          "value": "",
+          "script": "const finalConfigOutput = getVariable(\"finalConfigOutput\");\nconst tacacs_ip = getVariable(\"tacacs_ip\");\n\nlet devicesToConfigure = {};\nlet allDevices = {};\nlet reportAvailable = true;\nlet resultList = {};\nlet errorList = {};\nerrorList.errors = [];\n\nfor (const [deviceIP, jobOutput] of Object.entries(finalConfigOutput)) {\n  if (!jobOutput) {\n    reportAvailable = false;\n    errorList.errors = [\"No data available\"];\n    continue;\n  }\n  const showCommand = jobOutput.show_command;\n  const jobReportJsonData = jobOutput.job_report;\n\n  if (\n    !jobReportJsonData ||\n    !jobReportJsonData ||\n    !Array.isArray(jobReportJsonData)\n  ) {\n    reportAvailable = false;\n    errorList.errors = [\"No report available\"];\n  } else {\n    jobReportJsonData.forEach((dataItem) => {\n      if (!dataItem) {\n        reportAvailable = false;\n        return;\n      }\n\n      const deviceIp = dataItem.ip_address;\n      const reachabilityStatus = dataItem.device_status === \"Reachable\";\n      let changeRequired = true;\n      let currentConfig = \"\";\n      let authentication = false;\n\n      if (dataItem.device_status === \"Reachable\") {\n        authentication = true;\n      }\n\n      allDevices[deviceIp] = true;\n\n      if (\n        !dataItem.data_dump_post ||\n        !Array.isArray(dataItem.data_dump_post) ||\n        dataItem.data_dump_post.length < 1\n      ) {\n        changeRequired = null;\n        currentConfig = \"NA\";\n\n        resultList[deviceIp] = {\n          reachability_status: reachabilityStatus,\n          authentication: authentication,\n          change_required: changeRequired,\n          current_config: currentConfig,\n        };\n\n        reportAvailable = false;\n        errorList.errors = [`No data available for ${deviceIp}`];\n        return;\n      }\n\n      let dataFound = false;\n      let jobOutputNotAvailable = false;\n\n      dataItem.data_dump_post.forEach((command) => {\n        if (\n          command &&\n          command.json_output &&\n          Array.isArray(command.json_output) &&\n          command.command_name === `${showCommand}`\n        ) {\n          const array = command.json_output;\n\n          for (let i = 0; i < array.length; i++) {\n            if (array[i].includes(tacacs_ip)) {\n              dataFound = true;\n              changeRequired = false;\n              break;\n            } else {\n              changeRequired = true;\n            }\n          }\n\n          currentConfig = command.command_output;\n        } else {\n          changeRequired = null;\n          jobOutputNotAvailable = true;\n          currentConfig = \"No output available\";\n          errorList.errors.push(`No output available for ${deviceIp}`);\n        }\n      });\n\n      if (!dataFound && !jobOutputNotAvailable) {\n        devicesToConfigure[deviceIp] = true;\n      }\n\n      resultList[deviceIp] = {\n        reachability_status: reachabilityStatus,\n        authentication: authentication,\n        change_required: changeRequired,\n        current_config: currentConfig,\n      };\n    });\n  }\n}\n\nfunction formatResultListForEmail(resultList) {\n  let html = `\n    <h2>Device Configuration Report</h2>\n    <table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" style=\"border-collapse: collapse; font-family: Arial, sans-serif;\">\n      <thead>\n        <tr style=\"background-color: #f2f2f2;\">\n          <th>Device IP</th>\n          <th>Reachability</th>\n          <th>Authenticated</th>\n          <th>Change Required</th>\n          <th>Current Config</th>\n        </tr>\n      </thead>\n      <tbody>\n  `;\n\n  for (const [ip, data] of Object.entries(resultList)) {\n    html += `\n      <tr>\n        <td>${ip}</td>\n        <td>${data.reachability_status ? \"Yes\" : \"No\"}</td>\n        <td>${data.authentication ? \"Yes\" : \"No\"}</td>\n        <td>${data.change_required === null\n        ? \"Unknown\"\n        : data.change_required\n          ? \"Yes\"\n          : \"No\"\n      }</td>\n        <td><pre style=\"white-space: pre-wrap; max-width: 600px;\">${data.current_config\n      }</pre></td>\n      </tr>\n    `;\n  }\n\n  html += `\n      </tbody>\n    </table>\n  `;\n\n  return html;\n}\n\nfunction formatResultListPlainText(resultList) {\n  let text = \"Device Configuration Report\\n\\n\";\n\n  for (const [ip, data] of Object.entries(resultList)) {\n    text += `Device IP: ${ip}\n  Reachable: ${data.reachability_status ? \"Yes\" : \"No\"}\n  Authenticated: ${data.authentication ? \"Yes\" : \"No\"}\n  Change Required: ${data.change_required === null\n        ? \"Unknown\"\n        : data.change_required\n          ? \"Yes\"\n          : \"No\"\n      }\n  Current Config:\n${data.current_config}\n------------------------------------------------------------\n`;\n  }\n\n  return text;\n}\n\nconst itsmWorknotesBody = formatResultListPlainText(resultList);\nconst emailBody = formatResultListForEmail(resultList);\n\nsetVariable(\"itsmWorknotesOutput\", itsmWorknotesBody);\nsetVariable(\"plainTextOutput\", emailBody);\n\nreturn (\n  Object.keys(devicesToConfigure).length !== Object.keys(allDevices).length\n);\n",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "decision",
+        "dragging": false,
+        "measured": {
+          "width": 48,
+          "height": 48
+        },
+        "position": {
+          "x": 214.22222222222223,
+          "y": 681.9041263792247
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "start",
+        "data": {
+          "type": "start",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "start",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 48
+        },
+        "position": {
+          "x": 518.3655405592873,
+          "y": -277.16422201768506
+        },
+        "selected": false,
+        "resizable": false
+      }
+    ],
+    "viewport": {
+      "x": 100.8913483262163,
+      "y": 192.5048722781881,
+      "zoom": 0.5
+    }
+  },
+  "config_flow": true,
+  "workflow_type": "change",
+  "metadata": {
+    "tags": [
+      "TACACS",
+      "show run | in tacacs",
+      "tacacs server",
+      "TACACS configuration",
+      "aaa authentication"
+    ],
+    "type": "change",
+    "device": "IOS-XE",
+    "vendor": "Cisco"
+  }
+}
