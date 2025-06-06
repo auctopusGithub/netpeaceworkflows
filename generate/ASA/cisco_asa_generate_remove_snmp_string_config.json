@@ -1,0 +1,894 @@
+{
+  "id": "99452130-57d1-498c-8d10-4ff49561da66",
+  "required_variables": [
+    "changeNumber",
+    "ntp_ip"
+  ],
+  "is_deleted": false,
+  "date_created": "Fri 06, Jun 2025, 06:21 PM",
+  "last_modified": "Fri 06, Jun 2025, 06:21 PM",
+  "slug": null,
+  "name": "cisco_asa_generate_remove_snmp_string_config",
+  "description": [
+    {
+      "name": "changeNumber",
+      "type": "String",
+      "label": "Change Number"
+    },
+    {
+      "name": "ntp_ip",
+      "type": "String",
+      "label": "NTP server"
+    }
+  ],
+  "workflow_data": {
+    "edges": [
+      {
+        "id": "f4284967-971f-4c7c-828e-70479f52c9ac",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "start",
+        "target": "127a1d0e-215a-4dcf-b967-6932d749ad6b",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "start-end",
+        "targetHandle": "target"
+      },
+      {
+        "id": "7228aaad-5fa8-4c1b-b7b4-7777ab236b3c",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "127a1d0e-215a-4dcf-b967-6932d749ad6b",
+        "target": "0ded2e91-6c7a-4b3d-93e2-3d5d214ba616",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "0e97d513-bcfa-4743-886a-43c0bba9a42d",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "0ded2e91-6c7a-4b3d-93e2-3d5d214ba616",
+        "target": "c8cd6f23-395c-42f0-9785-1a6a67e804b0",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "06fba0bb-07bc-44b5-82ee-fd12c928a14a",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "eb5e450d-1673-401a-adf1-be1d331aa095",
+        "target": "6630974f-54c4-4636-ba34-cff1e7c9b403",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "no",
+        "targetHandle": "target"
+      },
+      {
+        "id": "23fabd32-6f5b-4bc5-8380-a8ac532e7133",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "6630974f-54c4-4636-ba34-cff1e7c9b403",
+        "target": "2a334cb4-972a-4dfd-8df7-11ac3d69ffaf",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "start-end"
+      },
+      {
+        "id": "3eb4e256-4753-4807-882a-3df5f0d0fd65",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "3c62a729-6ae9-4e05-a89d-8ffaa19602b2",
+        "target": "19284cd0-ca3e-41b7-b62f-c5284f241a88",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "7d5b0f5d-efb5-496a-87e2-66d219a01bb6",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "19284cd0-ca3e-41b7-b62f-c5284f241a88",
+        "target": "89c31888-846d-40f7-990e-57814de2d8ea",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "8bf6d608-b4d3-450d-8155-41cf4129258c",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "89c31888-846d-40f7-990e-57814de2d8ea",
+        "target": "60b1687f-e153-41f3-8e64-dcc830352a75",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "no",
+        "targetHandle": "start-end"
+      },
+      {
+        "id": "ccdbb3ba-349b-436d-802d-ac53c2a27527",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "6778787a-c08f-4429-91af-0c95547124fc",
+        "target": "c2b4f861-d0db-4099-9a01-0fca6d6952d4",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "184c8999-584e-4e7c-8ad6-58d1d95c4964",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "c2b4f861-d0db-4099-9a01-0fca6d6952d4",
+        "target": "54529e3d-0ec4-4b97-8123-56c4374af394",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "start-end"
+      },
+      {
+        "id": "16d38ec0-5553-49b6-bdf2-e5eba9939fb3",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "89c31888-846d-40f7-990e-57814de2d8ea",
+        "target": "6778787a-c08f-4429-91af-0c95547124fc",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "yes",
+        "targetHandle": "target"
+      },
+      {
+        "id": "c9522445-cd7e-405b-a341-c63b7699899c",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "c8cd6f23-395c-42f0-9785-1a6a67e804b0",
+        "target": "eb5e450d-1673-401a-adf1-be1d331aa095",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "05bc1826-c08c-487f-af86-74e53d461775",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "eb5e450d-1673-401a-adf1-be1d331aa095",
+        "target": "3c62a729-6ae9-4e05-a89d-8ffaa19602b2",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "yes",
+        "targetHandle": "target"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "start",
+        "data": {
+          "type": "start",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "start",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 52
+        },
+        "position": {
+          "x": 591.6060461669713,
+          "y": -72.04715520412655
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "0ded2e91-6c7a-4b3d-93e2-3d5d214ba616",
+        "data": {
+          "type": "show-commands",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "show-commands",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 532.5996430466405,
+          "y": 137.3973052649572
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "127a1d0e-215a-4dcf-b967-6932d749ad6b",
+        "data": {
+          "type": "commands",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "show_steps": [
+            "show running-config | include community"
+          ],
+          "config_steps": [
+            "no snmp-server community {{snmp}} RO"
+          ]
+        },
+        "type": "commands",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 532.5996430466403,
+          "y": 35.54288935931065
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "c8cd6f23-395c-42f0-9785-1a6a67e804b0",
+        "data": {
+          "type": "job-report",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "reportData": [
+            {
+              "id": "b21145b4-4c83-4bd4-94cf-6b2791872243",
+              "job_id": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "jobName": "job_6/6/2025 6:13:26 pm",
+              "hostname": "iosv-01.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "ip_address": "192.168.85.51",
+              "date_created": "Fri 06, Jun 2025, 06:13 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "snmp-server community public RO\nsnmp-server community ${snmp} RO\nsnmp-server community new_public RO\nsnmp-server community newww RO"
+                  ],
+                  "command_name": "show running-config | include community",
+                  "command_output": "snmp-server community public RO\nsnmp-server community ${snmp} RO\nsnmp-server community new_public RO\nsnmp-server community newww RO",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "25ffc3f4-5d20-4097-bba5-ee8807df4f10",
+              "job_id": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "jobName": "job_6/6/2025 6:13:26 pm",
+              "hostname": "cisco_cat8k_015.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "ip_address": "192.168.85.15",
+              "date_created": "Fri 06, Jun 2025, 06:13 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "snmp-server community public RO\nsnmp-server community ${snmp} RO\nsnmp-server community new_public RO\nsnmp-server community newww RO"
+                  ],
+                  "command_name": "show running-config | include community",
+                  "command_output": "snmp-server community public RO\nsnmp-server community ${snmp} RO\nsnmp-server community new_public RO\nsnmp-server community newww RO",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "b2fbba42-ed1b-4232-bd6d-ee92a51f6da0",
+              "job_id": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "jobName": "job_6/6/2025 6:13:26 pm",
+              "hostname": "iosvl2-01.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "ip_address": "192.168.85.154",
+              "date_created": "Fri 06, Jun 2025, 06:13 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "snmp-server community public RO\nsnmp-server community 192.168.78.12 RO\nsnmp-server community new_public RO\nsnmp-server community newww RO"
+                  ],
+                  "command_name": "show running-config | include community",
+                  "command_output": "snmp-server community public RO\nsnmp-server community 192.168.78.12 RO\nsnmp-server community new_public RO\nsnmp-server community newww RO",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "f246dbb0-fd8b-4aea-9d6b-f57714245b5c",
+              "job_id": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "jobName": "job_6/6/2025 6:13:26 pm",
+              "hostname": "cisco_cat8k_016.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "ip_address": "192.168.85.16",
+              "date_created": "Fri 06, Jun 2025, 06:13 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "snmp-server community public RO\nsnmp-server community new_public RO\nsnmp-server community newww RO"
+                  ],
+                  "command_name": "show running-config | include community",
+                  "command_output": "snmp-server community public RO\nsnmp-server community new_public RO\nsnmp-server community newww RO",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "ee2bf255-f923-49c6-84ab-f633c8e9b105",
+              "job_id": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "jobName": "job_6/6/2025 6:13:26 pm",
+              "hostname": "cisco_cat8k_018.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "ip_address": "192.168.85.18",
+              "date_created": "Fri 06, Jun 2025, 06:13 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "snmp-server community public RO\nsnmp-server community new_public RO\nsnmp-server community newww RO"
+                  ],
+                  "command_name": "show running-config | include community",
+                  "command_output": "snmp-server community public RO\nsnmp-server community new_public RO\nsnmp-server community newww RO",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "6cc15f81-6c72-4691-a6ef-6f35a949c170",
+              "job_id": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "jobName": "job_6/6/2025 6:13:26 pm",
+              "hostname": "cisco_cat8k_014.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "ip_address": "192.168.85.14",
+              "date_created": "Fri 06, Jun 2025, 06:13 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "snmp-server community public RO\nsnmp-server community new_public RO\nsnmp-server community newww RO"
+                  ],
+                  "command_name": "show running-config | include community",
+                  "command_output": "snmp-server community public RO\nsnmp-server community new_public RO\nsnmp-server community newww RO",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "83132235-607a-4e9d-b034-749967f8bdad",
+              "job_id": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "jobName": "job_6/6/2025 6:13:26 pm",
+              "hostname": "cisco_cat8k_012.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "ip_address": "192.168.85.12",
+              "date_created": "Fri 06, Jun 2025, 06:13 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "snmp-server community public RO\nsnmp-server community new_public RO\nsnmp-server community newww RO"
+                  ],
+                  "command_name": "show running-config | include community",
+                  "command_output": "snmp-server community public RO\nsnmp-server community new_public RO\nsnmp-server community newww RO",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "15079887-7d48-417d-828d-15dc1460c0ec",
+              "job_id": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "jobName": "job_6/6/2025 6:13:26 pm",
+              "hostname": "cisco_cat8k_017.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "ip_address": "192.168.85.17",
+              "date_created": "Fri 06, Jun 2025, 06:13 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "snmp-server community public RO\nsnmp-server community new_public RO\nsnmp-server community newww RO"
+                  ],
+                  "command_name": "show running-config | include community",
+                  "command_output": "snmp-server community public RO\nsnmp-server community new_public RO\nsnmp-server community newww RO",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "cfab6e18-26c6-4fe7-8095-e2a1465ad9f8",
+              "job_id": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "jobName": "job_6/6/2025 6:13:26 pm",
+              "hostname": "cisco_cat8k_013.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "ip_address": "192.168.85.13",
+              "date_created": "Fri 06, Jun 2025, 06:13 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "snmp-server community public RO\nsnmp-server community new_public RO\nsnmp-server community newww RO"
+                  ],
+                  "command_name": "show running-config | include community",
+                  "command_output": "snmp-server community public RO\nsnmp-server community new_public RO\nsnmp-server community newww RO",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "5eca2e8d-957e-49b8-a1d6-4f044ce1f0ac",
+              "job_id": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "jobName": "job_6/6/2025 6:13:26 pm",
+              "hostname": "iosv-02.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "ip_address": "192.168.85.52",
+              "date_created": "Fri 06, Jun 2025, 06:13 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "snmp-server community public RO\nsnmp-server community new_public RO\nsnmp-server community newww RO"
+                  ],
+                  "command_name": "show running-config | include community",
+                  "command_output": "snmp-server community public RO\nsnmp-server community new_public RO\nsnmp-server community newww RO",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "148f01f5-90b7-4091-a116-7df00e54608f",
+              "job_id": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "jobName": "job_6/6/2025 6:13:26 pm",
+              "hostname": "cisco_cat8k_011.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "29918407-46dd-4e38-91c9-ad0af406af2d",
+              "ip_address": "192.168.85.11",
+              "date_created": "Fri 06, Jun 2025, 06:13 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "snmp-server community public RO\nsnmp-server community ${snmp} RO\nsnmp-server community new_public RO\nsnmp-server community newww RO"
+                  ],
+                  "command_name": "show running-config | include community",
+                  "command_output": "snmp-server community public RO\nsnmp-server community ${snmp} RO\nsnmp-server community new_public RO\nsnmp-server community newww RO",
+                  "command_status": "Success"
+                }
+              ]
+            }
+          ]
+        },
+        "type": "job-report",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 532.6902825227696,
+          "y": 240.61077198324557
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "eb5e450d-1673-401a-adf1-be1d331aa095",
+        "data": {
+          "type": "decision",
+          "error": false,
+          "value": "",
+          "script": "const configCommand = getVariable(\"configCommands\");\nconst showCommands = getVariable(\"showCommands\");\nconst snmp = getVariable(\"snmp\");\nconst jobReportJsonData = getVariable(\"rawShowOutput\");\n\n// Replace vars with actual values\nconst configCommandOutput = configCommand.replace(/{{(.*?)}}/g, (_, varName) => getVariable(varName));\n\nconsole.log(\"Config Command: \", configCommandOutput);\nconsole.log(\"Show Commands: \", showCommands);\nconsole.log(\"SNMP: \", snmp);\nconsole.log(\"Job Report JSON Data: \", jobReportJsonData);\n\nlet devicesToConfigure = {};\nlet allDevices = {};\nlet reportAvailable = true;\nlet resultList = {};\nlet errorList = {};\nerrorList.errors = [];\n\nif (\n  !jobReportJsonData ||\n  !jobReportJsonData ||\n  !Array.isArray(jobReportJsonData)\n) {\n  reportAvailable = false;\n  errorList.errors = [\"No report available\"];\n  console.error(\"Invalid JSON data format.\");\n} else {\n  jobReportJsonData.forEach((dataItem) => {\n    if (!dataItem) {\n      reportAvailable = false;\n      errorList.errors = [\"No data available\"];\n      return;\n    }\n\n    const deviceIP = dataItem.ip_address;\n    const reachability_status = dataItem.device_status === \"Reachable\";\n    let change_required = true;\n    let current_config = \"\";\n    let authentication = false;\n\n    if (dataItem.device_status === \"Reachable\") {\n      authentication = true;\n    }\n\n    allDevices[deviceIP] = true;\n\n    if (\n      !dataItem.data_dump_show_commands ||\n      !Array.isArray(dataItem.data_dump_show_commands) ||\n      dataItem.data_dump_show_commands.length < 1\n    ) {\n      change_required = null;\n      current_config = \"NA\";\n\n      resultList[deviceIP] = {\n        reachability_status,\n        authentication,\n        change_required,\n        current_config,\n      };\n\n      reportAvailable = false;\n      errorList.errors = [`No data available for ${deviceIP}`];\n      return;\n    }\n\n    let data_found = false;\n    let jobOutputNotAvailable = false;\n\n    dataItem.data_dump_show_commands.forEach((command) => {\n      if (\n        command &&\n        command.json_output &&\n        Array.isArray(command.json_output) &&\n        command.command_name === `${showCommands}`\n      ) {\n        const array = command.json_output;\n\n        for (let i = 0; i < array.length; i++) {\n          if (!array[i].includes(snmp)) {\n            change_required = false;\n            data_found = true;\n            break;\n          }\n        }\n        current_config = command.command_output;\n      } else if (\n        command &&\n        command.error === \"False\" &&\n        command.command_status === \"Success\" &&\n        command.command_output === \"No output received\" &&\n        command.command_name === `${showCommands}`\n      ) {\n        change_required = true;\n        data_found = false;\n        current_config = command.command_output;\n      } else {\n        jobOutputNotAvailable = true;\n        change_required = null;\n        current_config = \"No output available\";\n        errorList.errors.push(`No output available for ${deviceIP}`);\n      }\n    });\n\n    resultList[deviceIP] = {\n      reachability_status,\n      authentication,\n      change_required,\n      current_config,\n    };\n\n    if (!data_found && !jobOutputNotAvailable) {\n      devicesToConfigure[deviceIP] = true;\n      resultList[deviceIP][\"config_command\"] = configCommandOutput;\n      resultList[deviceIP][\"show_command\"] = showCommands;\n    } else {\n      resultList[deviceIP][\"config_command\"] = \"NA\";\n    }\n  });\n}\n\nfunction formatResultListPlainText(resultList) {\n  let text = \"Device Configuration Report\\n\\n\";\n\n  for (const [ip, data] of Object.entries(resultList)) {\n    text += `Device IP: ${ip}\n  Reachable: ${data.reachability_status ? \"Yes\" : \"No\"}\n  Authenticated: ${data.authentication ? \"Yes\" : \"No\"}\n  Change Required: ${data.change_required === null\n        ? \"Unknown\"\n        : data.change_required\n          ? \"Yes\"\n          : \"No\"\n      }\n  Current Config:\n${data.current_config}\n------------------------------------------------------------\n`;\n  }\n\n  return text;\n}\n\nconst plainTextOutput = formatResultListPlainText(resultList);\n\nsetVariable(\"plainTextOutput\", plainTextOutput);\n\nsetVariable(\"expectedConfigData\", resultList);\n\nconsole.log(\"Devices to configure: \", devicesToConfigure);\nconsole.log(\"All devices: \", allDevices);\nconsole.log(\"Report available: \", reportAvailable);\nconsole.log(\"Result list: \", resultList);\nconsole.log(\"Error list: \", errorList);\nconsole.log(\"Move Further: \", Object.keys(devicesToConfigure).length > 0);\n\nreturn Object.keys(devicesToConfigure).length > 0;",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "decision",
+        "dragging": false,
+        "measured": {
+          "width": 48,
+          "height": 48
+        },
+        "position": {
+          "x": 583.8541193284602,
+          "y": 341.8925120092656
+        },
+        "selected": true,
+        "resizable": false
+      },
+      {
+        "id": "6630974f-54c4-4636-ba34-cff1e7c9b403",
+        "data": {
+          "type": "process",
+          "error": false,
+          "value": "",
+          "script": "/*\nAvailable Context:\n- handleError(error): Handle an error by displaying a snackbar message.\n- setVariable(name, value): Set a variable with the given name and value.\n- getVariable(name): Get the value of a variable with the given name.\n- clearVariables(): Clear all variables.\n- result: This variable contains the returned value from previous node.\n\nExample:\n  setVariable('exampleVar', 'exampleValue');\n  const value = getVariable('exampleVar');\n  if (value) {\n    console.log(value)\n  } else {\n    handleError('Variable not found');\n  }\n*/\n\n// Run your code here\nconst allNoOutput = getVariable(\"allNoOutput\")\n\nif (allNoOutput) {\n  handleError(\"No Data Found\")\n} else {\n  handleError(\"Configuration already exists\")\n}\n",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "process",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 674.0933568574081,
+          "y": 416.0655619454937
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "2a334cb4-972a-4dfd-8df7-11ac3d69ffaf",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 52
+        },
+        "position": {
+          "x": 732.2900789739547,
+          "y": 525.9989123808293
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "3c62a729-6ae9-4e05-a89d-8ffaa19602b2",
+        "data": {
+          "type": "ai-opinion",
+          "error": false,
+          "value": "",
+          "success": false,
+          "aiOpinion": "{\"Problem_Found\":\"Removing the NTP server configuration can lead to time desynchronization across devices.\",\"Category\":\"Time Sync Configuration\",\"Outage_Potentials\":{\"Data_Plane\":false,\"Control_Plane\":true},\"Possible_Solution\":\"Consider configuring a new NTP server or ensuring that an alternative time source is available.\"}",
+          "isLoading": false
+        },
+        "type": "ai-opinion",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 408.3277736418985,
+          "y": 421.2061310787739
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "19284cd0-ca3e-41b7-b62f-c5284f241a88",
+        "data": {
+          "type": "expected-config",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "expected-config",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 408.2062294348275,
+          "y": 529.350861580574
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "89c31888-846d-40f7-990e-57814de2d8ea",
+        "data": {
+          "type": "boolean-box",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "variableNodeType": "expected-config"
+        },
+        "type": "boolean-box",
+        "dragging": false,
+        "measured": {
+          "width": 48,
+          "height": 48
+        },
+        "position": {
+          "x": 459.6673448042071,
+          "y": 642.0261167592379
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "60b1687f-e153-41f3-8e64-dcc830352a75",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 52
+        },
+        "position": {
+          "x": 565.2550440359591,
+          "y": 711.2169644422812
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "c2b4f861-d0db-4099-9a01-0fca6d6952d4",
+        "data": {
+          "type": "itsm-worknotes",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "event_type": "Change",
+          "work_notes": "{{itsmWorknotesOutput}}"
+        },
+        "type": "itsm-worknotes",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 184.39607148125333,
+          "y": 820.0030327574851
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "6778787a-c08f-4429-91af-0c95547124fc",
+        "data": {
+          "type": "mail",
+          "error": false,
+          "value": "",
+          "message": "{{plainTextOutput}}",
+          "payload": {
+            "message": "{{plainTextOutput}}",
+            "subject": "Cisco IOS Generate - Remove NTP Workflow Report",
+            "email_group": "b5f3a7d6-d2e2-4218-9c48-d9e2e11753ef"
+          },
+          "subject": "Cisco IOS Generate - Remove NTP Workflow Report",
+          "success": false,
+          "isLoading": false,
+          "email_group": {
+            "id": "b5f3a7d6-d2e2-4218-9c48-d9e2e11753ef",
+            "group_name": "Default",
+            "is_deleted": false
+          }
+        },
+        "type": "mail",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 184.60466165129571,
+          "y": 713.0538718628836
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "54529e3d-0ec4-4b97-8123-56c4374af394",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 52
+        },
+        "position": {
+          "x": 243.29155503308903,
+          "y": 944.8452886721838
+        },
+        "selected": false,
+        "resizable": false
+      }
+    ],
+    "viewport": {
+      "x": -26.103082364634417,
+      "y": 93.57100630693628,
+      "zoom": 0.7788168718618312
+    }
+  },
+  "config_flow": true,
+  "workflow_type": "change",
+  "metadata": {},
+  "created_by": "kartikey",
+  "updated_by": null
+}
