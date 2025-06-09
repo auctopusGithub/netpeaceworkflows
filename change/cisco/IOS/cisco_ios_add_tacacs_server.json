@@ -1323,23 +1323,12 @@
       }
     ],
     "viewport": {
-      "x": 239.47880214440033,
-      "y": -264.09439414720043,
+      "x": 122.47880214440033,
+      "y": 307.9056058527995,
       "zoom": 0.7162418203672654
     }
   },
   "config_flow": true,
   "workflow_type": "change",
-  "metadata": {
-    "tags": [
-      "TACACS",
-      "show run | in tacacs",
-      "tacacs server",
-      "TACACS configuration",
-      "aaa authentication"
-    ],
-    "type": "change",
-    "device": "IOS",
-    "vendor": "Cisco"
-  }
+  "metadata": {}
 }
