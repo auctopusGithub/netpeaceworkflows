@@ -1,0 +1,1032 @@
+{
+  "name": "citrix_ns_disable_vip",
+  "description": [
+    {
+      "name": "changeNumber",
+      "type": "String",
+      "label": "Change Number"
+    },
+    {
+      "name": "syslog_server",
+      "type": "String",
+      "label": "Syslog Server"
+    }
+  ],
+  "workflow_data": {
+    "edges": [
+      {
+        "id": "a22d5938-5b94-48b5-8213-a3fe2a590c59",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "start",
+        "target": "3e0064dd-f6cf-4a02-bead-9f67b228557a",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "start-end",
+        "targetHandle": "target"
+      },
+      {
+        "id": "850a76b6-1850-4391-b41a-44d505a9c6cc",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "3e0064dd-f6cf-4a02-bead-9f67b228557a",
+        "target": "7c9b7f87-922b-4914-b43c-5c7f2f40a2bf",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "c53459dc-ecfb-42df-ad5f-1fccfa23cb04",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "7c9b7f87-922b-4914-b43c-5c7f2f40a2bf",
+        "target": "34de947e-2d09-4c97-9164-ca87401979fd",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "9ca5dfeb-2598-4b0c-adfe-2339bf4f92c3",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "34de947e-2d09-4c97-9164-ca87401979fd",
+        "target": "84e0f3af-4952-45e8-922c-b9bfa36e8aa1",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "ed056143-19fc-45c1-bf13-5a82e933a22c",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "84e0f3af-4952-45e8-922c-b9bfa36e8aa1",
+        "target": "12161b03-3be1-4571-bf56-237b9d73c5d7",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "no",
+        "targetHandle": "target"
+      },
+      {
+        "id": "7f3ee73c-c0be-4e35-9620-14e969a73e47",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "12161b03-3be1-4571-bf56-237b9d73c5d7",
+        "target": "a5348f1b-aa6f-4aa8-bf0c-69334b4f2b57",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "start-end"
+      },
+      {
+        "id": "d21de9b7-6243-4fe6-8e89-b5042ce94df6",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "84e0f3af-4952-45e8-922c-b9bfa36e8aa1",
+        "target": "3fd6895b-73c4-4da7-b3b4-3372978b85d8",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "yes",
+        "targetHandle": "target"
+      },
+      {
+        "id": "b13521c5-6599-48ca-8913-5126c1e3f140",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "3fd6895b-73c4-4da7-b3b4-3372978b85d8",
+        "target": "b9da4ec8-be40-44bc-b8fe-70cd412beb9d",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "47919835-569a-4bc9-b9dc-dc1a11b7b2a0",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "b9da4ec8-be40-44bc-b8fe-70cd412beb9d",
+        "target": "d9b330d5-3468-40f4-9266-989c6b0256e9",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "ce182c8e-319f-41de-bdef-12edf3cf6d4a",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "d9b330d5-3468-40f4-9266-989c6b0256e9",
+        "target": "33ffc0c2-136c-4bd0-9c09-0b615277760e",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "no",
+        "targetHandle": "start-end"
+      },
+      {
+        "id": "6b5b9adc-dfa0-487f-b942-de85dbf1c545",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "d9b330d5-3468-40f4-9266-989c6b0256e9",
+        "target": "423870d1-f1c8-495a-ade9-cea91673f3ef",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "yes",
+        "targetHandle": "target"
+      },
+      {
+        "id": "20b9dec8-0a8c-4abb-85d2-1e56406f751f",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "423870d1-f1c8-495a-ade9-cea91673f3ef",
+        "target": "53a28547-0760-4aa4-9fe4-72883b2a2490",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "9da8ae4b-0367-45b1-b6b2-dddba8ff3cd5",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "a16bd994-4330-488f-943f-b2b9173c963f",
+        "target": "2d4e757a-7dc5-4c58-b26a-953f9924f6b0",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "start-end"
+      },
+      {
+        "id": "048b9ceb-a56d-4edd-8177-a48a93403592",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "edc7f85f-13ea-4ffe-aa09-3d445a5707f6",
+        "target": "a16bd994-4330-488f-943f-b2b9173c963f",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "ce5fb854-ee9e-4165-a682-6ab5bb14741a",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "53a28547-0760-4aa4-9fe4-72883b2a2490",
+        "target": "edc7f85f-13ea-4ffe-aa09-3d445a5707f6",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "no",
+        "targetHandle": "target"
+      },
+      {
+        "id": "6fd9c747-606e-490d-9319-c8e7a557fa3d",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "53a28547-0760-4aa4-9fe4-72883b2a2490",
+        "target": "7496d1f6-eb02-40ad-a844-dfdf8478a632",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "yes",
+        "targetHandle": "target"
+      },
+      {
+        "id": "c9e8ef3d-837c-4fbb-b6a9-fa21afb4998b",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "7496d1f6-eb02-40ad-a844-dfdf8478a632",
+        "target": "587317f4-4032-407d-8310-43560f45494a",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "a7ef3383-522d-4b73-847b-0c28fb8dfd77",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "587317f4-4032-407d-8310-43560f45494a",
+        "target": "16e4d72d-a0e7-4238-b544-6038b62a06e4",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "f0d9d69d-03bb-4c4a-818a-a2d8962fb43b",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "16e4d72d-a0e7-4238-b544-6038b62a06e4",
+        "target": "85ebc66a-6c7e-47aa-93d1-9d2f5a7416b7",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "start-end"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "start",
+        "data": {
+          "type": "start",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "start",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 48
+        },
+        "position": {
+          "x": 516.2682117454722,
+          "y": -50.41476978877526
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "3e0064dd-f6cf-4a02-bead-9f67b228557a",
+        "data": {
+          "type": "commands",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "show_steps": [
+            "Sh run | in logg"
+          ],
+          "config_steps": [
+            "logging host {{syslog_server}} 514"
+          ]
+        },
+        "type": "commands",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 457.2300989122173,
+          "y": 54.95762545137832
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "7c9b7f87-922b-4914-b43c-5c7f2f40a2bf",
+        "data": {
+          "type": "show-commands",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "show-commands",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 457.23009891221733,
+          "y": 156.73658605835203
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "34de947e-2d09-4c97-9164-ca87401979fd",
+        "data": {
+          "type": "job-report",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "reportData": [
+            {
+              "id": "8dc7d713-d14d-4322-a994-d1d9135e8283",
+              "job_id": "a37cf44e-ec91-48b3-bc97-3c1676fd3bf0",
+              "jobName": "job_9/6/2025 4:33:17 pm",
+              "hostname": "csr1000v-2.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "a37cf44e-ec91-48b3-bc97-3c1676fd3bf0",
+              "ip_address": "192.168.85.150",
+              "date_created": "Mon 09, Jun 2025, 04:33 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "ntp server 192.168.10.163"
+                  ],
+                  "command_name": "show running-config | include ntp",
+                  "command_output": "ntp server 192.168.10.163",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "9cbbd83c-7da9-4a64-9a9f-4d9de5c1945d",
+              "job_id": "a37cf44e-ec91-48b3-bc97-3c1676fd3bf0",
+              "jobName": "job_9/6/2025 4:33:17 pm",
+              "hostname": "csr1000v-1.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "a37cf44e-ec91-48b3-bc97-3c1676fd3bf0",
+              "ip_address": "192.168.85.151",
+              "date_created": "Mon 09, Jun 2025, 04:33 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "ntp server 15.207.248.194 source GigabitEthernet1\nntp server 192.168.10.163"
+                  ],
+                  "command_name": "show running-config | include ntp",
+                  "command_output": "ntp server 15.207.248.194 source GigabitEthernet1\nntp server 192.168.10.163",
+                  "command_status": "Success"
+                }
+              ]
+            }
+          ]
+        },
+        "type": "job-report",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 456.90499157448795,
+          "y": 264.1073074443901
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "84e0f3af-4952-45e8-922c-b9bfa36e8aa1",
+        "data": {
+          "type": "decision",
+          "error": false,
+          "value": "",
+          "script": "const configCommand = getVariable(\"configCommands\");\nconst showCommands = getVariable(\"showCommands\");\nconst syslog_server = getVariable(\"syslog_server\");\nconst jobReportJsonData = getVariable(\"rawShowOutput\");\n\n// Replace vars with actual values\nconst configCommandOutput = configCommand.replace(/{{(.*?)}}/g, (_, varName) => getVariable(varName));\n\nconsole.log(\"Config Command: \", configCommandOutput);\nconsole.log(\"Show Commands: \", showCommands);\nconsole.log(\"Job Report JSON Data: \", jobReportJsonData);\n\nlet devicesToConfigure = {};\nlet allDevices = {};\nlet reportAvailable = true;\nlet resultList = {};\nlet errorList = {};\nerrorList.errors = [];\n\nif (\n  !jobReportJsonData ||\n  !jobReportJsonData ||\n  !Array.isArray(jobReportJsonData)\n) {\n  reportAvailable = false;\n  errorList.errors = [\"No report available\"];\n  console.error(\"Invalid JSON data format.\");\n} else {\n  jobReportJsonData.forEach((dataItem) => {\n    if (!dataItem) {\n      reportAvailable = false;\n      errorList.errors = [\"No data available\"];\n      return;\n    }\n\n    const deviceIP = dataItem.ip_address;\n    const reachability_status = dataItem.device_status === \"Reachable\";\n    let change_required = true;\n    let current_config = \"\";\n    let authentication = false;\n\n    if (dataItem.device_status === \"Reachable\") {\n      authentication = true;\n    }\n\n    allDevices[deviceIP] = true;\n\n    if (\n      !dataItem.data_dump_show_commands ||\n      !Array.isArray(dataItem.data_dump_show_commands) ||\n      dataItem.data_dump_show_commands.length < 1\n    ) {\n      change_required = null;\n      current_config = \"NA\";\n\n      resultList[deviceIP] = {\n        reachability_status,\n        authentication,\n        change_required,\n        current_config,\n      };\n\n      reportAvailable = false;\n      errorList.errors = [`No data available for ${deviceIP}`];\n      return;\n    }\n\n    let data_found = false;\n    let jobOutputNotAvailable = false;\n\n    dataItem.data_dump_show_commands.forEach((command) => {\n      if (\n        command &&\n        command.json_output &&\n        Array.isArray(command.json_output) &&\n        command.command_name === `${showCommands}`\n      ) {\n        const array = command.json_output;\n\n        for (let i = 0; i < array.length; i++) {\n          if (!array[i].includes(syslog_server)) {\n            change_required = false;\n            data_found = true;\n            break;\n          }\n        }\n        current_config = command.command_output;\n      } else if (\n        command &&\n        command.error === \"False\" &&\n        command.command_status === \"Success\" &&\n        command.command_output === \"No output received\" &&\n        command.command_name === `${showCommands}`\n\n      ) {\n        data_found = false;\n        current_config = command.command_output;\n        change_required = false;\n      } else {\n        jobOutputNotAvailable = true;\n        change_required = null;\n        current_config = \"No output available\";\n        errorList.errors.push(`No output available for ${deviceIP}`);\n      }\n    });\n\n    resultList[deviceIP] = {\n      reachability_status,\n      authentication,\n      change_required,\n      current_config,\n    };\n\n    if (!data_found && !jobOutputNotAvailable) {\n      devicesToConfigure[deviceIP] = true;\n      resultList[deviceIP][\"config_command\"] = configCommandOutput;\n      resultList[deviceIP][\"show_command\"] = showCommands;\n    } else {\n      resultList[deviceIP][\"config_command\"] = \"NA\";\n    }\n  });\n}\n\nsetVariable(\"expectedConfigData\", resultList);\n\nconsole.log(\"Devices to configure: \", devicesToConfigure);\nconsole.log(\"All devices: \", allDevices);\nconsole.log(\"Report available: \", reportAvailable);\nconsole.log(\"Result list: \", resultList);\nconsole.log(\"Error list: \", errorList);\nconsole.log(\"Move Further: \", Object.keys(devicesToConfigure).length > 0);\n\nconst allConfigsAlreadyRemoved = Object.values(resultList).every(device => {\n  const currentConfig = device.current_config?.trim().toLowerCase() || \"\";\n  return (\n    currentConfig === \"no output received\" ||\n    !currentConfig.includes(syslog_server)\n  );\n});\n\nsetVariable(\"allNoOutput\", allConfigsAlreadyRemoved);\n//\nconsole.log(\"All devices already removed or no output:\", allConfigsAlreadyRemoved);\n\nif (allConfigsAlreadyRemoved) {\n  //\n  console.log(\"Halting flow: nothing to remove.\");\n  return false;\n}\n\n//\nconsole.log(\"Proceeding: at least one device has config to remove.\");\nreturn Object.keys(devicesToConfigure).length > 0;\n\n\n",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "decision",
+        "dragging": false,
+        "measured": {
+          "width": 48,
+          "height": 48
+        },
+        "position": {
+          "x": 507.252697506661,
+          "y": 395.16757379290317
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "a5348f1b-aa6f-4aa8-bf0c-69334b4f2b57",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 48
+        },
+        "position": {
+          "x": 642.299103396311,
+          "y": 550.2418517175029
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "12161b03-3be1-4571-bf56-237b9d73c5d7",
+        "data": {
+          "type": "process",
+          "error": false,
+          "value": "",
+          "script": "/*\nAvailable Context:\n- handleError(error): Handle an error by displaying a snackbar message.\n- setVariable(name, value): Set a variable with the given name and value.\n- getVariable(name): Get the value of a variable with the given name.\n- clearVariables(): Clear all variables.\n- result: This variable contains the returned value from previous node.\n\nExample:\n  setVariable('exampleVar', 'exampleValue');\n  const value = getVariable('exampleVar');\n  if (value) {\n    console.log(value)\n  } else {\n    handleError('Variable not found');\n  }\n*/\n\nconst allNoOutput = getVariable(\"allNoOutput\")\n\nif (allNoOutput) {\n  handleError(\"No Data Found\")\n} else {\n  handleError(\"Configuration already exists\")\n}\n",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "process",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 582.8588829640147,
+          "y": 472.3382695501551
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "3fd6895b-73c4-4da7-b3b4-3372978b85d8",
+        "data": {
+          "type": "ai-opinion",
+          "error": false,
+          "value": "",
+          "success": false,
+          "aiOpinion": "{\"Problem_Found\":\"Removing the NTP server configuration can lead to time synchronization issues across the network devices.\",\"Category\":\"Time Synchronization\",\"Outage_Potentials\":{\"Data_Plane\":false,\"Control_Plane\":true},\"Possible_Solution\":\"Consider replacing it with a different NTP server or ensuring that another time source is available for synchronization.\"}",
+          "isLoading": false
+        },
+        "type": "ai-opinion",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 361.36800642203747,
+          "y": 475.5764586426956
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "b9da4ec8-be40-44bc-b8fe-70cd412beb9d",
+        "data": {
+          "type": "expected-config",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "expected-config",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 361.36800642203747,
+          "y": 568.6210253974555
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "d9b330d5-3468-40f4-9266-989c6b0256e9",
+        "data": {
+          "type": "boolean-box",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "variableNodeType": "expected-config"
+        },
+        "type": "boolean-box",
+        "dragging": false,
+        "measured": {
+          "width": 48,
+          "height": 48
+        },
+        "position": {
+          "x": 413.0594323969041,
+          "y": 667.4090839272005
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "33ffc0c2-136c-4bd0-9c09-0b615277760e",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 48
+        },
+        "position": {
+          "x": 516.4422843466373,
+          "y": 758.1562539719663
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "423870d1-f1c8-495a-ade9-cea91673f3ef",
+        "data": {
+          "type": "multi-config",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "multi-config",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 264.87734460228654,
+          "y": 755.8588572619723
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "53a28547-0760-4aa4-9fe4-72883b2a2490",
+        "data": {
+          "type": "decision",
+          "error": false,
+          "value": "",
+          "script": "const finalConfigOutput = getVariable(\"finalConfigOutput\");\nconst syslog_server = getVariable(\"syslog_server\");\n\nlet devicesToConfigure = {};\nlet allDevices = {};\nlet reportAvailable = true;\nlet resultList = {};\nlet errorList = {};\nerrorList.errors = [];\n\nfor (const [deviceIP, jobOutput] of Object.entries(finalConfigOutput)) {\n  if (!jobOutput) {\n    reportAvailable = false;\n    errorList.errors = [\"No data available\"];\n    continue;\n  }\n  const showCommand = jobOutput.show_command;\n  const jobReportJsonData = jobOutput.job_report;\n\n  console.log(jobReportJsonData);\n\n  if (\n    !jobReportJsonData ||\n    !jobReportJsonData ||\n    !Array.isArray(jobReportJsonData)\n  ) {\n    reportAvailable = false;\n    errorList.errors = [\"No report available\"];\n  } else {\n    jobReportJsonData.forEach((dataItem) => {\n      if (!dataItem) {\n        reportAvailable = false;\n        return;\n      }\n\n      const deviceIp = dataItem.ip_address;\n      const reachabilityStatus = dataItem.device_status === \"Reachable\";\n      let changeRequired = true;\n      let currentConfig = \"\";\n      let authentication = false;\n\n      if (dataItem.device_status === \"Reachable\") {\n        authentication = true;\n      }\n\n      allDevices[deviceIp] = true;\n\n      if (\n        !dataItem.data_dump_post ||\n        !Array.isArray(dataItem.data_dump_post) ||\n        dataItem.data_dump_post.length < 1\n      ) {\n        changeRequired = null;\n        currentConfig = \"NA\";\n\n        resultList[deviceIp] = {\n          reachability_status: reachabilityStatus,\n          authentication: authentication,\n          change_required: changeRequired,\n          current_config: currentConfig,\n        };\n\n        reportAvailable = false;\n        errorList.errors = [`No data available for ${deviceIp}`];\n        return;\n      }\n\n      let dataFound = false;\n      let jobOutputNotAvailable = false;\n\n      // pre\n      let preOutputWasNoOutput = false;\n\n      // Check data_dump_pre here:\n      if (Array.isArray(dataItem.data_dump_pre)) {\n        for (let preCmd of dataItem.data_dump_pre) {\n          if (\n            preCmd.command_name === showCommand &&\n            preCmd.command_output?.trim().toLowerCase() === \"no output received\"\n          ) {\n            //\n            console.log(\"pre has no o/p\")\n            preOutputWasNoOutput = true;\n            break;\n          }\n        }\n      }\n\n      if (preOutputWasNoOutput) {\n        //\n        console.log(\"nothin to remove\")\n        // Nothing to remove, config didn't exist\n        changeRequired = false;\n        devicesToConfigure[deviceIp] = false;\n      }\n\n      // existing post check\n      if(!preOutputWasNoOutput){\n        dataItem.data_dump_post.forEach((command) => {\n        if (\n          command &&\n          command.json_output &&\n          Array.isArray(command.json_output) &&\n          command.command_name === `${showCommand}`\n        ) {\n          const array = command.json_output;\n\n          for (let i = 0; i < array.length; i++) {\n            if (!array[i].includes(syslog_server)) {\n              dataFound = true;\n              changeRequired = false;\n              break;\n            } else {\n              changeRequired = true;\n            }\n          }\n\n          currentConfig = command.command_output;\n        } else {\n          changeRequired = null;\n          jobOutputNotAvailable = true;\n          currentConfig = \"No output available\";\n          errorList.errors.push(`No output available for ${deviceIp}`);\n        }\n      });\n      }\n\n      if (!dataFound && !jobOutputNotAvailable) {\n        devicesToConfigure[deviceIp] = true;\n      }\n\n      resultList[deviceIp] = {\n        reachability_status: reachabilityStatus,\n        authentication: authentication,\n        change_required: changeRequired,\n        current_config: currentConfig,\n      };\n    });\n  }\n}\n\nfunction formatResultListPlainText(resultList) {\n  let text = \"Device Configuration Report\\n\\n\";\n\n  for (const [ip, data] of Object.entries(resultList)) {\n    text += `Device IP: ${ip}\n  Reachable: ${data.reachability_status ? \"Yes\" : \"No\"}\n  Authenticated: ${data.authentication ? \"Yes\" : \"No\"}\n  Change Required: ${data.change_required === null\n        ? \"Unknown\"\n        : data.change_required\n          ? \"Yes\"\n          : \"No\"\n      }\n  Current Config:\n${data.current_config}\n------------------------------------------------------------\n`;\n  }\n\n  return text;\n}\n\nconst plainTextOutput = formatResultListPlainText(resultList);\n\nsetVariable(\"plainTextOutput\", plainTextOutput);\n\nconsole.log(plainTextOutput)\n\nreturn (\n  Object.keys(devicesToConfigure).length !== Object.keys(allDevices).length\n);\n\n\n",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "decision",
+        "dragging": false,
+        "measured": {
+          "width": 48,
+          "height": 48
+        },
+        "position": {
+          "x": 315.50606510621344,
+          "y": 871.8773911166728
+        },
+        "selected": true,
+        "resizable": false
+      },
+      {
+        "id": "edc7f85f-13ea-4ffe-aa09-3d445a5707f6",
+        "data": {
+          "type": "mail",
+          "error": false,
+          "value": "",
+          "message": "{{plainTextOutput}}",
+          "payload": {
+            "message": "{{plainTextOutput}}",
+            "subject": "Cisco IOS-XE Remove NTP Workflow Report",
+            "email_group": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7"
+          },
+          "subject": "Cisco IOS-XE Remove NTP Workflow Report",
+          "success": false,
+          "isLoading": false,
+          "email_group": {
+            "id": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7",
+            "group_name": "Default",
+            "is_deleted": false
+          }
+        },
+        "type": "mail",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 380.8958784569871,
+          "y": 967.2193545814267
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "a16bd994-4330-488f-943f-b2b9173c963f",
+        "data": {
+          "type": "itsm-worknotes",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "event_type": "Change",
+          "work_notes": "{{plainTextOutput}}"
+        },
+        "type": "itsm-worknotes",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 380.8958784569871,
+          "y": 1067.1561114661688
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "2d4e757a-7dc5-4c58-b26a-953f9924f6b0",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 48
+        },
+        "position": {
+          "x": 439.77689127183,
+          "y": 1178.5798519008813
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "587317f4-4032-407d-8310-43560f45494a",
+        "data": {
+          "type": "mail",
+          "error": false,
+          "value": "",
+          "message": "{{plainTextOutput}}",
+          "payload": {
+            "message": "{{plainTextOutput}}",
+            "subject": "Cisco IOS-XE Remove NTP Workflow Report",
+            "email_group": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7"
+          },
+          "subject": "Cisco IOS-XE Remove NTP Workflow Report",
+          "success": false,
+          "isLoading": false,
+          "email_group": {
+            "id": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7",
+            "group_name": "Default",
+            "is_deleted": false
+          }
+        },
+        "type": "mail",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 147.71011239258894,
+          "y": 1067.156111466169
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "7496d1f6-eb02-40ad-a844-dfdf8478a632",
+        "data": {
+          "type": "configuration-output",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "reportData": {
+            "192.168.85.150": {
+              "device_ip": "192.168.85.150",
+              "job_report": [
+                {
+                  "id": "a042647b-4bd6-4b93-82a4-458b5f0acfec",
+                  "job_id": "5df70493-a2de-4955-a6ea-a41204015c8c",
+                  "jobName": "CHG0030002_9/6/2025 4:33:57 pm_config",
+                  "hostname": "csr1000v-2.cml.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "5df70493-a2de-4955-a6ea-a41204015c8c",
+                  "ip_address": "192.168.85.150",
+                  "date_created": "Mon 09, Jun 2025, 04:34 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "ntp server 192.168.10.163"
+                      ],
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "ntp server 192.168.10.163",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "No output received",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": [
+                        "no ntp server 192.168.10.163"
+                      ],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncsr1000v-2(config)#no ntp server 192.168.10.163\ncsr1000v-2(config)#end\ncsr1000v-2#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "show running-config | include ntp",
+              "authentication": true,
+              "config_command": "no ntp server 192.168.10.163",
+              "current_config": "ntp server 192.168.10.163",
+              "change_required": true,
+              "device_group_id": "6f9ea6bd-f6d4-458a-83bf-2ee3aa60eab4",
+              "config_template_id": "f439064d-4d12-4d46-b894-8b490763d05a",
+              "reachability_status": true
+            },
+            "192.168.85.151": {
+              "device_ip": "192.168.85.151",
+              "job_report": [
+                {
+                  "id": "c435846d-2bb8-4249-a87d-98291e46e411",
+                  "job_id": "1af71b5a-b0e8-4a59-88de-70c7e07ba9d9",
+                  "jobName": "CHG0030002_9/6/2025 4:33:57 pm_config",
+                  "hostname": "csr1000v-1.cml.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "1af71b5a-b0e8-4a59-88de-70c7e07ba9d9",
+                  "ip_address": "192.168.85.151",
+                  "date_created": "Mon 09, Jun 2025, 04:34 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "ntp server 15.207.248.194 source GigabitEthernet1\nntp server 192.168.10.163"
+                      ],
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "ntp server 15.207.248.194 source GigabitEthernet1\nntp server 192.168.10.163",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "ntp server 15.207.248.194 source GigabitEthernet1"
+                      ],
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "ntp server 15.207.248.194 source GigabitEthernet1",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": [
+                        "no ntp server 192.168.10.163"
+                      ],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncsr1000v-1(config)#no ntp server 192.168.10.163\ncsr1000v-1(config)#end\ncsr1000v-1#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "show running-config | include ntp",
+              "authentication": true,
+              "config_command": "no ntp server 192.168.10.163",
+              "current_config": "ntp server 15.207.248.194 source GigabitEthernet1\nntp server 192.168.10.163",
+              "change_required": true,
+              "device_group_id": "56546495-4430-49a2-b74d-62f2754aeed0",
+              "config_template_id": "7afe5e64-a090-479b-98f6-f05defc1f060",
+              "reachability_status": true
+            }
+          }
+        },
+        "type": "configuration-output",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 148.85881074758598,
+          "y": 968.3680529364237
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "16e4d72d-a0e7-4238-b544-6038b62a06e4",
+        "data": {
+          "type": "itsm-worknotes",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "event_type": "Change",
+          "work_notes": "{{plainTextOutput}}"
+        },
+        "type": "itsm-worknotes",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 148.0614140375919,
+          "y": 1172.3363601258961
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "85ebc66a-6c7e-47aa-93d1-9d2f5a7416b7",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 48
+        },
+        "position": {
+          "x": 206.6450301424407,
+          "y": 1273.8679104306261
+        },
+        "selected": false,
+        "resizable": false
+      }
+    ],
+    "viewport": {
+      "x": 135.75938391494765,
+      "y": 108.01489113507927,
+      "zoom": 0.5904963307147649
+    }
+  },
+  "config_flow": true,
+  "workflow_type": "change",
+  "metadata": {
+    "tags": [
+      "add syslog",
+      "syslog server",
+      "logging",
+      "system log",
+      "show run | in logg",
+      "logging host",
+      "transport udp port"
+    ],
+    "type": "change",
+    "device": "Netscaler",
+    "vendor": "NetScaler"
+  }
+}
