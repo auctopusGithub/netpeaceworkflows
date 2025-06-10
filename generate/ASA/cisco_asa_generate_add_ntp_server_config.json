@@ -2,11 +2,12 @@
   "id": "b38b29f1-97d2-4b56-8dbb-953569de2d4d",
   "required_variables": [
     "changeNumber",
-    "ntp_ip"
+    "ntp_ip",
+    "peer_key"
   ],
   "is_deleted": false,
   "date_created": "Mon 09, Jun 2025, 07:03 PM",
-  "last_modified": "Mon 09, Jun 2025, 07:06 PM",
+  "last_modified": "Tue 10, Jun 2025, 04:32 PM",
   "slug": null,
   "name": "cisco_asa_generate_add_ntp_server_config",
   "description": [
@@ -19,6 +20,11 @@
       "name": "ntp_ip",
       "type": "String",
       "label": "NTP server"
+    },
+    {
+      "name": "peer_key",
+      "type": "String",
+      "label": "Peer Key"
     }
   ],
   "workflow_data": {
@@ -315,8 +321,7 @@
             "show running-config | include ntp"
           ],
           "config_steps": [
-            "ntp server {{ntp_ip}}",
-            "ntp update-calender"
+            "ntp server {{ntp_ip}} key {{peer_key}} source outside prefer"
           ]
         },
         "type": "commands",
@@ -329,7 +334,7 @@
           "x": 532.5996430466403,
           "y": 35.54288935931065
         },
-        "selected": false,
+        "selected": true,
         "resizable": false
       },
       {
@@ -855,7 +860,7 @@
           "x": 184.60466165129571,
           "y": 714.6560116180628
         },
-        "selected": true,
+        "selected": false,
         "resizable": false
       },
       {
