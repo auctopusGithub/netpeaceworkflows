@@ -1,5 +1,5 @@
 {
-  "name": "cisco_ios_generate_remove_ntp_server_config",
+  "name": "cisco_nxos_generate_remove_ntp_server_config",
   "description": [
     {
       "name": "changeNumber",
@@ -333,14 +333,14 @@
           "isLoading": false,
           "reportData": [
             {
-              "id": "bd358c23-1bcc-4fd5-a0a8-82efebfbe444",
-              "job_id": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "jobName": "job_3/6/2025 11:33:53 am",
-              "hostname": "cisco_cat8k_012.cml.com",
+              "id": "a549b8f3-1608-4414-908d-2e4e5b663d4d",
+              "job_id": "deacbffa-d258-4d31-b2d6-e14e16820029",
+              "jobName": "job_9/6/2025 5:32:07 pm",
+              "hostname": "nexus9kv-02",
               "job_type": "Show Commands",
-              "UserJobID": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "ip_address": "192.168.85.12",
-              "date_created": "Tue 03, Jun 2025, 11:34 AM",
+              "UserJobID": "deacbffa-d258-4d31-b2d6-e14e16820029",
+              "ip_address": "192.168.85.161",
+              "date_created": "Mon 09, Jun 2025, 05:32 PM",
               "data_dump_pre": null,
               "device_status": "Reachable",
               "data_dump_post": null,
@@ -350,23 +350,23 @@
                 {
                   "error": "False",
                   "json_output": [
-                    "ntp server 192.168.10.163"
+                    "ntp server 192.168.10.163 use-vrf default\n"
                   ],
                   "command_name": "show running-config | include ntp",
-                  "command_output": "ntp server 192.168.10.163",
+                  "command_output": "ntp server 192.168.10.163 use-vrf default\n",
                   "command_status": "Success"
                 }
               ]
             },
             {
-              "id": "3783fab2-296d-4e68-8737-24ee2d78857e",
-              "job_id": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "jobName": "job_3/6/2025 11:33:53 am",
-              "hostname": "cisco_cat8k_018.cml.com",
+              "id": "8eeff3c1-2ee2-4b15-b1c9-be50d19c7bef",
+              "job_id": "deacbffa-d258-4d31-b2d6-e14e16820029",
+              "jobName": "job_9/6/2025 5:32:07 pm",
+              "hostname": "nexus9kv-01",
               "job_type": "Show Commands",
-              "UserJobID": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "ip_address": "192.168.85.18",
-              "date_created": "Tue 03, Jun 2025, 11:34 AM",
+              "UserJobID": "deacbffa-d258-4d31-b2d6-e14e16820029",
+              "ip_address": "192.168.85.160",
+              "date_created": "Mon 09, Jun 2025, 05:32 PM",
               "data_dump_pre": null,
               "device_status": "Reachable",
               "data_dump_post": null,
@@ -376,244 +376,10 @@
                 {
                   "error": "False",
                   "json_output": [
-                    "ntp server 192.168.10.163"
+                    "ntp server 192.168.10.163 use-vrf default\nntp server 192.168.85.162 use-vrf default\n"
                   ],
                   "command_name": "show running-config | include ntp",
-                  "command_output": "ntp server 192.168.10.163",
-                  "command_status": "Success"
-                }
-              ]
-            },
-            {
-              "id": "da909abc-fe34-41c4-a802-7324f231dc73",
-              "job_id": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "jobName": "job_3/6/2025 11:33:53 am",
-              "hostname": "cisco_cat8k_015.cml.com",
-              "job_type": "Show Commands",
-              "UserJobID": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "ip_address": "192.168.85.15",
-              "date_created": "Tue 03, Jun 2025, 11:34 AM",
-              "data_dump_pre": null,
-              "device_status": "Reachable",
-              "data_dump_post": null,
-              "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.67.11\nntp server 192.168.10.163"
-                  ],
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "ntp server 192.168.67.11\nntp server 192.168.10.163",
-                  "command_status": "Success"
-                }
-              ]
-            },
-            {
-              "id": "6d64ce2e-2360-414e-a3f4-f3e745f52077",
-              "job_id": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "jobName": "job_3/6/2025 11:33:53 am",
-              "hostname": "iosv-01.cml.com",
-              "job_type": "Show Commands",
-              "UserJobID": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "ip_address": "192.168.85.51",
-              "date_created": "Tue 03, Jun 2025, 11:34 AM",
-              "data_dump_pre": null,
-              "device_status": "Reachable",
-              "data_dump_post": null,
-              "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.67.11\nntp server 192.168.10.163"
-                  ],
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "ntp server 192.168.67.11\nntp server 192.168.10.163",
-                  "command_status": "Success"
-                }
-              ]
-            },
-            {
-              "id": "a661b87f-652d-469f-9ac3-f498c0ce20bf",
-              "job_id": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "jobName": "job_3/6/2025 11:33:53 am",
-              "hostname": "cisco_cat8k_017.cml.com",
-              "job_type": "Show Commands",
-              "UserJobID": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "ip_address": "192.168.85.17",
-              "date_created": "Tue 03, Jun 2025, 11:34 AM",
-              "data_dump_pre": null,
-              "device_status": "Reachable",
-              "data_dump_post": null,
-              "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "ntp server 192.168.10.163",
-                  "command_status": "Success"
-                }
-              ]
-            },
-            {
-              "id": "09a8783f-399b-485f-9165-175b4030e49a",
-              "job_id": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "jobName": "job_3/6/2025 11:33:53 am",
-              "hostname": "cisco_cat8k_013.cml.com",
-              "job_type": "Show Commands",
-              "UserJobID": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "ip_address": "192.168.85.13",
-              "date_created": "Tue 03, Jun 2025, 11:34 AM",
-              "data_dump_pre": null,
-              "device_status": "Reachable",
-              "data_dump_post": null,
-              "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "ntp server 192.168.10.163",
-                  "command_status": "Success"
-                }
-              ]
-            },
-            {
-              "id": "cf05b893-2945-411b-996e-960a9a02f45e",
-              "job_id": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "jobName": "job_3/6/2025 11:33:53 am",
-              "hostname": "cisco_cat8k_016.cml.com",
-              "job_type": "Show Commands",
-              "UserJobID": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "ip_address": "192.168.85.16",
-              "date_created": "Tue 03, Jun 2025, 11:34 AM",
-              "data_dump_pre": null,
-              "device_status": "Reachable",
-              "data_dump_post": null,
-              "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "ntp server 192.168.10.163",
-                  "command_status": "Success"
-                }
-              ]
-            },
-            {
-              "id": "e3b3f2f7-cc22-439f-bc83-f90acda7b212",
-              "job_id": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "jobName": "job_3/6/2025 11:33:53 am",
-              "hostname": "cisco_cat8k_014.cml.com",
-              "job_type": "Show Commands",
-              "UserJobID": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "ip_address": "192.168.85.14",
-              "date_created": "Tue 03, Jun 2025, 11:34 AM",
-              "data_dump_pre": null,
-              "device_status": "Reachable",
-              "data_dump_post": null,
-              "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "ntp server 192.168.10.163",
-                  "command_status": "Success"
-                }
-              ]
-            },
-            {
-              "id": "05313170-e496-453c-9b0b-8f3c527f3339",
-              "job_id": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "jobName": "job_3/6/2025 11:33:53 am",
-              "hostname": "iosvl2-01.cml.com",
-              "job_type": "Show Commands",
-              "UserJobID": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "ip_address": "192.168.85.154",
-              "date_created": "Tue 03, Jun 2025, 11:34 AM",
-              "data_dump_pre": null,
-              "device_status": "Reachable",
-              "data_dump_post": null,
-              "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "ntp server 192.168.10.163",
-                  "command_status": "Success"
-                }
-              ]
-            },
-            {
-              "id": "e0b6d5d7-5ed8-4b41-8d2e-9837e43bb668",
-              "job_id": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "jobName": "job_3/6/2025 11:33:53 am",
-              "hostname": "iosv-02.cml.com",
-              "job_type": "Show Commands",
-              "UserJobID": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "ip_address": "192.168.85.52",
-              "date_created": "Tue 03, Jun 2025, 11:34 AM",
-              "data_dump_pre": null,
-              "device_status": "Reachable",
-              "data_dump_post": null,
-              "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "ntp server 192.168.10.163",
-                  "command_status": "Success"
-                }
-              ]
-            },
-            {
-              "id": "8ec13f1f-02f9-40f7-a289-af13b3f1e90f",
-              "job_id": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "jobName": "job_3/6/2025 11:33:53 am",
-              "hostname": "cisco_cat8k_011.cml.com",
-              "job_type": "Show Commands",
-              "UserJobID": "1700b5a5-8ed3-4885-9906-27b52700d3e2",
-              "ip_address": "192.168.85.11",
-              "date_created": "Tue 03, Jun 2025, 11:34 AM",
-              "data_dump_pre": null,
-              "device_status": "Reachable",
-              "data_dump_post": null,
-              "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.67.11\nntp server 192.168.10.163"
-                  ],
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "ntp server 192.168.67.11\nntp server 192.168.10.163",
+                  "command_output": "ntp server 192.168.10.163 use-vrf default\nntp server 192.168.85.162 use-vrf default\n",
                   "command_status": "Success"
                 }
               ]
@@ -708,7 +474,7 @@
           "error": false,
           "value": "",
           "success": false,
-          "aiOpinion": "{\"Problem_Found\":\"Removing the NTP server configuration can lead to time desynchronization across devices.\",\"Category\":\"Time Sync Configuration\",\"Outage_Potentials\":{\"Data_Plane\":false,\"Control_Plane\":true},\"Possible_Solution\":\"Consider configuring a new NTP server or ensuring that an alternative time source is available.\"}",
+          "aiOpinion": "{\"Problem_Found\":\"Removing the NTP server may cause the device to lose synchronization for time, potentially impacting time-sensitive applications.\",\"Category\":\"Network Time Protocol (NTP) Configuration\",\"Outage_Potentials\":{\"Data_Plane\":false,\"Control_Plane\":true},\"Possible_Solution\":\"Consider setting a backup NTP server or retaining the current configuration until an alternative time source is available.\"}",
           "isLoading": false
         },
         "type": "ai-opinion",
@@ -824,14 +590,14 @@
           "message": "{{plainTextOutput}}",
           "payload": {
             "message": "{{plainTextOutput}}",
-            "subject": "Cisco IOS Generate - Remove NTP Workflow Report",
-            "email_group": "b5f3a7d6-d2e2-4218-9c48-d9e2e11753ef"
+            "subject": "Cisco NXOS Generate - Remove NTP Workflow Report",
+            "email_group": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7"
           },
-          "subject": "Cisco IOS Generate - Remove NTP Workflow Report",
+          "subject": "Cisco NXOS Generate - Remove NTP Workflow Report",
           "success": false,
           "isLoading": false,
           "email_group": {
-            "id": "b5f3a7d6-d2e2-4218-9c48-d9e2e11753ef",
+            "id": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7",
             "group_name": "Default",
             "is_deleted": false
           }
@@ -873,8 +639,8 @@
       }
     ],
     "viewport": {
-      "x": 7.896917635365412,
-      "y": -76.42899369306372,
+      "x": 35.89691763536541,
+      "y": 16.57100630693617,
       "zoom": 0.7788168718618312
     }
   },
@@ -884,13 +650,12 @@
     "tags": [
       "NTP",
       "NTP server",
-      "show run | in ntp",
+      "show running-config | include ntp",
       "NTP configuration",
-      "remove NTP",
       "Network Time Protocol"
     ],
     "type": "generate",
-    "device": "IOS",
+    "device": "NXOS",
     "vendor": "Cisco"
   }
 }

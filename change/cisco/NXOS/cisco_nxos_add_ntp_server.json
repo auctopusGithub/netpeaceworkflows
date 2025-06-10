@@ -441,14 +441,40 @@
           "isLoading": false,
           "reportData": [
             {
-              "id": "91583784-618b-472f-bab1-1cfa0de14d1f",
-              "job_id": "7f383b37-6a2f-4eec-b9a8-89b4dad527b8",
-              "jobName": "job_30/5/2025 4:09:32 pm",
-              "hostname": "cisco_cat8k_013.cml.com",
+              "id": "b35133ef-29ec-49d4-8c4e-696e8b5bd1b4",
+              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "jobName": "job_3/6/2025 12:08:13 pm",
+              "hostname": "cisco_cat8k_011.cml.com",
               "job_type": "Show Commands",
-              "UserJobID": "7f383b37-6a2f-4eec-b9a8-89b4dad527b8",
-              "ip_address": "192.168.85.13",
-              "date_created": "Fri 30, May 2025, 04:09 PM",
+              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "ip_address": "192.168.85.11",
+              "date_created": "Tue 03, Jun 2025, 12:08 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "ntp server 192.168.67.11"
+                  ],
+                  "command_name": "show running-config | include ntp",
+                  "command_output": "ntp server 192.168.67.11",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "126c4e84-bb9c-48ca-ba18-01cd6c97a7b1",
+              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "jobName": "job_3/6/2025 12:08:13 pm",
+              "hostname": "cisco_cat8k_012.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "ip_address": "192.168.85.12",
+              "date_created": "Tue 03, Jun 2025, 12:08 PM",
               "data_dump_pre": null,
               "device_status": "Reachable",
               "data_dump_post": null,
@@ -464,14 +490,14 @@
               ]
             },
             {
-              "id": "cc7da0f5-2c23-4be5-930b-e5890c1954bc",
-              "job_id": "7f383b37-6a2f-4eec-b9a8-89b4dad527b8",
-              "jobName": "job_30/5/2025 4:09:32 pm",
-              "hostname": "cisco_cat8k_012.cml.com",
+              "id": "bdebca98-0109-47be-8f93-70a1216aa000",
+              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "jobName": "job_3/6/2025 12:08:13 pm",
+              "hostname": "cisco_cat8k_016.cml.com",
               "job_type": "Show Commands",
-              "UserJobID": "7f383b37-6a2f-4eec-b9a8-89b4dad527b8",
-              "ip_address": "192.168.85.12",
-              "date_created": "Fri 30, May 2025, 04:09 PM",
+              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "ip_address": "192.168.85.16",
+              "date_created": "Tue 03, Jun 2025, 12:08 PM",
               "data_dump_pre": null,
               "device_status": "Reachable",
               "data_dump_post": null,
@@ -482,6 +508,196 @@
                   "error": "False",
                   "command_name": "show running-config | include ntp",
                   "command_output": "No output received",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "0310f43b-fa13-4d2f-bd9a-822a66426c06",
+              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "jobName": "job_3/6/2025 12:08:13 pm",
+              "hostname": "cisco_cat8k_013.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "ip_address": "192.168.85.13",
+              "date_created": "Tue 03, Jun 2025, 12:08 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "command_name": "show running-config | include ntp",
+                  "command_output": "No output received",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "7e1ba4d3-53a2-4861-bdcc-b9eab5308bde",
+              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "jobName": "job_3/6/2025 12:08:13 pm",
+              "hostname": "cisco_cat8k_017.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "ip_address": "192.168.85.17",
+              "date_created": "Tue 03, Jun 2025, 12:08 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "command_name": "show running-config | include ntp",
+                  "command_output": "No output received",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "77598c9a-803b-46ce-8d26-3528adb31c7a",
+              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "jobName": "job_3/6/2025 12:08:13 pm",
+              "hostname": "cisco_cat8k_014.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "ip_address": "192.168.85.14",
+              "date_created": "Tue 03, Jun 2025, 12:08 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "command_name": "show running-config | include ntp",
+                  "command_output": "No output received",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "0ebaf335-be55-4335-b907-5a3b9a22718d",
+              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "jobName": "job_3/6/2025 12:08:13 pm",
+              "hostname": "cisco_cat8k_018.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "ip_address": "192.168.85.18",
+              "date_created": "Tue 03, Jun 2025, 12:08 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "command_name": "show running-config | include ntp",
+                  "command_output": "No output received",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "26c61514-29c2-40bc-aacf-48a95a75a677",
+              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "jobName": "job_3/6/2025 12:08:13 pm",
+              "hostname": "iosvl2-01.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "ip_address": "192.168.85.154",
+              "date_created": "Tue 03, Jun 2025, 12:08 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "command_name": "show running-config | include ntp",
+                  "command_output": "No output received",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "5726f34b-8f02-42dc-b0c2-80486e00c4e8",
+              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "jobName": "job_3/6/2025 12:08:13 pm",
+              "hostname": "iosv-02.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "ip_address": "192.168.85.52",
+              "date_created": "Tue 03, Jun 2025, 12:08 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "command_name": "show running-config | include ntp",
+                  "command_output": "No output received",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "46e4d677-cbac-4e6f-a421-9f5db6637d02",
+              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "jobName": "job_3/6/2025 12:08:13 pm",
+              "hostname": "iosv-01.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "ip_address": "192.168.85.51",
+              "date_created": "Tue 03, Jun 2025, 12:08 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "ntp server 192.168.67.11"
+                  ],
+                  "command_name": "show running-config | include ntp",
+                  "command_output": "ntp server 192.168.67.11",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "1e9487b5-b3ad-4605-8535-d7114c1676b0",
+              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "jobName": "job_3/6/2025 12:08:13 pm",
+              "hostname": "cisco_cat8k_015.cml.com",
+              "job_type": "Show Commands",
+              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
+              "ip_address": "192.168.85.15",
+              "date_created": "Tue 03, Jun 2025, 12:08 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "ntp server 192.168.67.11"
+                  ],
+                  "command_name": "show running-config | include ntp",
+                  "command_output": "ntp server 192.168.67.11",
                   "command_status": "Success"
                 }
               ]
@@ -521,7 +737,7 @@
           "x": 582.8541193284602,
           "y": 343.3925120092656
         },
-        "selected": true,
+        "selected": false,
         "resizable": false
       },
       {
@@ -576,7 +792,7 @@
           "error": false,
           "value": "",
           "success": false,
-          "aiOpinion": "{\"Problem_Found\":\"The NTP server is set to a specific IP address which may not be reachable or may not provide correct time information if it's down or misconfigured.\",\"Category\":\"Time Synchronization\",\"Outage_Potentials\":{\"Data_Plane\":false,\"Control_Plane\":true},\"Possible_Solution\":\"Verify the reachability and configuration of the NTP server; consider using multiple NTP servers for redundancy.\"}",
+          "aiOpinion": "{\"Problem_Found\":\"The command 'ntp update-calendar' is not commonly used with some IOS versions, it may lead to misconfiguration or unintended behavior if not supported.\",\"Category\":\"Time Synchronization\",\"Outage_Potentials\":{\"Data_Plane\":false,\"Control_Plane\":true},\"Possible_Solution\":\"Verify IOS version compatibility with the 'ntp update-calendar' command and ensure the correct syntax is used.\"}",
           "isLoading": false
         },
         "type": "ai-opinion",
@@ -687,7 +903,7 @@
           "type": "decision",
           "error": false,
           "value": "",
-          "script": "const finalConfigOutput = getVariable(\"finalConfigOutput\");\nconst ntpIp = getVariable(\"ntp_ip\");\n\nlet devicesToConfigure = {};\nlet allDevices = {};\nlet reportAvailable = true;\nlet resultList = {};\nlet errorList = {};\nerrorList.errors = [];\n\nfor (const [deviceIP, jobOutput] of Object.entries(finalConfigOutput)) {\n  if (!jobOutput) {\n    reportAvailable = false;\n    errorList.errors = [\"No data available\"];\n    continue;\n  }\n  const showCommand = jobOutput.show_command;\n  const jobReportJsonData = jobOutput.job_report;\n\n  if (\n    !jobReportJsonData ||\n    !jobReportJsonData ||\n    !Array.isArray(jobReportJsonData)\n  ) {\n    reportAvailable = false;\n    errorList.errors = [\"No report available\"];\n  } else {\n    jobReportJsonData.forEach((dataItem) => {\n      if (!dataItem) {\n        reportAvailable = false;\n        return;\n      }\n\n      const deviceIp = dataItem.ip_address;\n      const reachabilityStatus = dataItem.device_status === \"Reachable\";\n      let changeRequired = true;\n      let currentConfig = \"\";\n      let authentication = false;\n\n      if (dataItem.device_status === \"Reachable\") {\n        authentication = true;\n      }\n\n      allDevices[deviceIp] = true;\n\n      if (\n        !dataItem.data_dump_post ||\n        !Array.isArray(dataItem.data_dump_post) ||\n        dataItem.data_dump_post.length < 1\n      ) {\n        changeRequired = null;\n        currentConfig = \"NA\";\n\n        resultList[deviceIp] = {\n          reachability_status: reachabilityStatus,\n          authentication: authentication,\n          change_required: changeRequired,\n          current_config: currentConfig,\n        };\n\n        reportAvailable = false;\n        errorList.errors = [`No data available for ${deviceIp}`];\n        return;\n      }\n\n      let dataFound = false;\n      let jobOutputNotAvailable = false;\n\n      dataItem.data_dump_post.forEach((command) => {\n        if (\n          command &&\n          command.json_output &&\n          Array.isArray(command.json_output) &&\n          command.command_name === `${showCommand}`\n        ) {\n          const array = command.json_output;\n\n          for (let i = 0; i < array.length; i++) {\n            if (array[i].includes(ntpIp)) {\n              dataFound = true;\n              changeRequired = false;\n              break;\n            } else {\n              changeRequired = true;\n            }\n          }\n\n          currentConfig = command.command_output;\n        } else {\n          changeRequired = null;\n          jobOutputNotAvailable = true;\n          currentConfig = \"No output available\";\n          errorList.errors.push(`No output available for ${deviceIp}`);\n        }\n      });\n      \n      if (!dataFound && !jobOutputNotAvailable) {\n        devicesToConfigure[deviceIp] = true;\n      }\n\n      resultList[deviceIp] = {\n        reachability_status: reachabilityStatus,\n        authentication: authentication,\n        change_required: changeRequired,\n        current_config: currentConfig,\n      };\n    });\n  }\n}\n\nfunction formatResultListForEmail(resultList) {\n  let html = `\n    <h2>Device Configuration Report</h2>\n    <table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" style=\"border-collapse: collapse; font-family: Arial, sans-serif;\">\n      <thead>\n        <tr style=\"background-color: #f2f2f2;\">\n          <th>Device IP</th>\n          <th>Reachability</th>\n          <th>Authenticated</th>\n          <th>Change Required</th>\n          <th>Current Config</th>\n        </tr>\n      </thead>\n      <tbody>\n  `;\n\n  for (const [ip, data] of Object.entries(resultList)) {\n    html += `\n      <tr>\n        <td>${ip}</td>\n        <td>${data.reachability_status ? \"Yes\" : \"No\"}</td>\n        <td>${data.authentication ? \"Yes\" : \"No\"}</td>\n        <td>${data.change_required === null\n        ? \"Unknown\"\n        : data.change_required\n          ? \"Yes\"\n          : \"No\"\n      }</td>\n        <td><pre style=\"white-space: pre-wrap; max-width: 600px;\">${data.current_config\n      }</pre></td>\n      </tr>\n    `;\n  }\n\n  html += `\n      </tbody>\n    </table>\n  `;\n\n  return html;\n}\n\nfunction formatResultListPlainText(resultList) {\n  let text = \"Device Configuration Report\\n\\n\";\n\n  for (const [ip, data] of Object.entries(resultList)) {\n    text += `Device IP: ${ip}\n  Reachable: ${data.reachability_status ? \"Yes\" : \"No\"}\n  Authenticated: ${data.authentication ? \"Yes\" : \"No\"}\n  Change Required: ${data.change_required === null\n        ? \"Unknown\"\n        : data.change_required\n          ? \"Yes\"\n          : \"No\"\n      }\n  Current Config:\n${data.current_config}\n------------------------------------------------------------\n`;\n  }\n\n  return text;\n}\n\nconst itsmWorknotesBody = formatResultListPlainText(resultList);\nconst emailBody = formatResultListForEmail(resultList);\n\nsetVariable(\"itsmWorknotesOutput\", itsmWorknotesBody);\nsetVariable(\"plainTextOutput\", emailBody);\n\nreturn (\n  Object.keys(devicesToConfigure).length !== Object.keys(allDevices).length\n);\n",
+          "script": "const finalConfigOutput = getVariable(\"finalConfigOutput\");\nconst ntpIp = getVariable(\"ntp_ip\");\n\nlet devicesToConfigure = {};\nlet allDevices = {};\nlet reportAvailable = true;\nlet resultList = {};\nlet errorList = {};\nerrorList.errors = [];\n\nfor (const [deviceIP, jobOutput] of Object.entries(finalConfigOutput)) {\n  if (!jobOutput) {\n    reportAvailable = false;\n    errorList.errors = [\"No data available\"];\n    continue;\n  }\n  const showCommand = jobOutput.show_command;\n  const jobReportJsonData = jobOutput.job_report;\n\n  if (\n    !jobReportJsonData ||\n    !jobReportJsonData ||\n    !Array.isArray(jobReportJsonData)\n  ) {\n    reportAvailable = false;\n    errorList.errors = [\"No report available\"];\n  } else {\n    jobReportJsonData.forEach((dataItem) => {\n      if (!dataItem) {\n        reportAvailable = false;\n        return;\n      }\n\n      const deviceIp = dataItem.ip_address;\n      const reachabilityStatus = dataItem.device_status === \"Reachable\";\n      let changeRequired = true;\n      let currentConfig = \"\";\n      let authentication = false;\n\n      if (dataItem.device_status === \"Reachable\") {\n        authentication = true;\n      }\n\n      allDevices[deviceIp] = true;\n\n      if (\n        !dataItem.data_dump_post ||\n        !Array.isArray(dataItem.data_dump_post) ||\n        dataItem.data_dump_post.length < 1\n      ) {\n        changeRequired = null;\n        currentConfig = \"NA\";\n\n        resultList[deviceIp] = {\n          reachability_status: reachabilityStatus,\n          authentication: authentication,\n          change_required: changeRequired,\n          current_config: currentConfig,\n        };\n\n        reportAvailable = false;\n        errorList.errors = [`No data available for ${deviceIp}`];\n        return;\n      }\n\n      let dataFound = false;\n      let jobOutputNotAvailable = false;\n\n      dataItem.data_dump_post.forEach((command) => {\n        if (\n          command &&\n          command.json_output &&\n          Array.isArray(command.json_output) &&\n          command.command_name === `${showCommand}`\n        ) {\n          const array = command.json_output;\n\n          for (let i = 0; i < array.length; i++) {\n            if (array[i].includes(ntpIp)) {\n              dataFound = true;\n              changeRequired = false;\n              break;\n            } else {\n              changeRequired = true;\n            }\n          }\n\n          currentConfig = command.command_output;\n        } else {\n          changeRequired = null;\n          jobOutputNotAvailable = true;\n          currentConfig = \"No output available\";\n          errorList.errors.push(`No output available for ${deviceIp}`);\n        }\n      });\n      \n      if (!dataFound && !jobOutputNotAvailable) {\n        devicesToConfigure[deviceIp] = true;\n      }\n\n      resultList[deviceIp] = {\n        reachability_status: reachabilityStatus,\n        authentication: authentication,\n        change_required: changeRequired,\n        current_config: currentConfig,\n      };\n    });\n  }\n}\n\nfunction formatResultListPlainText(resultList) {\n  let text = \"Device Configuration Report\\n\\n\";\n\n  for (const [ip, data] of Object.entries(resultList)) {\n    text += `Device IP: ${ip}\n  Reachable: ${data.reachability_status ? \"Yes\" : \"No\"}\n  Authenticated: ${data.authentication ? \"Yes\" : \"No\"}\n  Change Required: ${data.change_required === null\n        ? \"Unknown\"\n        : data.change_required\n          ? \"Yes\"\n          : \"No\"\n      }\n  Current Config:\n${data.current_config}\n------------------------------------------------------------\n`;\n  }\n\n  return text;\n}\n\nconst plainTextOutput = formatResultListPlainText(resultList);\n\nsetVariable(\"plainTextOutput\", plainTextOutput);\n\nreturn (\n  Object.keys(devicesToConfigure).length !== Object.keys(allDevices).length\n);\n",
           "success": false,
           "isLoading": false
         },
@@ -713,14 +929,14 @@
           "message": "{{plainTextOutput}}",
           "payload": {
             "message": "{{plainTextOutput}}",
-            "subject": "Cisco IOS Add NTP Workflow Report",
-            "email_group": "5f8d4b50-3b66-4c0e-ba1d-e06b1edb3519"
+            "subject": "Cisco NXOS Add NTP Workflow Report",
+            "email_group": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7"
           },
-          "subject": "Cisco IOS Add NTP Workflow Report",
+          "subject": "Cisco NXOS Add NTP Workflow Report",
           "success": false,
           "isLoading": false,
           "email_group": {
-            "id": "5f8d4b50-3b66-4c0e-ba1d-e06b1edb3519",
+            "id": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7",
             "group_name": "Default",
             "is_deleted": false
           }
@@ -747,7 +963,7 @@
           "success": false,
           "isLoading": false,
           "event_type": "Change",
-          "work_notes": "{{itsmWorknotesOutput}}"
+          "work_notes": "{{plainTextOutput}}"
         },
         "type": "itsm-worknotes",
         "dragging": false,
@@ -771,7 +987,7 @@
           "success": false,
           "isLoading": false,
           "event_type": "Change",
-          "work_notes": "{{itsmWorknotesOutput}}"
+          "work_notes": "{{plainTextOutput}}"
         },
         "type": "itsm-worknotes",
         "dragging": false,
@@ -795,18 +1011,77 @@
           "success": false,
           "isLoading": false,
           "reportData": {
+            "192.168.85.11": {
+              "device_ip": "192.168.85.11",
+              "job_report": [
+                {
+                  "id": "f221807a-248c-4505-abfe-ef1e15a437c2",
+                  "job_id": "e37d9ce3-b9fa-4727-ac73-94e1b9e4a223",
+                  "jobName": "CHG0030002_3/6/2025 12:08:44 pm_config",
+                  "hostname": "cisco_cat8k_011.cml.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "e37d9ce3-b9fa-4727-ac73-94e1b9e4a223",
+                  "ip_address": "192.168.85.11",
+                  "date_created": "Tue 03, Jun 2025, 12:09 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "ntp server 192.168.67.11"
+                      ],
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "ntp server 192.168.67.11",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "ntp server 192.168.67.11\nntp server 192.168.10.163"
+                      ],
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "ntp server 192.168.67.11\nntp server 192.168.10.163",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": [
+                        "ntp server 192.168.10.163",
+                        "ntp update-calender"
+                      ],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_011(config)#ntp server 192.168.10.163\ncisco_cat8k_011(config)#ntp update-calender\n                                         ^\n% Invalid input detected at '^' marker.\n\ncisco_cat8k_011(config)#end\ncisco_cat8k_011#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "show running-config | include ntp",
+              "authentication": true,
+              "config_command": "ntp server 192.168.10.163;ntp update-calender",
+              "current_config": "ntp server 192.168.67.11",
+              "change_required": true,
+              "device_group_id": "c7fde06a-f4c9-429a-997e-033346ab0e6c",
+              "config_template_id": "4cc109d4-b489-489a-ab13-2e0e0a707222",
+              "reachability_status": true
+            },
             "192.168.85.12": {
               "device_ip": "192.168.85.12",
               "job_report": [
                 {
-                  "id": "3381d3a8-1255-444d-8867-6a7d089808ef",
-                  "job_id": "a4918824-ca20-46cf-b1b6-4a55aeb421c2",
-                  "jobName": "CHG0030002_30/5/2025 4:10:18 pm_config",
+                  "id": "314fcb4c-7564-4aad-b0d7-9451f86a9907",
+                  "job_id": "d3fe20ec-4f04-4a3f-935b-fc036217fe10",
+                  "jobName": "CHG0030002_3/6/2025 12:08:44 pm_config",
                   "hostname": "cisco_cat8k_012.cml.com",
                   "job_type": "Configuration",
-                  "UserJobID": "a4918824-ca20-46cf-b1b6-4a55aeb421c2",
+                  "UserJobID": "d3fe20ec-4f04-4a3f-935b-fc036217fe10",
                   "ip_address": "192.168.85.12",
-                  "date_created": "Fri 30, May 2025, 04:10 PM",
+                  "date_created": "Tue 03, Jun 2025, 12:09 PM",
                   "data_dump_pre": [
                     {
                       "error": "False",
@@ -847,22 +1122,22 @@
               "config_command": "ntp server 192.168.10.163;ntp update-calender",
               "current_config": "No output received",
               "change_required": true,
-              "device_group_id": "bbbe5638-f5f3-4351-be2f-4d500c2a0e07",
-              "config_template_id": "299f884d-aec9-42ab-9cad-ef3d16c7cf60",
+              "device_group_id": "78a3a41b-56c0-4f8a-8728-a7a40c1e38a1",
+              "config_template_id": "da0f0f48-a4d8-4fcc-8b0e-020756d61480",
               "reachability_status": true
             },
             "192.168.85.13": {
               "device_ip": "192.168.85.13",
               "job_report": [
                 {
-                  "id": "3b134757-29c9-4210-a018-f63f24014809",
-                  "job_id": "111a4d56-e9d9-493e-976b-6ea8e6e2597e",
-                  "jobName": "CHG0030002_30/5/2025 4:10:18 pm_config",
+                  "id": "baf16239-b284-4a74-b61e-f7157528698f",
+                  "job_id": "fe7d0556-99a7-4ed9-bfe6-025b94aec6f3",
+                  "jobName": "CHG0030002_3/6/2025 12:08:44 pm_config",
                   "hostname": "cisco_cat8k_013.cml.com",
                   "job_type": "Configuration",
-                  "UserJobID": "111a4d56-e9d9-493e-976b-6ea8e6e2597e",
+                  "UserJobID": "fe7d0556-99a7-4ed9-bfe6-025b94aec6f3",
                   "ip_address": "192.168.85.13",
-                  "date_created": "Fri 30, May 2025, 04:10 PM",
+                  "date_created": "Tue 03, Jun 2025, 12:09 PM",
                   "data_dump_pre": [
                     {
                       "error": "False",
@@ -903,8 +1178,462 @@
               "config_command": "ntp server 192.168.10.163;ntp update-calender",
               "current_config": "No output received",
               "change_required": true,
-              "device_group_id": "155ac02d-09d9-4005-83cb-292437384046",
-              "config_template_id": "e2a8a3d4-f766-4d83-be94-80e544273de2",
+              "device_group_id": "da934d90-5361-46e6-acc5-c3d73b0b049d",
+              "config_template_id": "304facd6-5ca2-4d57-afac-d555e24778cd",
+              "reachability_status": true
+            },
+            "192.168.85.14": {
+              "device_ip": "192.168.85.14",
+              "job_report": [
+                {
+                  "id": "d9c82caf-c73d-4fc3-a1a3-48eff0b69cfe",
+                  "job_id": "8ca031d1-443e-4c8f-bd67-534e71980a6e",
+                  "jobName": "CHG0030002_3/6/2025 12:08:44 pm_config",
+                  "hostname": "cisco_cat8k_014.cml.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "8ca031d1-443e-4c8f-bd67-534e71980a6e",
+                  "ip_address": "192.168.85.14",
+                  "date_created": "Tue 03, Jun 2025, 12:09 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "No output received",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "ntp server 192.168.10.163"
+                      ],
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "ntp server 192.168.10.163",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": [
+                        "ntp server 192.168.10.163",
+                        "ntp update-calender"
+                      ],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_014(config)#ntp server 192.168.10.163\ncisco_cat8k_014(config)#ntp update-calender\n                                         ^\n% Invalid input detected at '^' marker.\n\ncisco_cat8k_014(config)#end\ncisco_cat8k_014#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "show running-config | include ntp",
+              "authentication": true,
+              "config_command": "ntp server 192.168.10.163;ntp update-calender",
+              "current_config": "No output received",
+              "change_required": true,
+              "device_group_id": "32b3e504-3036-44d7-84d0-fd6d1436ea30",
+              "config_template_id": "0be05bd6-ad1f-4dba-a7e1-e684a529ba07",
+              "reachability_status": true
+            },
+            "192.168.85.15": {
+              "device_ip": "192.168.85.15",
+              "job_report": [
+                {
+                  "id": "829ba695-92ad-4e9c-9dd0-e8a1fa4e0815",
+                  "job_id": "33e320f8-5f34-4d58-9000-92eb402fff61",
+                  "jobName": "CHG0030002_3/6/2025 12:08:44 pm_config",
+                  "hostname": "cisco_cat8k_015.cml.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "33e320f8-5f34-4d58-9000-92eb402fff61",
+                  "ip_address": "192.168.85.15",
+                  "date_created": "Tue 03, Jun 2025, 12:09 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "ntp server 192.168.67.11"
+                      ],
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "ntp server 192.168.67.11",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "ntp server 192.168.67.11\nntp server 192.168.10.163"
+                      ],
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "ntp server 192.168.67.11\nntp server 192.168.10.163",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": [
+                        "ntp server 192.168.10.163",
+                        "ntp update-calender"
+                      ],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_015(config)#ntp server 192.168.10.163\ncisco_cat8k_015(config)#ntp update-calender\n                                         ^\n% Invalid input detected at '^' marker.\n\ncisco_cat8k_015(config)#end\ncisco_cat8k_015#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "show running-config | include ntp",
+              "authentication": true,
+              "config_command": "ntp server 192.168.10.163;ntp update-calender",
+              "current_config": "ntp server 192.168.67.11",
+              "change_required": true,
+              "device_group_id": "e018f933-13c6-4be1-8bcb-dda303ff693c",
+              "config_template_id": "63542164-9513-46b2-921b-209135b2ba1c",
+              "reachability_status": true
+            },
+            "192.168.85.16": {
+              "device_ip": "192.168.85.16",
+              "job_report": [
+                {
+                  "id": "b783523d-1cfc-41d6-a0de-39f4b0d5f2bc",
+                  "job_id": "72a63367-3ace-4ccf-bdee-9461b3886284",
+                  "jobName": "CHG0030002_3/6/2025 12:08:44 pm_config",
+                  "hostname": "cisco_cat8k_016.cml.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "72a63367-3ace-4ccf-bdee-9461b3886284",
+                  "ip_address": "192.168.85.16",
+                  "date_created": "Tue 03, Jun 2025, 12:09 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "No output received",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "ntp server 192.168.10.163"
+                      ],
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "ntp server 192.168.10.163",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": [
+                        "ntp server 192.168.10.163",
+                        "ntp update-calender"
+                      ],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_016(config)#ntp server 192.168.10.163\ncisco_cat8k_016(config)#ntp update-calender\n                                         ^\n% Invalid input detected at '^' marker.\n\ncisco_cat8k_016(config)#end\ncisco_cat8k_016#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "show running-config | include ntp",
+              "authentication": true,
+              "config_command": "ntp server 192.168.10.163;ntp update-calender",
+              "current_config": "No output received",
+              "change_required": true,
+              "device_group_id": "04af15c6-16fc-4bea-aeb8-24fb21b0a2ce",
+              "config_template_id": "84354148-1925-42d4-abed-1c6b4530d2bf",
+              "reachability_status": true
+            },
+            "192.168.85.17": {
+              "device_ip": "192.168.85.17",
+              "job_report": [
+                {
+                  "id": "da351a32-6d49-42ef-9b20-6cc40c895155",
+                  "job_id": "7e58a32f-3532-46e2-8848-0a09a35fb7c2",
+                  "jobName": "CHG0030002_3/6/2025 12:08:44 pm_config",
+                  "hostname": "cisco_cat8k_017.cml.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "7e58a32f-3532-46e2-8848-0a09a35fb7c2",
+                  "ip_address": "192.168.85.17",
+                  "date_created": "Tue 03, Jun 2025, 12:09 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "No output received",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "ntp server 192.168.10.163"
+                      ],
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "ntp server 192.168.10.163",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": [
+                        "ntp server 192.168.10.163",
+                        "ntp update-calender"
+                      ],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_017(config)#ntp server 192.168.10.163\ncisco_cat8k_017(config)#ntp update-calender\n                                         ^\n% Invalid input detected at '^' marker.\n\ncisco_cat8k_017(config)#end\ncisco_cat8k_017#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "show running-config | include ntp",
+              "authentication": true,
+              "config_command": "ntp server 192.168.10.163;ntp update-calender",
+              "current_config": "No output received",
+              "change_required": true,
+              "device_group_id": "0873312d-3170-406a-8e83-d2f76b7c7c83",
+              "config_template_id": "13f7239c-707f-427d-a40d-83d470ca38b6",
+              "reachability_status": true
+            },
+            "192.168.85.18": {
+              "device_ip": "192.168.85.18",
+              "job_report": [
+                {
+                  "id": "058fb74f-2184-4897-aeb5-bd1eeaa5c857",
+                  "job_id": "0d4e33e2-d443-4f12-bd5e-743a9902aef3",
+                  "jobName": "CHG0030002_3/6/2025 12:08:44 pm_config",
+                  "hostname": "cisco_cat8k_018.cml.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "0d4e33e2-d443-4f12-bd5e-743a9902aef3",
+                  "ip_address": "192.168.85.18",
+                  "date_created": "Tue 03, Jun 2025, 12:09 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "No output received",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "ntp server 192.168.10.163"
+                      ],
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "ntp server 192.168.10.163",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": [
+                        "ntp server 192.168.10.163",
+                        "ntp update-calender"
+                      ],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_018(config)#ntp server 192.168.10.163\ncisco_cat8k_018(config)#ntp update-calender\n                                         ^\n% Invalid input detected at '^' marker.\n\ncisco_cat8k_018(config)#end\ncisco_cat8k_018#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "show running-config | include ntp",
+              "authentication": true,
+              "config_command": "ntp server 192.168.10.163;ntp update-calender",
+              "current_config": "No output received",
+              "change_required": true,
+              "device_group_id": "22bae1d0-77e4-4f9e-a75c-4b535328a91f",
+              "config_template_id": "9272c765-5ce6-4b23-a277-9a803292cc67",
+              "reachability_status": true
+            },
+            "192.168.85.51": {
+              "device_ip": "192.168.85.51",
+              "job_report": [
+                {
+                  "id": "3214ed97-8682-44f2-ba08-fdb470751f05",
+                  "job_id": "ef6db07d-8eb2-4e71-8232-42bff715aec7",
+                  "jobName": "CHG0030002_3/6/2025 12:08:44 pm_config",
+                  "hostname": "iosv-01.cml.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "ef6db07d-8eb2-4e71-8232-42bff715aec7",
+                  "ip_address": "192.168.85.51",
+                  "date_created": "Tue 03, Jun 2025, 12:09 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "ntp server 192.168.67.11"
+                      ],
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "ntp server 192.168.67.11",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "ntp server 192.168.67.11\nntp server 192.168.10.163"
+                      ],
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "ntp server 192.168.67.11\nntp server 192.168.10.163",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": [
+                        "ntp server 192.168.10.163",
+                        "ntp update-calender"
+                      ],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\niosv-01(config)#ntp server 192.168.10.163\niosv-01(config)#ntp update-calender\n                                 ^\n% Invalid input detected at '^' marker.\n\niosv-01(config)#end\niosv-01#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "show running-config | include ntp",
+              "authentication": true,
+              "config_command": "ntp server 192.168.10.163;ntp update-calender",
+              "current_config": "ntp server 192.168.67.11",
+              "change_required": true,
+              "device_group_id": "d1e47cb6-b22e-426a-b094-1f6f7506a053",
+              "config_template_id": "a8237016-9aa9-431d-afa8-4bec6bba47a9",
+              "reachability_status": true
+            },
+            "192.168.85.52": {
+              "device_ip": "192.168.85.52",
+              "job_report": [
+                {
+                  "id": "927315ad-1421-4e13-bb23-3bcb4be944de",
+                  "job_id": "e8f891a8-d61d-4bea-beba-cb47575621f9",
+                  "jobName": "CHG0030002_3/6/2025 12:08:44 pm_config",
+                  "hostname": "iosv-02.cml.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "e8f891a8-d61d-4bea-beba-cb47575621f9",
+                  "ip_address": "192.168.85.52",
+                  "date_created": "Tue 03, Jun 2025, 12:09 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "No output received",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "ntp server 192.168.10.163"
+                      ],
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "ntp server 192.168.10.163",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": [
+                        "ntp server 192.168.10.163",
+                        "ntp update-calender"
+                      ],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\niosv-02(config)#ntp server 192.168.10.163\niosv-02(config)#ntp update-calender\n                                 ^\n% Invalid input detected at '^' marker.\n\niosv-02(config)#end\niosv-02#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "show running-config | include ntp",
+              "authentication": true,
+              "config_command": "ntp server 192.168.10.163;ntp update-calender",
+              "current_config": "No output received",
+              "change_required": true,
+              "device_group_id": "f4bf7fce-f8ad-43eb-865f-564867ea51bc",
+              "config_template_id": "6c90f874-598f-4ae7-813e-ed182845f7f7",
+              "reachability_status": true
+            },
+            "192.168.85.154": {
+              "device_ip": "192.168.85.154",
+              "job_report": [
+                {
+                  "id": "205c220e-8e5f-4198-9a05-815c1b4f50b9",
+                  "job_id": "01c118af-a09a-480c-a587-e4a0730b63aa",
+                  "jobName": "CHG0030002_3/6/2025 12:08:44 pm_config",
+                  "hostname": "iosvl2-01.cml.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "01c118af-a09a-480c-a587-e4a0730b63aa",
+                  "ip_address": "192.168.85.154",
+                  "date_created": "Tue 03, Jun 2025, 12:09 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "No output received",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "ntp server 192.168.10.163"
+                      ],
+                      "command_name": "show running-config | include ntp",
+                      "command_output": "ntp server 192.168.10.163",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": [
+                        "ntp server 192.168.10.163",
+                        "ntp update-calender"
+                      ],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\niosvl2-01(config)#ntp server 192.168.10.163\niosvl2-01(config)#ntp update-calender\n                                   ^\n% Invalid input detected at '^' marker.\n\niosvl2-01(config)#end\niosvl2-01#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "show running-config | include ntp",
+              "authentication": true,
+              "config_command": "ntp server 192.168.10.163;ntp update-calender",
+              "current_config": "No output received",
+              "change_required": true,
+              "device_group_id": "73d76bef-5f32-4b5b-9cfb-654f17a277e0",
+              "config_template_id": "6af41f93-082b-48a7-94f3-ee66f4e9a190",
               "reachability_status": true
             }
           }
@@ -931,14 +1660,14 @@
           "message": "{{plainTextOutput}}",
           "payload": {
             "message": "{{plainTextOutput}}",
-            "subject": "Cisco IOS Add NTP Workflow Report",
-            "email_group": "5f8d4b50-3b66-4c0e-ba1d-e06b1edb3519"
+            "subject": "Cisco NXOS Add NTP Workflow Report",
+            "email_group": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7"
           },
-          "subject": "Cisco IOS Add NTP Workflow Report",
+          "subject": "Cisco NXOS Add NTP Workflow Report",
           "success": false,
           "isLoading": false,
           "email_group": {
-            "id": "5f8d4b50-3b66-4c0e-ba1d-e06b1edb3519",
+            "id": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7",
             "group_name": "Default",
             "is_deleted": false
           }
@@ -953,7 +1682,7 @@
           "x": 188.3941489839965,
           "y": 991.6596468391641
         },
-        "selected": false,
+        "selected": true,
         "resizable": false
       },
       {
@@ -1002,8 +1731,8 @@
       }
     ],
     "viewport": {
-      "x": 210.86736284646804,
-      "y": -182.79951354968574,
+      "x": 122.86736284646804,
+      "y": -132.7995135496858,
       "zoom": 0.7169776240079133
     }
   },

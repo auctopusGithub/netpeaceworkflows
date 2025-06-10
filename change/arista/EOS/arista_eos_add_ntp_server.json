@@ -1,4 +1,13 @@
 {
+  "id": "d02f253c-5c63-492a-aff9-8a00c63b391b",
+  "required_variables": [
+    "changeNumber",
+    "ntp_ip"
+  ],
+  "is_deleted": false,
+  "date_created": "Mon 09, Jun 2025, 02:23 PM",
+  "last_modified": "Mon 09, Jun 2025, 05:58 PM",
+  "slug": null,
   "name": "arista_eos_add_ntp_server",
   "description": [
     {
@@ -18,14 +27,14 @@
         "id": "f4284967-971f-4c7c-828e-70479f52c9ac",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "start",
         "target": "127a1d0e-215a-4dcf-b967-6932d749ad6b",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -36,14 +45,14 @@
         "id": "7228aaad-5fa8-4c1b-b7b4-7777ab236b3c",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "127a1d0e-215a-4dcf-b967-6932d749ad6b",
         "target": "0ded2e91-6c7a-4b3d-93e2-3d5d214ba616",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -54,14 +63,14 @@
         "id": "754feec2-0560-4a98-aefe-833fa3ae9e44",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "c8cd6f23-395c-42f0-9785-1a6a67e804b0",
         "target": "eb5e450d-1673-401a-adf1-be1d331aa095",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -72,14 +81,14 @@
         "id": "0e97d513-bcfa-4743-886a-43c0bba9a42d",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "0ded2e91-6c7a-4b3d-93e2-3d5d214ba616",
         "target": "c8cd6f23-395c-42f0-9785-1a6a67e804b0",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -126,14 +135,14 @@
         "id": "b17640c1-31ba-4b4b-9edb-1509004d414d",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "eb5e450d-1673-401a-adf1-be1d331aa095",
         "target": "3c62a729-6ae9-4e05-a89d-8ffaa19602b2",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -144,14 +153,14 @@
         "id": "3eb4e256-4753-4807-882a-3df5f0d0fd65",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "3c62a729-6ae9-4e05-a89d-8ffaa19602b2",
         "target": "19284cd0-ca3e-41b7-b62f-c5284f241a88",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -162,14 +171,14 @@
         "id": "7d5b0f5d-efb5-496a-87e2-66d219a01bb6",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "19284cd0-ca3e-41b7-b62f-c5284f241a88",
         "target": "89c31888-846d-40f7-990e-57814de2d8ea",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -180,14 +189,14 @@
         "id": "8bf6d608-b4d3-450d-8155-41cf4129258c",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "89c31888-846d-40f7-990e-57814de2d8ea",
         "target": "60b1687f-e153-41f3-8e64-dcc830352a75",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -440,40 +449,14 @@
           "isLoading": false,
           "reportData": [
             {
-              "id": "b35133ef-29ec-49d4-8c4e-696e8b5bd1b4",
-              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "jobName": "job_3/6/2025 12:08:13 pm",
-              "hostname": "cisco_cat8k_011.cml.com",
+              "id": "e0ae8ec7-474d-4e36-8b38-41eadca80267",
+              "job_id": "464af0e8-bd15-42bf-ae64-c1523e2fc292",
+              "jobName": "job_9/6/2025 5:56:46 pm",
+              "hostname": "arista02.in",
               "job_type": "Show Commands",
-              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "ip_address": "192.168.85.11",
-              "date_created": "Tue 03, Jun 2025, 12:08 PM",
-              "data_dump_pre": null,
-              "device_status": "Reachable",
-              "data_dump_post": null,
-              "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.67.11"
-                  ],
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "ntp server 192.168.67.11",
-                  "command_status": "Success"
-                }
-              ]
-            },
-            {
-              "id": "126c4e84-bb9c-48ca-ba18-01cd6c97a7b1",
-              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "jobName": "job_3/6/2025 12:08:13 pm",
-              "hostname": "cisco_cat8k_012.cml.com",
-              "job_type": "Show Commands",
-              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "ip_address": "192.168.85.12",
-              "date_created": "Tue 03, Jun 2025, 12:08 PM",
+              "UserJobID": "464af0e8-bd15-42bf-ae64-c1523e2fc292",
+              "ip_address": "10.71.2.41",
+              "date_created": "Mon 09, Jun 2025, 05:57 PM",
               "data_dump_pre": null,
               "device_status": "Reachable",
               "data_dump_post": null,
@@ -489,14 +472,14 @@
               ]
             },
             {
-              "id": "bdebca98-0109-47be-8f93-70a1216aa000",
-              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "jobName": "job_3/6/2025 12:08:13 pm",
-              "hostname": "cisco_cat8k_016.cml.com",
+              "id": "9130f306-ad20-4a2d-82a4-dddc2f349189",
+              "job_id": "464af0e8-bd15-42bf-ae64-c1523e2fc292",
+              "jobName": "job_9/6/2025 5:56:46 pm",
+              "hostname": "arista01.in",
               "job_type": "Show Commands",
-              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "ip_address": "192.168.85.16",
-              "date_created": "Tue 03, Jun 2025, 12:08 PM",
+              "UserJobID": "464af0e8-bd15-42bf-ae64-c1523e2fc292",
+              "ip_address": "10.71.2.40",
+              "date_created": "Mon 09, Jun 2025, 05:57 PM",
               "data_dump_pre": null,
               "device_status": "Reachable",
               "data_dump_post": null,
@@ -512,194 +495,52 @@
               ]
             },
             {
-              "id": "0310f43b-fa13-4d2f-bd9a-822a66426c06",
-              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "jobName": "job_3/6/2025 12:08:13 pm",
-              "hostname": "cisco_cat8k_013.cml.com",
+              "id": "f2dfe36e-df0c-4cf1-94ce-c072637a06f6",
+              "job_id": "464af0e8-bd15-42bf-ae64-c1523e2fc292",
+              "jobName": "job_9/6/2025 5:56:46 pm",
+              "hostname": "arista03.in",
               "job_type": "Show Commands",
-              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "ip_address": "192.168.85.13",
-              "date_created": "Tue 03, Jun 2025, 12:08 PM",
+              "UserJobID": "464af0e8-bd15-42bf-ae64-c1523e2fc292",
+              "ip_address": "10.71.2.43",
+              "date_created": "Mon 09, Jun 2025, 05:57 PM",
               "data_dump_pre": null,
-              "device_status": "Reachable",
+              "device_status": "Unreachable",
               "data_dump_post": null,
               "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "No output received",
-                  "command_status": "Success"
-                }
-              ]
+              "authentication_status": "Failed",
+              "data_dump_show_commands": []
             },
             {
-              "id": "7e1ba4d3-53a2-4861-bdcc-b9eab5308bde",
-              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "jobName": "job_3/6/2025 12:08:13 pm",
-              "hostname": "cisco_cat8k_017.cml.com",
+              "id": "e70efa8e-d1c6-43f9-96a8-6e4ee39e1c40",
+              "job_id": "464af0e8-bd15-42bf-ae64-c1523e2fc292",
+              "jobName": "job_9/6/2025 5:56:46 pm",
+              "hostname": "arista04.in",
               "job_type": "Show Commands",
-              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "ip_address": "192.168.85.17",
-              "date_created": "Tue 03, Jun 2025, 12:08 PM",
+              "UserJobID": "464af0e8-bd15-42bf-ae64-c1523e2fc292",
+              "ip_address": "10.71.2.44",
+              "date_created": "Mon 09, Jun 2025, 05:57 PM",
               "data_dump_pre": null,
-              "device_status": "Reachable",
+              "device_status": "Unreachable",
               "data_dump_post": null,
               "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "No output received",
-                  "command_status": "Success"
-                }
-              ]
+              "authentication_status": "Failed",
+              "data_dump_show_commands": []
             },
             {
-              "id": "77598c9a-803b-46ce-8d26-3528adb31c7a",
-              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "jobName": "job_3/6/2025 12:08:13 pm",
-              "hostname": "cisco_cat8k_014.cml.com",
+              "id": "912b8011-01df-4be1-b135-002cdcd83d84",
+              "job_id": "464af0e8-bd15-42bf-ae64-c1523e2fc292",
+              "jobName": "job_9/6/2025 5:56:46 pm",
+              "hostname": "arista05.in",
               "job_type": "Show Commands",
-              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "ip_address": "192.168.85.14",
-              "date_created": "Tue 03, Jun 2025, 12:08 PM",
+              "UserJobID": "464af0e8-bd15-42bf-ae64-c1523e2fc292",
+              "ip_address": "10.71.2.45",
+              "date_created": "Mon 09, Jun 2025, 05:57 PM",
               "data_dump_pre": null,
-              "device_status": "Reachable",
+              "device_status": "Unreachable",
               "data_dump_post": null,
               "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "No output received",
-                  "command_status": "Success"
-                }
-              ]
-            },
-            {
-              "id": "0ebaf335-be55-4335-b907-5a3b9a22718d",
-              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "jobName": "job_3/6/2025 12:08:13 pm",
-              "hostname": "cisco_cat8k_018.cml.com",
-              "job_type": "Show Commands",
-              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "ip_address": "192.168.85.18",
-              "date_created": "Tue 03, Jun 2025, 12:08 PM",
-              "data_dump_pre": null,
-              "device_status": "Reachable",
-              "data_dump_post": null,
-              "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "No output received",
-                  "command_status": "Success"
-                }
-              ]
-            },
-            {
-              "id": "26c61514-29c2-40bc-aacf-48a95a75a677",
-              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "jobName": "job_3/6/2025 12:08:13 pm",
-              "hostname": "iosvl2-01.cml.com",
-              "job_type": "Show Commands",
-              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "ip_address": "192.168.85.154",
-              "date_created": "Tue 03, Jun 2025, 12:08 PM",
-              "data_dump_pre": null,
-              "device_status": "Reachable",
-              "data_dump_post": null,
-              "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "No output received",
-                  "command_status": "Success"
-                }
-              ]
-            },
-            {
-              "id": "5726f34b-8f02-42dc-b0c2-80486e00c4e8",
-              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "jobName": "job_3/6/2025 12:08:13 pm",
-              "hostname": "iosv-02.cml.com",
-              "job_type": "Show Commands",
-              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "ip_address": "192.168.85.52",
-              "date_created": "Tue 03, Jun 2025, 12:08 PM",
-              "data_dump_pre": null,
-              "device_status": "Reachable",
-              "data_dump_post": null,
-              "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "No output received",
-                  "command_status": "Success"
-                }
-              ]
-            },
-            {
-              "id": "46e4d677-cbac-4e6f-a421-9f5db6637d02",
-              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "jobName": "job_3/6/2025 12:08:13 pm",
-              "hostname": "iosv-01.cml.com",
-              "job_type": "Show Commands",
-              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "ip_address": "192.168.85.51",
-              "date_created": "Tue 03, Jun 2025, 12:08 PM",
-              "data_dump_pre": null,
-              "device_status": "Reachable",
-              "data_dump_post": null,
-              "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.67.11"
-                  ],
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "ntp server 192.168.67.11",
-                  "command_status": "Success"
-                }
-              ]
-            },
-            {
-              "id": "1e9487b5-b3ad-4605-8535-d7114c1676b0",
-              "job_id": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "jobName": "job_3/6/2025 12:08:13 pm",
-              "hostname": "cisco_cat8k_015.cml.com",
-              "job_type": "Show Commands",
-              "UserJobID": "933f96b0-01ee-4ae5-9393-b904631c6f33",
-              "ip_address": "192.168.85.15",
-              "date_created": "Tue 03, Jun 2025, 12:08 PM",
-              "data_dump_pre": null,
-              "device_status": "Reachable",
-              "data_dump_post": null,
-              "data_dump_config": null,
-              "authentication_status": "Succesful",
-              "data_dump_show_commands": [
-                {
-                  "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.67.11"
-                  ],
-                  "command_name": "show running-config | include ntp",
-                  "command_output": "ntp server 192.168.67.11",
-                  "command_status": "Success"
-                }
-              ]
+              "authentication_status": "Failed",
+              "data_dump_show_commands": []
             }
           ]
         },
@@ -791,7 +632,7 @@
           "error": false,
           "value": "",
           "success": false,
-          "aiOpinion": "{\"Problem_Found\":\"The command 'ntp update-calendar' is not commonly used with some IOS versions, it may lead to misconfiguration or unintended behavior if not supported.\",\"Category\":\"Time Synchronization\",\"Outage_Potentials\":{\"Data_Plane\":false,\"Control_Plane\":true},\"Possible_Solution\":\"Verify IOS version compatibility with the 'ntp update-calendar' command and ensure the correct syntax is used.\"}",
+          "aiOpinion": "{\"Problem_Found\":\"Potential time synchronization issue if the NTP server is unreachable or misconfigured.\",\"Category\":\"NTP Configuration\",\"Outage_Potentials\":{\"Data_Plane\":false,\"Control_Plane\":true},\"Possible_Solution\":\"Ensure that the NTP server is reachable and correctly configured. Consider adding backup NTP servers.\"}",
           "isLoading": false
         },
         "type": "ai-opinion",
@@ -916,7 +757,7 @@
           "x": 368.14069492618256,
           "y": 828.8277066839221
         },
-        "selected": true,
+        "selected": false,
         "resizable": false
       },
       {
@@ -928,14 +769,14 @@
           "message": "{{plainTextOutput}}",
           "payload": {
             "message": "{{plainTextOutput}}",
-            "subject": "Cisco IOS Add NTP Workflow Report",
-            "email_group": "5f8d4b50-3b66-4c0e-ba1d-e06b1edb3519"
+            "subject": "Arista EOS Add NTP Workflow Report",
+            "email_group": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7"
           },
-          "subject": "Cisco IOS Add NTP Workflow Report",
+          "subject": "Arista EOS Add NTP Workflow Report",
           "success": false,
           "isLoading": false,
           "email_group": {
-            "id": "5f8d4b50-3b66-4c0e-ba1d-e06b1edb3519",
+            "id": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7",
             "group_name": "Default",
             "is_deleted": false
           }
@@ -1659,14 +1500,14 @@
           "message": "{{plainTextOutput}}",
           "payload": {
             "message": "{{plainTextOutput}}",
-            "subject": "Cisco IOS Add NTP Workflow Report",
-            "email_group": "b5f3a7d6-d2e2-4218-9c48-d9e2e11753ef"
+            "subject": "Arista EOS Add NTP Workflow Report",
+            "email_group": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7"
           },
-          "subject": "Cisco IOS Add NTP Workflow Report",
+          "subject": "Arista EOS Add NTP Workflow Report",
           "success": false,
           "isLoading": false,
           "email_group": {
-            "id": "b5f3a7d6-d2e2-4218-9c48-d9e2e11753ef",
+            "id": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7",
             "group_name": "Default",
             "is_deleted": false
           }
@@ -1730,8 +1571,8 @@
       }
     ],
     "viewport": {
-      "x": 117.86736284646804,
-      "y": 91.2004864503142,
+      "x": 62.86736284646804,
+      "y": -138.7995135496858,
       "zoom": 0.7169776240079133
     }
   },
@@ -1748,5 +1589,7 @@
     "type": "change",
     "device": "EOS",
     "vendor": "Arista"
-  }
+  },
+  "created_by": "anurag",
+  "updated_by": "mrinal"
 }

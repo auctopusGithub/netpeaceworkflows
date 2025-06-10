@@ -1,5 +1,14 @@
 {
-  "name": "cisco_ios_generate_remove_ntp_server_config",
+  "id": "345d9349-e2fa-4698-81cd-2fd88123d25c",
+  "required_variables": [
+    "changeNumber",
+    "ntp_ip"
+  ],
+  "is_deleted": false,
+  "date_created": "Mon 09, Jun 2025, 06:55 PM",
+  "last_modified": "Mon 09, Jun 2025, 06:57 PM",
+  "slug": null,
+  "name": "cisco_ios-xr_generate_remove_ntp_server_config",
   "description": [
     {
       "name": "changeNumber",
@@ -18,14 +27,14 @@
         "id": "f4284967-971f-4c7c-828e-70479f52c9ac",
         "type": "smoothstep",
         "style": {
-          "stroke": "#4caf50",
+          "stroke": "grey",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "start",
         "target": "127a1d0e-215a-4dcf-b967-6932d749ad6b",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "#4caf50",
+          "color": "grey",
           "width": 20,
           "height": 20
         },
@@ -36,14 +45,14 @@
         "id": "7228aaad-5fa8-4c1b-b7b4-7777ab236b3c",
         "type": "smoothstep",
         "style": {
-          "stroke": "#4caf50",
+          "stroke": "grey",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "127a1d0e-215a-4dcf-b967-6932d749ad6b",
         "target": "0ded2e91-6c7a-4b3d-93e2-3d5d214ba616",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "#4caf50",
+          "color": "grey",
           "width": 20,
           "height": 20
         },
@@ -54,14 +63,14 @@
         "id": "0e97d513-bcfa-4743-886a-43c0bba9a42d",
         "type": "smoothstep",
         "style": {
-          "stroke": "#4caf50",
+          "stroke": "grey",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "0ded2e91-6c7a-4b3d-93e2-3d5d214ba616",
         "target": "c8cd6f23-395c-42f0-9785-1a6a67e804b0",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "#4caf50",
+          "color": "grey",
           "width": 20,
           "height": 20
         },
@@ -108,14 +117,14 @@
         "id": "3eb4e256-4753-4807-882a-3df5f0d0fd65",
         "type": "smoothstep",
         "style": {
-          "stroke": "#4caf50",
+          "stroke": "grey",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "3c62a729-6ae9-4e05-a89d-8ffaa19602b2",
         "target": "19284cd0-ca3e-41b7-b62f-c5284f241a88",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "#4caf50",
+          "color": "grey",
           "width": 20,
           "height": 20
         },
@@ -126,14 +135,14 @@
         "id": "7d5b0f5d-efb5-496a-87e2-66d219a01bb6",
         "type": "smoothstep",
         "style": {
-          "stroke": "#4caf50",
+          "stroke": "grey",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "19284cd0-ca3e-41b7-b62f-c5284f241a88",
         "target": "89c31888-846d-40f7-990e-57814de2d8ea",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "#4caf50",
+          "color": "grey",
           "width": 20,
           "height": 20
         },
@@ -162,14 +171,14 @@
         "id": "ccdbb3ba-349b-436d-802d-ac53c2a27527",
         "type": "smoothstep",
         "style": {
-          "stroke": "#4caf50",
+          "stroke": "grey",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "6778787a-c08f-4429-91af-0c95547124fc",
         "target": "c2b4f861-d0db-4099-9a01-0fca6d6952d4",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "#4caf50",
+          "color": "grey",
           "width": 20,
           "height": 20
         },
@@ -180,14 +189,14 @@
         "id": "184c8999-584e-4e7c-8ad6-58d1d95c4964",
         "type": "smoothstep",
         "style": {
-          "stroke": "#4caf50",
+          "stroke": "grey",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "c2b4f861-d0db-4099-9a01-0fca6d6952d4",
         "target": "54529e3d-0ec4-4b97-8123-56c4374af394",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "#4caf50",
+          "color": "grey",
           "width": 20,
           "height": 20
         },
@@ -198,14 +207,14 @@
         "id": "16d38ec0-5553-49b6-bdf2-e5eba9939fb3",
         "type": "smoothstep",
         "style": {
-          "stroke": "#4caf50",
+          "stroke": "grey",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "89c31888-846d-40f7-990e-57814de2d8ea",
         "target": "6778787a-c08f-4429-91af-0c95547124fc",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "#4caf50",
+          "color": "grey",
           "width": 20,
           "height": 20
         },
@@ -216,14 +225,14 @@
         "id": "c9522445-cd7e-405b-a341-c63b7699899c",
         "type": "smoothstep",
         "style": {
-          "stroke": "#4caf50",
+          "stroke": "grey",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "c8cd6f23-395c-42f0-9785-1a6a67e804b0",
         "target": "eb5e450d-1673-401a-adf1-be1d331aa095",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "#4caf50",
+          "color": "grey",
           "width": 20,
           "height": 20
         },
@@ -234,14 +243,14 @@
         "id": "05bc1826-c08c-487f-af86-74e53d461775",
         "type": "smoothstep",
         "style": {
-          "stroke": "#4caf50",
+          "stroke": "grey",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "eb5e450d-1673-401a-adf1-be1d331aa095",
         "target": "3c62a729-6ae9-4e05-a89d-8ffaa19602b2",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "#4caf50",
+          "color": "grey",
           "width": 20,
           "height": 20
         },
@@ -824,14 +833,14 @@
           "message": "{{plainTextOutput}}",
           "payload": {
             "message": "{{plainTextOutput}}",
-            "subject": "Cisco IOS Generate - Remove NTP Workflow Report",
-            "email_group": "b5f3a7d6-d2e2-4218-9c48-d9e2e11753ef"
+            "subject": "Cisco IOS-XR Generate - Remove NTP Workflow Report",
+            "email_group": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7"
           },
-          "subject": "Cisco IOS Generate - Remove NTP Workflow Report",
+          "subject": "Cisco IOS-XR Generate - Remove NTP Workflow Report",
           "success": false,
           "isLoading": false,
           "email_group": {
-            "id": "b5f3a7d6-d2e2-4218-9c48-d9e2e11753ef",
+            "id": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7",
             "group_name": "Default",
             "is_deleted": false
           }
@@ -846,7 +855,7 @@
           "x": 184.60466165129571,
           "y": 713.0538718628836
         },
-        "selected": false,
+        "selected": true,
         "resizable": false
       },
       {
@@ -874,7 +883,7 @@
     ],
     "viewport": {
       "x": 7.896917635365412,
-      "y": -76.42899369306372,
+      "y": -77.42899369306372,
       "zoom": 0.7788168718618312
     }
   },
@@ -883,14 +892,15 @@
   "metadata": {
     "tags": [
       "NTP",
-      "NTP server",
-      "show run | in ntp",
+      "remove NTP server",
+      "show running-config ntp",
       "NTP configuration",
-      "remove NTP",
       "Network Time Protocol"
     ],
     "type": "generate",
-    "device": "IOS",
+    "device": "IOS-XR",
     "vendor": "Cisco"
-  }
+  },
+  "created_by": "mrinal",
+  "updated_by": "mrinal"
 }

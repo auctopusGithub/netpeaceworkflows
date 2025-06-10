@@ -1,4 +1,13 @@
 {
+  "id": "3e40c9d4-0f37-4c57-bcb6-1be5c03ea736",
+  "required_variables": [
+    "changeNumber",
+    "ntp_ip"
+  ],
+  "is_deleted": false,
+  "date_created": "Mon 02, Jun 2025, 07:56 PM",
+  "last_modified": "Tue 03, Jun 2025, 12:07 PM",
+  "slug": null,
   "name": "cisco_ios_remove_ntp_server",
   "description": [
     {
@@ -1738,5 +1747,7 @@
     "type": "change",
     "device": "IOS",
     "vendor": "Cisco"
-  }
+  },
+  "created_by": "mrinal",
+  "updated_by": "mrinal"
 }

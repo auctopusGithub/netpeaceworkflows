@@ -1,4 +1,13 @@
 {
+  "id": "78889611-d385-450f-9b09-606069ff3034",
+  "required_variables": [
+    "changeNumber",
+    "ntp_ip"
+  ],
+  "is_deleted": false,
+  "date_created": "Mon 02, Jun 2025, 07:56 PM",
+  "last_modified": "Tue 03, Jun 2025, 12:10 PM",
+  "slug": null,
   "name": "cisco_ios_add_ntp_server",
   "description": [
     {
@@ -18,14 +27,14 @@
         "id": "f4284967-971f-4c7c-828e-70479f52c9ac",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "start",
         "target": "127a1d0e-215a-4dcf-b967-6932d749ad6b",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -36,14 +45,14 @@
         "id": "7228aaad-5fa8-4c1b-b7b4-7777ab236b3c",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "127a1d0e-215a-4dcf-b967-6932d749ad6b",
         "target": "0ded2e91-6c7a-4b3d-93e2-3d5d214ba616",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -54,14 +63,14 @@
         "id": "754feec2-0560-4a98-aefe-833fa3ae9e44",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "c8cd6f23-395c-42f0-9785-1a6a67e804b0",
         "target": "eb5e450d-1673-401a-adf1-be1d331aa095",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -72,14 +81,14 @@
         "id": "0e97d513-bcfa-4743-886a-43c0bba9a42d",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "0ded2e91-6c7a-4b3d-93e2-3d5d214ba616",
         "target": "c8cd6f23-395c-42f0-9785-1a6a67e804b0",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -126,14 +135,14 @@
         "id": "b17640c1-31ba-4b4b-9edb-1509004d414d",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "eb5e450d-1673-401a-adf1-be1d331aa095",
         "target": "3c62a729-6ae9-4e05-a89d-8ffaa19602b2",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -144,14 +153,14 @@
         "id": "3eb4e256-4753-4807-882a-3df5f0d0fd65",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "3c62a729-6ae9-4e05-a89d-8ffaa19602b2",
         "target": "19284cd0-ca3e-41b7-b62f-c5284f241a88",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -162,14 +171,14 @@
         "id": "7d5b0f5d-efb5-496a-87e2-66d219a01bb6",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "19284cd0-ca3e-41b7-b62f-c5284f241a88",
         "target": "89c31888-846d-40f7-990e-57814de2d8ea",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -198,14 +207,14 @@
         "id": "b7205b98-8703-4d73-98da-2c406147b89e",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "89c31888-846d-40f7-990e-57814de2d8ea",
         "target": "2d7f2f26-9c70-42fa-8921-8b461b1bb46c",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -216,14 +225,14 @@
         "id": "bf91afe3-9fd7-44cb-8df9-8d44c969a006",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "2d7f2f26-9c70-42fa-8921-8b461b1bb46c",
         "target": "9d750b9a-5c75-4ad5-aac4-15355aae0df0",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -234,14 +243,14 @@
         "id": "3c15f253-94c0-4eaa-b7d1-2e757930f1ac",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "9d750b9a-5c75-4ad5-aac4-15355aae0df0",
         "target": "52f0cc73-e66b-46c6-abbd-a53e7d917725",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -252,14 +261,14 @@
         "id": "96f23f57-b130-4dbb-8a5e-d49fd004b590",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "52f0cc73-e66b-46c6-abbd-a53e7d917725",
         "target": "6778787a-c08f-4429-91af-0c95547124fc",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -270,14 +279,14 @@
         "id": "ccdbb3ba-349b-436d-802d-ac53c2a27527",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "6778787a-c08f-4429-91af-0c95547124fc",
         "target": "c2b4f861-d0db-4099-9a01-0fca6d6952d4",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -324,14 +333,14 @@
         "id": "184c8999-584e-4e7c-8ad6-58d1d95c4964",
         "type": "smoothstep",
         "style": {
-          "stroke": "grey",
+          "stroke": "#4caf50",
           "transition": "all 0.5s ease-in-out"
         },
         "source": "c2b4f861-d0db-4099-9a01-0fca6d6952d4",
         "target": "54529e3d-0ec4-4b97-8123-56c4374af394",
         "markerEnd": {
           "type": "arrowclosed",
-          "color": "grey",
+          "color": "#4caf50",
           "width": 20,
           "height": 20
         },
@@ -1749,5 +1758,7 @@
     "type": "change",
     "device": "IOS",
     "vendor": "Cisco"
-  }
+  },
+  "created_by": "mrinal",
+  "updated_by": "mrinal"
 }
