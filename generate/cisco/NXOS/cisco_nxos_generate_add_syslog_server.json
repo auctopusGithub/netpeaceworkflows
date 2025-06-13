@@ -1,15 +1,10 @@
 {
-  "name": "cisco_nxos_generate_add_ntp_server_config",
+  "name": "cisco_nxos_generate_add_syslog_server",
   "description": [
     {
-      "name": "changeNumber",
+      "name": "syslog_server",
       "type": "String",
-      "label": "Change Number"
-    },
-    {
-      "name": "ntp_ip",
-      "type": "String",
-      "label": "NTP server"
+      "label": "Syslog Server"
     }
   ],
   "workflow_data": {
@@ -303,10 +298,12 @@
           "success": false,
           "isLoading": false,
           "show_steps": [
-            "show running-config | include ntp"
+            "show logging server"
           ],
           "config_steps": [
-            "ntp server {{ntp_ip}} prefer"
+            "logging server {{syslog_server}} {{log_level}} port {{port}}",
+            "logging console",
+            "logging monitor"
           ]
         },
         "type": "commands",
@@ -319,7 +316,7 @@
           "x": 532.5996430466403,
           "y": 35.54288935931065
         },
-        "selected": true,
+        "selected": false,
         "resizable": false
       },
       {
@@ -638,7 +635,7 @@
           "type": "decision",
           "error": false,
           "value": "",
-          "script": "const configCommand = getVariable(\"configCommands\");\nconst showCommands = getVariable(\"showCommands\");\nconst ntpIp = getVariable(\"ntp_ip\");\nconst jobReportJsonData = getVariable(\"rawShowOutput\");\n\n// Replace vars with actual values\nconst configCommandOutput = configCommand.replace(/{{(.*?)}}/g, (_, varName) => getVariable(varName));\n\nconsole.log(\"Config Command: \", configCommandOutput);\nconsole.log(\"Show Commands: \", showCommands);\nconsole.log(\"Ntp Ip: \", ntpIp);\nconsole.log(\"Job Report JSON Data: \", jobReportJsonData);\n\nlet devicesToConfigure = {};\nlet allDevices = {};\nlet reportAvailable = true;\nlet resultList = {};\nlet errorList = {};\nerrorList.errors = [];\n\nif (\n  !jobReportJsonData ||\n  !jobReportJsonData ||\n  !Array.isArray(jobReportJsonData)\n) {\n  reportAvailable = false;\n  errorList.errors = [\"No report available\"];\n  console.error(\"Invalid JSON data format.\");\n} else {\n  jobReportJsonData.forEach((dataItem) => {\n    if (!dataItem) {\n      reportAvailable = false;\n      errorList.errors = [\"No data available\"];\n      return;\n    }\n\n    const deviceIP = dataItem.ip_address;\n    const reachability_status = dataItem.device_status === \"Reachable\";\n    let change_required = true;\n    let current_config = \"\";\n    let authentication = false;\n\n    if (dataItem.device_status === \"Reachable\") {\n      authentication = true;\n    }\n\n    allDevices[deviceIP] = true;\n\n    if (\n      !dataItem.data_dump_show_commands ||\n      !Array.isArray(dataItem.data_dump_show_commands) ||\n      dataItem.data_dump_show_commands.length < 1\n    ) {\n      change_required = null;\n      current_config = \"NA\";\n\n      resultList[deviceIP] = {\n        reachability_status,\n        authentication,\n        change_required,\n        current_config,\n      };\n\n      reportAvailable = false;\n      errorList.errors = [`No data available for ${deviceIP}`];\n      return;\n    }\n\n    let data_found = false;\n    let jobOutputNotAvailable = false;\n\n    dataItem.data_dump_show_commands.forEach((command) => {\n      if (\n        command &&\n        command.json_output &&\n        Array.isArray(command.json_output) &&\n        command.command_name === `${showCommands}`\n      ) {\n        const array = command.json_output;\n\n        for (let i = 0; i < array.length; i++) {\n          if (array[i].includes(ntpIp)) {\n            change_required = false;\n            data_found = true;\n            break;\n          }\n        }\n        current_config = command.command_output;\n      } else if (\n        command &&\n        command.error === \"False\" &&\n        command.command_status === \"Success\" &&\n        command.command_output === \"No output received\" &&\n        command.command_name === `${showCommands}`\n      ) {\n        change_required = true;\n        data_found = false;\n        current_config = command.command_output;\n      } else {\n        jobOutputNotAvailable = true;\n        change_required = null;\n        current_config = \"No output available\";\n        errorList.errors.push(`No output available for ${deviceIP}`);\n      }\n    });\n\n    resultList[deviceIP] = {\n      reachability_status,\n      authentication,\n      change_required,\n      current_config,\n    };\n\n    if (!data_found && !jobOutputNotAvailable) {\n      devicesToConfigure[deviceIP] = true;\n      resultList[deviceIP][\"config_command\"] = configCommandOutput;\n      resultList[deviceIP][\"show_command\"] = showCommands;\n    } else {\n      resultList[deviceIP][\"config_command\"] = \"NA\";\n    }\n  });\n}\n\nfunction formatResultListPlainText(resultList) {\n  let text = \"Device Configuration Report\\n\\n\";\n\n  for (const [ip, data] of Object.entries(resultList)) {\n    text += `Device IP: ${ip}\n  Reachable: ${data.reachability_status ? \"Yes\" : \"No\"}\n  Authenticated: ${data.authentication ? \"Yes\" : \"No\"}\n  Change Required: ${data.change_required === null\n        ? \"Unknown\"\n        : data.change_required\n          ? \"Yes\"\n          : \"No\"\n      }\n  Current Config:\n${data.current_config}\n------------------------------------------------------------\n`;\n  }\n\n  return text;\n}\n\nconst plainTextOutput = formatResultListPlainText(resultList);\n\nsetVariable(\"plainTextOutput\", plainTextOutput);\n\nsetVariable(\"expectedConfigData\", resultList);\n\nconsole.log(\"Devices to configure: \", devicesToConfigure);\nconsole.log(\"All devices: \", allDevices);\nconsole.log(\"Report available: \", reportAvailable);\nconsole.log(\"Result list: \", resultList);\nconsole.log(\"Error list: \", errorList);\nconsole.log(\"Move Further: \", Object.keys(devicesToConfigure).length > 0);\n\nreturn Object.keys(devicesToConfigure).length > 0;",
+          "script": "const configCommand = getVariable(\"configCommands\");\nconst showCommands = getVariable(\"showCommands\");\nconst syslog_server = getVariable(\"syslog_server\");\nconst jobReportJsonData = getVariable(\"rawShowOutput\");\n\n// Replace vars with actual values\nconst configCommandOutput = configCommand.replace(/{{(.*?)}}/g, (_, varName) => getVariable(varName));\n\nconsole.log(\"Config Command: \", configCommandOutput);\nconsole.log(\"Show Commands: \", showCommands);\nconsole.log(\"Job Report JSON Data: \", jobReportJsonData);\n\nlet devicesToConfigure = {};\nlet allDevices = {};\nlet reportAvailable = true;\nlet resultList = {};\nlet errorList = {};\nerrorList.errors = [];\n\nif (\n  !jobReportJsonData ||\n  !jobReportJsonData ||\n  !Array.isArray(jobReportJsonData)\n) {\n  reportAvailable = false;\n  errorList.errors = [\"No report available\"];\n  console.error(\"Invalid JSON data format.\");\n} else {\n  jobReportJsonData.forEach((dataItem) => {\n    if (!dataItem) {\n      reportAvailable = false;\n      errorList.errors = [\"No data available\"];\n      return;\n    }\n\n    const deviceIP = dataItem.ip_address;\n    const reachability_status = dataItem.device_status === \"Reachable\";\n    let change_required = true;\n    let current_config = \"\";\n    let authentication = false;\n\n    if (dataItem.device_status === \"Reachable\") {\n      authentication = true;\n    }\n\n    allDevices[deviceIP] = true;\n\n    if (\n      !dataItem.data_dump_show_commands ||\n      !Array.isArray(dataItem.data_dump_show_commands) ||\n      dataItem.data_dump_show_commands.length < 1\n    ) {\n      change_required = null;\n      current_config = \"NA\";\n\n      resultList[deviceIP] = {\n        reachability_status,\n        authentication,\n        change_required,\n        current_config,\n      };\n\n      reportAvailable = false;\n      errorList.errors = [`No data available for ${deviceIP}`];\n      return;\n    }\n\n    let data_found = false;\n    let jobOutputNotAvailable = false;\n\n    dataItem.data_dump_show_commands.forEach((command) => {\n      if (\n        command &&\n        command.json_output &&\n        Array.isArray(command.json_output) &&\n        command.command_name === `${showCommands}`\n      ) {\n        const array = command.json_output;\n\n        for (let i = 0; i < array.length; i++) {\n          if (array[i].includes(syslog_server)) {\n            change_required = false;\n            data_found = true;\n            break;\n          }\n        }\n\n        current_config = command.command_output;\n      } else if (\n        command &&\n        command.error === \"False\" &&\n        command.command_status === \"Success\" &&\n        command.command_output === \"No output received\" &&\n        command.command_name === `${showCommands}`\n      ) {\n        change_required = true;\n        data_found = false;\n        current_config = command.command_output;\n      } else {\n        jobOutputNotAvailable = true;\n        change_required = null;\n        current_config = \"No output available\";\n        errorList.errors.push(`No output available for ${deviceIP}`);\n      }\n    });\n\n    resultList[deviceIP] = {\n      reachability_status,\n      authentication,\n      change_required,\n      current_config,\n    };\n\n    if (!data_found && !jobOutputNotAvailable) {\n      devicesToConfigure[deviceIP] = true;\n      resultList[deviceIP][\"config_command\"] = configCommandOutput;\n      resultList[deviceIP][\"show_command\"] = showCommands;\n    } else {\n      resultList[deviceIP][\"config_command\"] = \"NA\";\n    }\n  });\n}\n\nfunction formatResultListPlainText(resultList) {\n  let text = \"Device Configuration Report\\n\\n\";\n\n  for (const [ip, data] of Object.entries(resultList)) {\n    text += `Device IP: ${ip}\n  Reachable: ${data.reachability_status ? \"Yes\" : \"No\"}\n  Authenticated: ${data.authentication ? \"Yes\" : \"No\"}\n  Change Required: ${data.change_required === null\n        ? \"Unknown\"\n        : data.change_required\n          ? \"Yes\"\n          : \"No\"\n      }\n  Current Config:\n${data.current_config}\n------------------------------------------------------------\n`;\n  }\n\n  return text;\n}\n\nconst plainTextOutput = formatResultListPlainText(resultList);\n\nsetVariable(\"plainTextOutput\", plainTextOutput);\n\nsetVariable(\"expectedConfigData\", resultList);\n\nconsole.log(\"Devices to configure: \", devicesToConfigure);\nconsole.log(\"All devices: \", allDevices);\nconsole.log(\"Report available: \", reportAvailable);\nconsole.log(\"Result list: \", resultList);\nconsole.log(\"Error list: \", errorList);\nconsole.log(\"Move Further: \", Object.keys(devicesToConfigure).length > 0);\n\nreturn Object.keys(devicesToConfigure).length > 0;",
           "success": false,
           "isLoading": false
         },
@@ -649,8 +646,8 @@
           "height": 48
         },
         "position": {
-          "x": 585.2107236559079,
-          "y": 331.7179795534081
+          "x": 583.8541193284602,
+          "y": 341.8925120092656
         },
         "selected": false,
         "resizable": false
@@ -661,7 +658,7 @@
           "type": "process",
           "error": false,
           "value": "",
-          "script": "/*\nAvailable Context:\n- handleError(error): Handle an error by displaying a snackbar message.\n- setVariable(name, value): Set a variable with the given name and value.\n- getVariable(name): Get the value of a variable with the given name.\n- clearVariables(): Clear all variables.\n- result: This variable contains the returned value from previous node.\n\nExample:\n  setVariable('exampleVar', 'exampleValue');\n  const value = getVariable('exampleVar');\n  if (value) {\n    console.log(value)\n  } else {\n    handleError('Variable not found');\n  }\n*/\n\n// Run your code here\nconst allNoOutput = getVariable(\"allNoOutput\")\n\nif (allNoOutput) {\n  handleError(\"No Data Found\")\n} else {\n  handleError(\"Configuration already exists\")\n}\n",
+          "script": "/*\nAvailable Context:\n- handleError(error): Handle an error by displaying a snackbar message.\n- setVariable(name, value): Set a variable with the given name and value.\n- getVariable(name): Get the value of a variable with the given name.\n- clearVariables(): Clear all variables.\n- result: This variable contains the returned value from previous node.\n\nExample:\n  setVariable('exampleVar', 'exampleValue');\n  const value = getVariable('exampleVar');\n  if (value) {\n    console.log(value)\n  } else {\n    handleError('Variable not found');\n  }\n*/\n\n// Run your code here\nhandleError(\"Configuration already exists.\");\n",
           "success": false,
           "isLoading": false
         },
@@ -823,14 +820,14 @@
           "message": "{{plainTextOutput}}",
           "payload": {
             "message": "{{plainTextOutput}}",
-            "subject": "Cisco NXOS Generate - Add NTP Server Workflow Report",
-            "email_group": "5f8d4b50-3b66-4c0e-ba1d-e06b1edb3519"
+            "subject": "CISCO NXOS Generate Add Syslog Server",
+            "email_group": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7"
           },
-          "subject": "Cisco NXOS Generate - Add NTP Server Workflow Report",
+          "subject": "CISCO NXOS Generate Add Syslog Server",
           "success": false,
           "isLoading": false,
           "email_group": {
-            "id": "5f8d4b50-3b66-4c0e-ba1d-e06b1edb3519",
+            "id": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7",
             "group_name": "Default",
             "is_deleted": false
           }
@@ -845,7 +842,7 @@
           "x": 184.60466165129571,
           "y": 714.6560116180628
         },
-        "selected": false,
+        "selected": true,
         "resizable": false
       },
       {
@@ -872,9 +869,9 @@
       }
     ],
     "viewport": {
-      "x": 201.40078332451975,
-      "y": 47.606873369201026,
-      "zoom": 0.5
+      "x": 48.38414098121632,
+      "y": 113.90436597921652,
+      "zoom": 0.5946035575013604
     }
   },
   "config_flow": true,
