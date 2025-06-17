@@ -1,10 +1,10 @@
 {
-  "name": "cisco_nxos_check_syslog_server",
+  "name": "cisco_nxos_check_vlan",
   "description": [
     {
-      "name": "syslog_server",
+      "name": "vlan_number",
       "type": "String",
-      "label": "Syslog Server"
+      "label": "VLAN Number"
     }
   ],
   "workflow_data": {
@@ -551,7 +551,7 @@
           "type": "decision",
           "error": false,
           "value": "",
-          "script": "const show_commands = getVariable(\"showCommands\");\nconst syslog_server = getVariable(\"syslog_server\");\nconst job_report_json_data = getVariable(\"rawShowOutput\");\n\nconsole.log(\"Show Commands:\", show_commands);\nconsole.log(\"Job Report JSON Data:\", job_report_json_data);\n\nlet allDevices = {};\nlet reportAvailable = true;\nlet resultList = {};\nlet errorList = { errors: [] };\nlet output_statements = {};\nlet syslogAvailabilityStatus;\nlet syslogConfigured;\n// Start with true, change to false if any fail\n\nfunction checkSyslog(array) {\n  if (Array.isArray(array)) {\n    for (let i = 0; i < array.length; i++) {\n      if (array[i].includes(`${syslog_server}`)) {\n        return true;\n      }\n    }\n    return false;\n  } else {\n    return false;\n  }\n}\n\n// Validate report structure\nif (!job_report_json_data || !job_report_json_data.data || !Array.isArray(job_report_json_data.data)) {\n  reportAvailable = false;\n  errorList.errors = ['No report available'];\n  console.error(\"Invalid JSON data format.\");\n} else {\n  job_report_json_data.data.forEach(dataItem => {\n    if (!dataItem) {\n      reportAvailable = false;\n      errorList.errors = ['No data available'];\n      return;\n    }\n\n    const device_ip = dataItem.ip_address;\n    const reachability_status = dataItem.device_status === \"Reachable\";\n    let change_required = true;\n    let current_config = \"\";\n    let authentication = false;\n\n    if (dataItem.device_status === \"Reachable\") {\n      authentication = true;\n    }\n\n    allDevices[device_ip] = true;\n\n    if (!dataItem.data_dump_show_commands || !Array.isArray(dataItem.data_dump_show_commands) || dataItem.data_dump_show_commands.length < 1) {\n      change_required = null;\n      current_config = \"NA\";\n\n      resultList[device_ip] = {\n        reachability_status,\n        authentication,\n        change_required,\n        current_config\n      };\n\n      reportAvailable = false;\n      errorList.errors = [`No data available for ${device_ip}`];\n      return;\n    }\n\n    let jobOutputNotAvailable = false;\n    let syslogReportAvailable = false;\n\n    dataItem.data_dump_show_commands.forEach(command => {\n      if (command && command.json_output && Array.isArray(command.json_output) && command.command_name === `${show_commands}`) {\n        syslogAvailabilityStatus = checkSyslog(command.json_output);\n        syslogReportAvailable = true;\n      }\n\n      current_config = command.command_output;\n    });\n\n    let output_statement = \"\";\n    if (syslogReportAvailable) {\n      if (syslogAvailabilityStatus) {\n        syslogConfigured = true\n        change_required = false;\n        output_statement = `Syslog server with ${syslog_server} is configured`;\n      } else {\n        syslogConfigured = false\n        output_statement = `Syslog server with ${syslog_server} is not configured`;\n      }\n    } else {\n      jobOutputNotAvailable = true;\n      change_required = null;\n      current_config = \"No output available\";\n      errorList.errors.push(`No output available for ${device_ip}`);\n      syslogConfigured = false\n      output_statement = \"No output available\"\n    }\n\n    resultList[device_ip] = {\n      reachability_status,\n      authentication,\n      change_required,\n      current_config\n    };\n  });\n}\n\nfunction formatResultListForEmail(resultList) {\n  let html = `\n    <h2>Expected Device Configuration Report</h2>\n    <table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" style=\"border-collapse: collapse; font-family: Arial, sans-serif;\">\n      <thead>\n        <tr style=\"background-color: #f2f2f2;\">\n          <th>Device IP</th>\n          <th>Reachability</th>\n          <th>Authenticated</th>\n          <th>Change Required</th>\n          <th>Show Command</th>\n          <th>Current Config</th>\n        </tr>\n      </thead>\n      <tbody>\n  `;\n\n  for (const [ip, data] of Object.entries(resultList)) {\n    html += `\n      <tr>\n        <td>${ip}</td>\n        <td>${data.reachability_status ? \"Yes\" : \"No\"}</td>\n        <td>${data.authentication ? \"Yes\" : \"No\"}</td>\n        <td>${data.change_required === null ? \"Unknown\" : data.change_required ? \"Yes\" : \"No\"}</td>\n        <td><pre>${data.show_command || \"NA\"}</pre></td>\n        <td><pre style=\"white-space: pre-wrap; max-width: 600px;\">${data.current_config}</pre></td>\n      </tr>\n    `;\n  }\n\n  html += `\n      </tbody>\n    </table>\n  `;\n\n  return html;\n}\n\nconst emailBody = formatResultListForEmail(resultList)\nsetVariable(\"plainTextOutput\", emailBody)\n\n// Set final variables for process\nsetVariable(\"viewpoint_output\", JSON.stringify(resultList));\nsetVariable(\"error_list\", JSON.stringify(errorList));\nsetVariable(\"output_statements\", output_statements);\nsetVariable(\"move_further\", syslogConfigured);\n\nconsole.log(\"viewpoint_output\", JSON.stringify(resultList));\nconsole.log(\"error_list\", JSON.stringify(errorList));\nconsole.log(\"output_statements\", JSON.stringify(output_statements));\nconsole.log(\"report_available\", reportAvailable);\n\nreturn syslogConfigured;",
+          "script": "const show_commands = getVariable(\"showCommands\");\nconst vlan_number = getVariable(\"vlan_number\");\nconst job_report_json_data = getVariable(\"rawShowOutput\");\n\nconsole.log(\"Show Commands:\", show_commands);\nconsole.log(\"Job Report JSON Data:\", job_report_json_data);\n\nlet allDevices = {};\nlet reportAvailable = true;\nlet resultList = {};\nlet errorList = { errors: [] };\nlet output_statements = {};\nlet vlan_availability_status;\nlet vlanConfigured;\n// Start with true, change to false if any fail\n\nfunction checkVLAN(array) {\n  if (Array.isArray(array)) {\n    for (let i = 0; i < array.length; i++) {\n      if (array[i].vlan_id === `${vlan_number}`) {\n        return true;\n      }\n    }\n    return false;\n  } else {\n    return false;\n  }\n}\n\n// Validate report structure\nif (!job_report_json_data || !Array.isArray(job_report_json_data)) {\n  reportAvailable = false;\n  errorList.errors.push(\"No report available\");\n  console.error(\"Invalid JSON data format.\");\n} else {\n  job_report_json_data.forEach(dataItem => {\n    if (!dataItem) {\n      reportAvailable = false;\n      errorList.errors.push(\"No data available for a device.\");\n      return;\n    }\n\n    const device_ip = dataItem.ip_address;\n    const reachability_status = dataItem.device_status === \"Reachable\";\n    const authentication = reachability_status;\n    let change_required = true;\n    let current_config = \"\";\n\n    allDevices[device_ip] = true;\n\n    if (!dataItem.data_dump_show_commands || !Array.isArray(dataItem.data_dump_show_commands) || dataItem.data_dump_show_commands.length < 1) {\n      change_required = null;\n      current_config = \"NA\";\n\n      resultList[device_ip] = {\n        reachability_status,\n        authentication,\n        change_required,\n        current_config\n      };\n\n      reportAvailable = false;\n      errorList.errors = [`No data available for ${device_ip}`];\n      return;\n    }\n\n    let jobOutputNotAvailable = false;\n    let vlanReportAvailable = false;\n\n    dataItem.data_dump_show_commands.forEach(command => {\n      if (command && command.json_output && Array.isArray(command.json_output) && command.command_name === `${show_commands}`) {\n        vlan_availability_status = checkVLAN(command.json_output);\n        vlanReportAvailable = true;\n      }\n\n      current_config = current_config + '\\n\\n' + command.command_output;\n    });\n\n    let output_statement = \"\";\n    if (vlanReportAvailable) {\n      if (vlan_availability_status) {\n        vlanConfigured = true\n        change_required = false;\n        output_statement = `VLAN ID ${vlan_number} is configured`;\n      } else {\n        vlanConfigured = false\n        output_statement = `VLAN ID ${vlan_number} is not configured`;\n      }\n    } else {\n      jobOutputNotAvailable = true;\n      change_required = null;\n      current_config = \"No output available\";\n      errorList.errors.push(`No output available for ${device_ip}`);\n      vlanConfigured = false\n      output_statement = \"No output available\"\n    }\n\n    output_statements[device_ip] = output_statement;\n\n    resultList[device_ip] = {\n      reachability_status,\n      authentication,\n      change_required,\n      current_config\n    };\n  });\n}\n\nfunction formatResultListForEmail(resultList) {\n  let html = `\n    <h2>Expected Device Configuration Report</h2>\n    <table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" style=\"border-collapse: collapse; font-family: Arial, sans-serif;\">\n      <thead>\n        <tr style=\"background-color: #f2f2f2;\">\n          <th>Device IP</th>\n          <th>Reachability</th>\n          <th>Authenticated</th>\n          <th>Change Required</th>\n          <th>Show Command</th>\n          <th>Current Config</th>\n        </tr>\n      </thead>\n      <tbody>\n  `;\n\n  for (const [ip, data] of Object.entries(resultList)) {\n    html += `\n      <tr>\n        <td>${ip}</td>\n        <td>${data.reachability_status ? \"Yes\" : \"No\"}</td>\n        <td>${data.authentication ? \"Yes\" : \"No\"}</td>\n        <td>${data.change_required === null ? \"Unknown\" : data.change_required ? \"Yes\" : \"No\"}</td>\n        <td><pre>${data.show_command || \"NA\"}</pre></td>\n        <td><pre style=\"white-space: pre-wrap; max-width: 600px;\">${data.current_config}</pre></td>\n      </tr>\n    `;\n  }\n\n  html += `\n      </tbody>\n    </table>\n  `;\n\n  return html;\n}\n\nconst emailBody = formatResultListForEmail(resultList)\nsetVariable(\"plainTextOutput\", emailBody)\n\n// Set final variables for process\nsetVariable(\"viewpoint_output\", JSON.stringify(resultList));\nsetVariable(\"error_list\", JSON.stringify(errorList));\nsetVariable(\"output_statements\", output_statements);\nsetVariable(\"move_further\", vlanConfigured);\n\nconsole.log(\"viewpoint_output\", JSON.stringify(resultList));\nconsole.log(\"error_list\", JSON.stringify(errorList));\nconsole.log(\"output_statements\", JSON.stringify(output_statements));\nconsole.log(\"report_available\", reportAvailable);\n\nreturn vlanConfigured;",
           "success": false,
           "isLoading": false
         },
@@ -574,7 +574,7 @@
           "type": "process",
           "error": false,
           "value": "",
-          "script": "try {\n  const move_further = getVariable(\"move_further\");\n  const syslog_server = getVariable(\"syslog_server\");\n\n  if (typeof move_further === \"boolean\") {\n    setVariable(\"route_decision\", move_further); // true or false\n\n    if (move_further) {\n      setVariable(\"syslog_server_status_message\", `Syslog server with ${syslog_server} is configured.`);\n    } else {\n      setVariable(\"syslog_server_status_message\", `Syslog server with ${syslog_server} is NOT configured.`);\n    }\n\n  } else {\n    console.error(\"Invalid 'move_further' value:\", move_further);\n    setVariable(\"route_decision\", false); // fail-safe\n    setVariable(\"syslog_server_status_message\", `Syslog server with ${syslog_server} configuration status unknown due to invalid move_further value.`);\n  }\n} catch (err) {\n  console.error(\"Error in decision node:\", err.message || err);\n  setVariable(\"route_decision\", false); // fallback\n  setVariable(\"syslog_server_status_message\", `Error determining Syslog server configuration status.`);\n}\n",
+          "script": "try {\n  const move_further = getVariable(\"move_further\");\n  const vlan_number = getVariable(\"vlan_number\");\n\n  if (typeof move_further === \"boolean\") {\n    setVariable(\"route_decision\", move_further); // true or false\n\n    if (move_further) {\n      setVariable(\"vlan_status_message\", `vlan number with ${vlan_number} is configured.`);\n    } else {\n      setVariable(\"vlan_status_message\", `vlan number with ${vlan_number} is NOT configured.`);\n    }\n\n  } else {\n    console.error(\"Invalid 'move_further' value:\", move_further);\n    setVariable(\"route_decision\", false); // fail-safe\n    setVariable(\"vlan_status_message\", `vlan number with ${vlan_number} configuration status unknown due to invalid move_further value.`);\n  }\n} catch (err) {\n  console.error(\"Error in decision node:\", err.message || err);\n  setVariable(\"route_decision\", false); // fallback\n  setVariable(\"vlan_status_message\", `Error determining vlan number configuration status.`);\n}\n",
           "success": false,
           "isLoading": false
         },
@@ -586,7 +586,7 @@
         },
         "position": {
           "x": 674.0933568574081,
-          "y": 417.9460551236361
+          "y": 416.0655619454937
         },
         "selected": false,
         "resizable": false
@@ -644,7 +644,7 @@
           "success": false,
           "isLoading": false,
           "show_steps": [
-            "show logging server"
+            "show vlan"
           ],
           "config_steps": [
             ""
@@ -660,7 +660,7 @@
           "x": 532.1500450082569,
           "y": 31.796740097458354
         },
-        "selected": true,
+        "selected": false,
         "resizable": false
       },
       {
@@ -982,10 +982,10 @@
           "message": "{{ plainTextOutput }}",
           "payload": {
             "message": "{{ plainTextOutput }}",
-            "subject": "Cisco NXOS Check eBGP Config",
+            "subject": "Cisco NXOS Check VLAN ",
             "email_group": "21b8fe97-8da0-439d-a19b-04ef68037bef"
           },
-          "subject": "Cisco NXOS Check eBGP Config",
+          "subject": "Cisco NXOS Check VLAN ",
           "success": false,
           "isLoading": false,
           "email_group": {
@@ -1004,7 +1004,7 @@
           "x": 376.3319420556208,
           "y": 634.8600226353223
         },
-        "selected": false,
+        "selected": true,
         "resizable": false
       },
       {
@@ -1013,7 +1013,7 @@
           "type": "process",
           "error": false,
           "value": "",
-          "script": "/*\nAvailable Context:\n- handleError(error): Handle an error by displaying a snackbar message.\n- setVariable(name, value): Set a variable with the given name and value.\n- getVariable(name): Get the value of a variable with the given name.\n- clearVariables(): Clear all variables.\n- result: This variable contains the returned value from previous node.\n\nExample:\n  setVariable('exampleVar', 'exampleValue');\n  const value = getVariable('exampleVar');\n  if (value) {\n    console.log(value)\n  } else {\n    handleError('Variable not found');\n  }\n*/\n\n// Run your code here\n// const data = null;\n\n// function printData(data) {\n//   console.log(data);\n// }\n\n// printData(data);\n\nconst output_statements = getVariable(\"output_statements\");\nconst syslog_server = getVariable(\"syslog_server\");\n\nconst analysisOutput = [];\n\nfor (const [ip, message] of Object.entries(output_statements)) {\n  const isConfigured = message.includes(`Syslog server with ${syslog_server} is configured`);\n  \n  analysisOutput.push({\n    \"IP Address\": ip,\n    \"Analysis\": isConfigured\n  });\n}\n\n// Final structure with nested array under `data` key inside `csvReport`\n// const finalReport = {\n//   csvReport: {\n//     data: analysisOutput\n//   }\n// };\n\nconst finalReport = {\n  csvReport: analysisOutput\n};\n\nconsole.log(JSON.stringify(finalReport, null, 2));\n\n// Set the formatted report as a process variable\nsetVariable(\"csvReport\", finalReport);\n\n\n",
+          "script": "/*\nAvailable Context:\n- handleError(error): Handle an error by displaying a snackbar message.\n- setVariable(name, value): Set a variable with the given name and value.\n- getVariable(name): Get the value of a variable with the given name.\n- clearVariables(): Clear all variables.\n- result: This variable contains the returned value from previous node.\n\nExample:\n  setVariable('exampleVar', 'exampleValue');\n  const value = getVariable('exampleVar');\n  if (value) {\n    console.log(value)\n  } else {\n    handleError('Variable not found');\n  }\n*/\n\n// Run your code here\n// const data = null;\n\n// function printData(data) {\n//   console.log(data);\n// }\n\n// printData(data);\n\nconst output_statements = getVariable(\"output_statements\");\nconst vlan_number = getVariable(\"vlan_number\");\n\nconst analysisOutput = [];\n\nfor (const [ip, message] of Object.entries(output_statements)) {\n  const isConfigured = message.includes(`vlan with number ${vlan_number} is configured`);\n  \n  analysisOutput.push({\n    \"IP Address\": ip,\n    \"Analysis\": isConfigured\n  });\n}\n\n// Final structure with nested array under `data` key inside `csvReport`\n// const finalReport = {\n//   csvReport: {\n//     data: analysisOutput\n//   }\n// };\n\nconst finalReport = {\n  csvReport: analysisOutput\n};\n\nconsole.log(JSON.stringify(finalReport, null, 2));\n\n// Set the formatted report as a process variable\nsetVariable(\"csvReport\", finalReport);\n\n\n",
           "success": false,
           "isLoading": false
         },
@@ -1032,26 +1032,20 @@
       }
     ],
     "viewport": {
-      "x": 73.91759591604523,
-      "y": 123.15997268183179,
-      "zoom": 0.5317753936165986
+      "x": 206.1982126640197,
+      "y": 161.22446026201197,
+      "zoom": 0.5
     }
   },
   "config_flow": true,
   "workflow_type": "change",
   "metadata": {
     "tags": [
-      "check syslog server",
-      "syslog server",
-      "logging",
-      "logging trap",
-      "logging monitor",
-      "logging console",
-      "system log",
-      "show run | in logg",
-      "show logging server",
-      "logging host",
-      "transport udp port"
+      "VLAN",
+      "show vlan",
+      "vlan id",
+      "vlan name",
+      "VLAN configuration"
     ],
     "type": "verify",
     "device": "NXOS",
