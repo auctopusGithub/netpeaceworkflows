@@ -1,0 +1,1248 @@
+{
+  "name": "cisco_ios_add_banner",
+  "description": [
+    {
+      "name": "changeNumber",
+      "type": "String",
+      "label": "Change Number"
+    },
+    {
+      "name": "banner_text",
+      "type": "String",
+      "label": "Banner Text"
+    }
+  ],
+  "workflow_data": {
+    "edges": [
+      {
+        "id": "f73d7240-4628-40df-b51a-17b57b6ba531",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "start",
+        "target": "665615d7-4f5f-49d1-9444-2f3648a34918",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "start-end",
+        "targetHandle": "target"
+      },
+      {
+        "id": "e5d5e571-deb0-420a-806c-f39ae83f072b",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "665615d7-4f5f-49d1-9444-2f3648a34918",
+        "target": "96dcc4f7-2f26-48ec-86dd-f51b30624c17",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "c2dbf8e4-3ffe-42da-b64f-31d050bc68eb",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "96dcc4f7-2f26-48ec-86dd-f51b30624c17",
+        "target": "41c03aa3-64ce-42f1-b656-68746d28d263",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "a64e5473-eebe-4bf7-8d6e-4a1e8c3c2f6b",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "c8b8dde7-912f-41ba-aaa2-e54ad179f019",
+        "target": "3f37b289-c531-454c-b00b-4b68f51d6e57",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "41900b8a-c7c7-402d-8299-9510ad1ccb47",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "3f37b289-c531-454c-b00b-4b68f51d6e57",
+        "target": "5c8ca31e-09ca-4c8b-91c5-46dd84d5d8f4",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "no",
+        "targetHandle": "start-end"
+      },
+      {
+        "id": "f9aed3c4-16c4-4879-8313-33b93561a21c",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "17272461-37cc-4eec-a9ab-14e83db56018",
+        "target": "1ddf251a-4a5c-4486-ae97-96b771a9629d",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "ccd919df-e102-4d0b-b5e4-d48c8f100048",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "1ddf251a-4a5c-4486-ae97-96b771a9629d",
+        "target": "78269a07-7d09-42b4-9949-ee7a10c52f99",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "no",
+        "targetHandle": "target"
+      },
+      {
+        "id": "ef7e216c-e27b-4f0f-b3fd-2a9689e926db",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "78269a07-7d09-42b4-9949-ee7a10c52f99",
+        "target": "a8a48b95-4f49-49e3-8e6e-2b9c20ba66d5",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "3bdcbb78-979e-4c25-85ac-72c643747a00",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "a8a48b95-4f49-49e3-8e6e-2b9c20ba66d5",
+        "target": "198cab1d-6938-4798-bc96-2461e26ff82d",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "start-end"
+      },
+      {
+        "id": "22767d36-2c3d-49bd-be41-f5726fa5d457",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "1ddf251a-4a5c-4486-ae97-96b771a9629d",
+        "target": "0917fdcf-baa6-4e9e-a913-d751dd66c1d5",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "yes",
+        "targetHandle": "target"
+      },
+      {
+        "id": "ff968ea4-6a60-480f-b9a6-fa8aac2634bf",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "07172512-31f4-4fac-8561-a5e6c5979a8d",
+        "target": "c7d6bd63-98ab-4eec-9fd6-37050bed9306",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "start-end"
+      },
+      {
+        "id": "7dc7e13b-82a6-4442-94d4-c350be4185f3",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "e348bd4d-5c48-48fb-a77d-60338d49c505",
+        "target": "07172512-31f4-4fac-8561-a5e6c5979a8d",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "a4e56e30-0f7f-4d95-acac-e1adb58cac01",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "0917fdcf-baa6-4e9e-a913-d751dd66c1d5",
+        "target": "e348bd4d-5c48-48fb-a77d-60338d49c505",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "974dae85-b3ac-4e17-ba8c-f8bef3a52714",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "41c03aa3-64ce-42f1-b656-68746d28d263",
+        "target": "c8b8dde7-912f-41ba-aaa2-e54ad179f019",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "9782eb53-a2c7-43e8-8742-20c2acb86607",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "3f37b289-c531-454c-b00b-4b68f51d6e57",
+        "target": "de548ea0-b944-40c5-a939-28eec637b76f",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "yes",
+        "targetHandle": "target"
+      },
+      {
+        "id": "12cdd92d-697f-450c-9dcc-f148b2502e95",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "#4caf50",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "de548ea0-b944-40c5-a939-28eec637b76f",
+        "target": "17272461-37cc-4eec-a9ab-14e83db56018",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "#4caf50",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "start",
+        "data": {
+          "type": "start",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "start",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 48
+        },
+        "position": {
+          "x": 802.6389849273198,
+          "y": -214.79317246497735
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "665615d7-4f5f-49d1-9444-2f3648a34918",
+        "data": {
+          "type": "commands",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "show_steps": ["sh run | in banner"],
+          "config_steps": ["banner motd #{{banner_text}}#"]
+        },
+        "type": "commands",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 744.4843014738221,
+          "y": -93.29409446109665
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "96dcc4f7-2f26-48ec-86dd-f51b30624c17",
+        "data": {
+          "type": "show-commands",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "show-commands",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 743.9207272794196,
+          "y": 30.20341222104902
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "41c03aa3-64ce-42f1-b656-68746d28d263",
+        "data": {
+          "type": "job-report",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "reportData": [
+            {
+              "id": "6d5d4c88-3daf-4ac0-bb23-a39e6f84d622",
+              "job_id": "55a14d88-92ba-4037-ac5c-56daa99d2266",
+              "jobName": "job_12/6/2025 12:41:16 pm",
+              "hostname": "nexus9kv-02",
+              "job_type": "Show Commands",
+              "UserJobID": "55a14d88-92ba-4037-ac5c-56daa99d2266",
+              "ip_address": "192.168.85.161",
+              "date_created": "Thu 12, Jun 2025, 12:41 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "command_name": "sh run | in banner",
+                  "command_output": "No output received",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "d2fc1e28-9970-45b8-bd86-25dcd893167d",
+              "job_id": "55a14d88-92ba-4037-ac5c-56daa99d2266",
+              "jobName": "job_12/6/2025 12:41:16 pm",
+              "hostname": "nexus9kv-01",
+              "job_type": "Show Commands",
+              "UserJobID": "55a14d88-92ba-4037-ac5c-56daa99d2266",
+              "ip_address": "192.168.85.160",
+              "date_created": "Thu 12, Jun 2025, 12:41 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": ["banner motd #Banner added on 05-04-2024#\n"],
+                  "command_name": "sh run | in banner",
+                  "command_output": "banner motd #Banner added on 05-04-2024#\n",
+                  "command_status": "Success"
+                }
+              ]
+            }
+          ]
+        },
+        "type": "job-report",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 742.5223484468745,
+          "y": 158.65958014249767
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "c8b8dde7-912f-41ba-aaa2-e54ad179f019",
+        "data": {
+          "type": "expected-config",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "expected-config",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 742.4376517365718,
+          "y": 301.3974973374801
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "3f37b289-c531-454c-b00b-4b68f51d6e57",
+        "data": {
+          "type": "boolean-box",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "variableNodeType": "expected-config"
+        },
+        "type": "boolean-box",
+        "dragging": false,
+        "measured": {
+          "width": 48,
+          "height": 48
+        },
+        "position": {
+          "x": 793.3142014504768,
+          "y": 425.9395638011075
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "5c8ca31e-09ca-4c8b-91c5-46dd84d5d8f4",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 48
+        },
+        "position": {
+          "x": 922.7601043695547,
+          "y": 675.216783760249
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "17272461-37cc-4eec-a9ab-14e83db56018",
+        "data": {
+          "type": "multi-config",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "multi-config",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 530.0119253094311,
+          "y": 604.8573528935293
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "1ddf251a-4a5c-4486-ae97-96b771a9629d",
+        "data": {
+          "type": "decision",
+          "error": false,
+          "value": "",
+          "script": "const finalConfigOutput = getVariable(\"finalConfigOutput\");\nconst banner_text = getVariable(\"banner_text\");\n\nlet devicesToConfigure = {};\nlet allDevices = {};\nlet reportAvailable = true;\nlet resultList = {};\nlet errorList = {};\nerrorList.errors = [];\n\nfor (const [deviceIP, jobOutput] of Object.entries(finalConfigOutput)) {\n  if (!jobOutput) {\n    reportAvailable = false;\n    errorList.errors = [\"No data available\"];\n    continue;\n  }\n  const showCommand = jobOutput.show_command;\n  const jobReportJsonData = jobOutput.job_report;\n\n  if (\n    !jobReportJsonData ||\n    !jobReportJsonData ||\n    !Array.isArray(jobReportJsonData)\n  ) {\n    reportAvailable = false;\n    errorList.errors = [\"No report available\"];\n  } else {\n    jobReportJsonData.forEach((dataItem) => {\n      if (!dataItem) {\n        reportAvailable = false;\n        return;\n      }\n\n      const deviceIp = dataItem.ip_address;\n      const reachabilityStatus = dataItem.device_status === \"Reachable\";\n      let changeRequired = true;\n      let currentConfig = \"\";\n      let authentication = false;\n\n      if (dataItem.device_status === \"Reachable\") {\n        authentication = true;\n      }\n\n      allDevices[deviceIp] = true;\n\n      if (\n        !dataItem.data_dump_post ||\n        !Array.isArray(dataItem.data_dump_post) ||\n        dataItem.data_dump_post.length < 1\n      ) {\n        changeRequired = null;\n        currentConfig = \"NA\";\n\n        resultList[deviceIp] = {\n          reachability_status: reachabilityStatus,\n          authentication: authentication,\n          change_required: changeRequired,\n          current_config: currentConfig,\n        };\n\n        reportAvailable = false;\n        errorList.errors = [`No data available for ${deviceIp}`];\n        return;\n      }\n\n      let dataFound = false;\n      let jobOutputNotAvailable = false;\n\n      dataItem.data_dump_post.forEach((command) => {\n        if (\n          command &&\n          command.json_output &&\n          Array.isArray(command.json_output) &&\n          command.command_name === `${showCommand}`\n        ) {\n          const array = command.json_output;\n\n          for (let i = 0; i < array.length; i++) {\n            if (array[i].includes(banner_text)) {\n              dataFound = true;\n              changeRequired = false;\n              break;\n            } else {\n              changeRequired = true;\n            }\n          }\n\n          currentConfig = command.command_output;\n        } else {\n          changeRequired = null;\n          jobOutputNotAvailable = true;\n          currentConfig = \"No output available\";\n          errorList.errors.push(`No output available for ${deviceIp}`);\n        }\n      });\n\n      // let postOutputWasNoOutput = false;\n      // // Check data_dump_post here:\n      // if (Array.isArray(dataItem.data_dump_post)) {\n      //   for (let postCmd of dataItem.data_dump_post) {\n      //     if (\n      //       postCmd.command_name === showCommand && typeof postCmd.command_output === \"string\" &&\n      //       postCmd.command_output?.trim().toLowerCase() === finalConfigOutput\n      //     ) {\n      //       postOutputWasNoOutput = true;\n      //       break;\n      //     }\n      //   }\n      // }\n\n      // if (postOutputWasNoOutput) {\n      //   // Nothing to remove, config didn't exist\n      //   console.log(\"postoutputwasnoouput\")\n      //   changeRequired = false;\n      //   devicesToConfigure[deviceIp] = false;\n      // }\n\n      if (!dataFound && !jobOutputNotAvailable) {\n        devicesToConfigure[deviceIp] = true;\n      }\n\n      resultList[deviceIp] = {\n        reachability_status: reachabilityStatus,\n        authentication: authentication,\n        change_required: changeRequired,\n        current_config: currentConfig,\n      };\n    });\n  }\n}\n\nfunction formatResultListPlainText(resultList) {\n  let text = \"Device Configuration Report\\n\\n\";\n\n  for (const [ip, data] of Object.entries(resultList)) {\n    text += `Device IP: ${ip}\n  Reachable: ${data.reachability_status ? \"Yes\" : \"No\"}\n  Authenticated: ${data.authentication ? \"Yes\" : \"No\"}\n  Change Required: ${data.change_required === null\n        ? \"Unknown\"\n        : data.change_required\n          ? \"Yes\"\n          : \"No\"\n      }\n  Current Config:\n${data.current_config}\n------------------------------------------------------------\n`;\n  }\n\n  return text;\n}\n\nconst plainTextOutput = formatResultListPlainText(resultList);\n\nsetVariable(\"plainTextOutput\", plainTextOutput);\n\nreturn (\n  Object.keys(devicesToConfigure).length !== Object.keys(allDevices).length\n);\n",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "decision",
+        "dragging": false,
+        "measured": {
+          "width": 48,
+          "height": 48
+        },
+        "position": {
+          "x": 582.8964123580552,
+          "y": 711.562329132321
+        },
+        "selected": true,
+        "resizable": false
+      },
+      {
+        "id": "198cab1d-6938-4798-bc96-2461e26ff82d",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 48
+        },
+        "position": {
+          "x": 726.4702966631212,
+          "y": 1141.357517648075
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "a8a48b95-4f49-49e3-8e6e-2b9c20ba66d5",
+        "data": {
+          "type": "itsm-worknotes",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "event_type": "Change",
+          "work_notes": "{{plainTextOutput}}"
+        },
+        "type": "itsm-worknotes",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 668.0087844904216,
+          "y": 1008.1118872896138
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "78269a07-7d09-42b4-9949-ee7a10c52f99",
+        "data": {
+          "type": "mail",
+          "error": false,
+          "value": "",
+          "message": "{{plainTextOutput}}",
+          "payload": {
+            "message": "{{plainTextOutput}}",
+            "subject": "CISCO NXOS Add Banner Workflow Report",
+            "email_group": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7"
+          },
+          "subject": "CISCO NXOS Add Banner Workflow Report",
+          "success": false,
+          "isLoading": false,
+          "email_group": {
+            "id": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7",
+            "group_name": "Default",
+            "is_deleted": false
+          }
+        },
+        "type": "mail",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 668.1222389705958,
+          "y": 876.7161690111888
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "0917fdcf-baa6-4e9e-a913-d751dd66c1d5",
+        "data": {
+          "type": "configuration-output",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "reportData": {
+            "10.71.2.8": {
+              "device_ip": "10.71.2.8",
+              "job_report": [
+                {
+                  "id": "d12ea4c3-a8e5-4cdf-8881-8b3a8e748ed7",
+                  "job_id": "f8929fda-b6cd-42b7-af63-baf4a67cda2c",
+                  "jobName": "CHG0030002_27/5/2025 6:01:16 pm_config",
+                  "hostname": "mgt8_miami.eveng.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "f8929fda-b6cd-42b7-af63-baf4a67cda2c",
+                  "ip_address": "10.71.2.8",
+                  "date_created": "Tue 27, May 2025, 06:02 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname mgt8_miami"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname mgt8_miami",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname automation"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname automation",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": ["hostname automation"],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\nmgt8_miami(config)#hostname automation\nautomation(config)#end\nautomation#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "sh run | in hostname",
+              "authentication": true,
+              "config_command": "hostname automation",
+              "current_config": "hostname mgt8_miami",
+              "change_required": true,
+              "device_group_id": "dd8be327-1d8e-46f7-b548-1996b9d2161c",
+              "config_template_id": "6f1a2ee2-f9d5-4264-864b-dcc0bc90c6b0",
+              "reachability_status": true
+            },
+            "10.71.2.9": {
+              "device_ip": "10.71.2.9",
+              "job_report": [
+                {
+                  "id": "5ec220af-2a0e-49db-8a9e-7eb3959998f2",
+                  "job_id": "cd6f84e2-f8f6-416e-a174-d30a71d0ef78",
+                  "jobName": "CHG0030002_27/5/2025 6:01:16 pm_config",
+                  "hostname": "mgt9_miami.eveng.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "cd6f84e2-f8f6-416e-a174-d30a71d0ef78",
+                  "ip_address": "10.71.2.9",
+                  "date_created": "Tue 27, May 2025, 06:01 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname mgt9_miami"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname mgt9_miami",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname automation"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname automation",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": ["hostname automation"],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\nmgt9_miami(config)#hostname automation\nautomation(config)#end\nautomation#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "sh run | in hostname",
+              "authentication": true,
+              "config_command": "hostname automation",
+              "current_config": "hostname mgt9_miami",
+              "change_required": true,
+              "device_group_id": "341893c9-819e-47d2-9249-a82c195f543b",
+              "config_template_id": "ec2af64b-806a-4813-a57d-b3d95874ce13",
+              "reachability_status": true
+            },
+            "10.71.2.11": {
+              "device_ip": "10.71.2.11",
+              "job_report": [
+                {
+                  "id": "b2ca05b3-752f-4310-93c5-f654856fc89d",
+                  "job_id": "8571da59-98c8-48a8-880c-418f83300a81",
+                  "jobName": "CHG0030002_27/5/2025 6:01:15 pm_config",
+                  "hostname": "mgt11_miami.eveng.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "8571da59-98c8-48a8-880c-418f83300a81",
+                  "ip_address": "10.71.2.11",
+                  "date_created": "Tue 27, May 2025, 06:01 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname mgt11_miami"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname mgt11_miami",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname automation"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname automation",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": ["hostname automation"],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\nmgt11_miami(config)#hostname automation\nautomation(config)#end\nautomation#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "sh run | in hostname",
+              "authentication": true,
+              "config_command": "hostname automation",
+              "current_config": "hostname mgt11_miami",
+              "change_required": true,
+              "device_group_id": "8ecbaa3c-c014-46f3-a073-55869e05b668",
+              "config_template_id": "abe8db75-8324-4b6d-8c78-bd10fe715fe0",
+              "reachability_status": true
+            },
+            "10.71.2.12": {
+              "device_ip": "10.71.2.12",
+              "job_report": [
+                {
+                  "id": "f99059fd-6e27-4417-9869-7756c2def474",
+                  "job_id": "90563a78-e1a6-4562-b369-e737f7143a56",
+                  "jobName": "CHG0030002_27/5/2025 6:01:16 pm_config",
+                  "hostname": "distSwitch12_miami.eveng.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "90563a78-e1a6-4562-b369-e737f7143a56",
+                  "ip_address": "10.71.2.12",
+                  "date_created": "Tue 27, May 2025, 06:02 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname distSwitch12_miami"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname distSwitch12_miami",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname automation"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname automation",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": ["hostname automation"],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ndistSwitch12_miami(config)#hostname automation\nautomation(config)#end\nautomation#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "sh run | in hostname",
+              "authentication": true,
+              "config_command": "hostname automation",
+              "current_config": "hostname distSwitch12_miami",
+              "change_required": true,
+              "device_group_id": "86e01981-ac3e-484d-8ed8-c62242a186a5",
+              "config_template_id": "470454bf-793d-43b7-906f-45482ee31a41",
+              "reachability_status": true
+            },
+            "10.71.2.13": {
+              "device_ip": "10.71.2.13",
+              "job_report": [
+                {
+                  "id": "aa87fb4b-b489-401f-84e9-66e7c6573c34",
+                  "job_id": "50211861-3e89-4965-8f6b-b122745e43ba",
+                  "jobName": "CHG0030002_27/5/2025 6:01:15 pm_config",
+                  "hostname": "distSwitch13_miami.eveng.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "50211861-3e89-4965-8f6b-b122745e43ba",
+                  "ip_address": "10.71.2.13",
+                  "date_created": "Tue 27, May 2025, 06:01 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname distSwitch13_miami"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname distSwitch13_miami",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname automation"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname automation",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": ["hostname automation"],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ndistSwitch13_miami(config)#hostname automation\nautomation(config)#end\nautomation#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "sh run | in hostname",
+              "authentication": true,
+              "config_command": "hostname automation",
+              "current_config": "hostname distSwitch13_miami",
+              "change_required": true,
+              "device_group_id": "dbe91f95-fb02-4a08-9ca9-b81d52087ea5",
+              "config_template_id": "617c11d6-1b6c-4201-9e57-f6d9f36c34bf",
+              "reachability_status": true
+            },
+            "10.71.2.14": {
+              "device_ip": "10.71.2.14",
+              "job_report": [
+                {
+                  "id": "d009ac01-b160-4169-99d1-5269078ce47e",
+                  "job_id": "af1fa7ce-2402-42a1-8935-79bfde177375",
+                  "jobName": "CHG0030002_27/5/2025 6:01:16 pm_config",
+                  "hostname": "coreSwitch14_miami.eveng.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "af1fa7ce-2402-42a1-8935-79bfde177375",
+                  "ip_address": "10.71.2.14",
+                  "date_created": "Tue 27, May 2025, 06:01 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname coreSwitch14_miami"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname coreSwitch14_miami",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname automation"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname automation",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": ["hostname automation"],
+                      "command_output": "\ncoreSwitch14_miami#configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncoreSwitch14_miami(config)#hostname automation\nautomation(config)#end\nautomation#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "sh run | in hostname",
+              "authentication": true,
+              "config_command": "hostname automation",
+              "current_config": "hostname coreSwitch14_miami",
+              "change_required": true,
+              "device_group_id": "1d2b0200-aea6-4417-b2fd-4bcbc812e7ab",
+              "config_template_id": "d1488618-11c2-4652-9e08-45542f69a021",
+              "reachability_status": true
+            },
+            "10.71.2.15": {
+              "device_ip": "10.71.2.15",
+              "job_report": [
+                {
+                  "id": "b66dafa2-dbf2-4a34-a771-6511d9c72eed",
+                  "job_id": "2f0310db-074c-43fb-80f8-84c0a77271f1",
+                  "jobName": "CHG0030002_27/5/2025 6:01:16 pm_config",
+                  "hostname": "coreSwitch15_miami.eveng.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "2f0310db-074c-43fb-80f8-84c0a77271f1",
+                  "ip_address": "10.71.2.15",
+                  "date_created": "Tue 27, May 2025, 06:02 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname coreSwitch15_miami"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname coreSwitch15_miami",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname automation"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname automation",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": ["hostname automation"],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncoreSwitch15_miami(config)#hostname automation\nautomation(config)#end\nautomation#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "sh run | in hostname",
+              "authentication": true,
+              "config_command": "hostname automation",
+              "current_config": "hostname coreSwitch15_miami",
+              "change_required": true,
+              "device_group_id": "aa88a174-9713-4894-b996-eb0c0b820e3f",
+              "config_template_id": "25124165-ca68-4295-8696-654984ecb624",
+              "reachability_status": true
+            },
+            "10.71.2.16": {
+              "device_ip": "10.71.2.16",
+              "job_report": [
+                {
+                  "id": "15a2e3ad-66c9-4eaa-b815-f2ac6f3d4c7d",
+                  "job_id": "e9d083d5-27e7-4132-8e64-ec5e1697330a",
+                  "jobName": "CHG0030002_27/5/2025 6:01:15 pm_config",
+                  "hostname": "SVI_Switch16_miami.eveng.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "e9d083d5-27e7-4132-8e64-ec5e1697330a",
+                  "ip_address": "10.71.2.16",
+                  "date_created": "Tue 27, May 2025, 06:01 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname SVI_Switch16_miami"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname SVI_Switch16_miami",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname automation"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname automation",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": ["hostname automation"],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\nSVI_Switch16_miami(config)#hostname automation\nautomation(config)#end\nautomation#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "sh run | in hostname",
+              "authentication": true,
+              "config_command": "hostname automation",
+              "current_config": "hostname SVI_Switch16_miami",
+              "change_required": true,
+              "device_group_id": "84eb8a72-ed6e-4d01-ac64-ffe8f8d6320f",
+              "config_template_id": "d381fc74-7921-464b-80d1-305a4428781c",
+              "reachability_status": true
+            },
+            "10.71.2.70": {
+              "device_ip": "10.71.2.70",
+              "job_report": [
+                {
+                  "id": "c057db30-79c6-418b-9220-178f5b8643ec",
+                  "job_id": "26bba951-1772-46c1-be9c-dac68fee7764",
+                  "jobName": "CHG0030002_27/5/2025 6:01:16 pm_config",
+                  "hostname": "cisco_ios70_miami.eveng.com",
+                  "job_type": "Configuration",
+                  "UserJobID": "26bba951-1772-46c1-be9c-dac68fee7764",
+                  "ip_address": "10.71.2.70",
+                  "date_created": "Tue 27, May 2025, 06:01 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname cisco_ios70_miami"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname cisco_ios70_miami",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": ["hostname automation"],
+                      "command_name": "sh run | in hostname",
+                      "command_output": "hostname automation",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": ["hostname automation"],
+                      "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_ios70_miami(config)#hostname automation\nautomation(config)#end\nautomation#",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "sh run | in hostname",
+              "authentication": true,
+              "config_command": "hostname automation",
+              "current_config": "hostname cisco_ios70_miami",
+              "change_required": true,
+              "device_group_id": "48a398ee-b35e-43f5-8d75-9c9571523f85",
+              "config_template_id": "2ba68644-bdaf-467e-9abf-d0d6b03220b8",
+              "reachability_status": true
+            }
+          }
+        },
+        "type": "configuration-output",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 374.5561912803682,
+          "y": 883.8992050645202
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "e348bd4d-5c48-48fb-a77d-60338d49c505",
+        "data": {
+          "type": "mail",
+          "error": false,
+          "value": "",
+          "message": "{{plainTextOutput}}",
+          "payload": {
+            "message": "{{plainTextOutput}}",
+            "subject": "CISCO NXOS Add Banner Workflow Report",
+            "email_group": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7"
+          },
+          "subject": "CISCO NXOS Add Banner Workflow Report",
+          "success": false,
+          "isLoading": false,
+          "email_group": {
+            "id": "9f033c55-dc8d-47cd-8f7e-c280f41b6df7",
+            "group_name": "Default",
+            "is_deleted": false
+          }
+        },
+        "type": "mail",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 373.95446933352537,
+          "y": 1017.1207779961842
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "07172512-31f4-4fac-8561-a5e6c5979a8d",
+        "data": {
+          "type": "itsm-worknotes",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "event_type": "Change",
+          "work_notes": "{{plainTextOutput}}"
+        },
+        "type": "itsm-worknotes",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 372.92635550686936,
+          "y": 1142.5025499946305
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "c7d6bd63-98ab-4eec-9fd6-37050bed9306",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 48
+        },
+        "position": {
+          "x": 431.5150828930042,
+          "y": 1280.438300179761
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "de548ea0-b944-40c5-a939-28eec637b76f",
+        "data": {
+          "type": "process",
+          "error": false,
+          "value": "",
+          "script": "/*\nAvailable Context:\n- handleError(error): Handle an error by displaying a snackbar message.\n- setVariable(name, value): Set a variable with the given name and value.\n- getVariable(name): Get the value of a variable with the given name.\n- clearVariables(): Clear all variables.\n- result: This variable contains the returned value from previous node.\n\nExample:\n  setVariable('exampleVar', 'exampleValue');\n  const value = getVariable('exampleVar');\n  if (value) {\n    console.log(value)\n  } else {\n    handleError('Variable not found');\n  }\n*/\n\n// Run your code here\nconst expectedConfigResult = getVariable(\"expectedConfigResult\");\nconsole.log(\"expectedConfigResult\", expectedConfigResult);\n\nconst show_command = getVariable(\"showCommands\");\n\nconst expectedConfigData = {};\n\nObject.keys(expectedConfigResult).forEach((item) => {\n  expectedConfigData[item] = {\n    ...expectedConfigResult[item], \n    show_command: show_command     \n  };\n});\n\nsetVariable(\"expectedConfigData\", expectedConfigData);\nconsole.log(\"expectedConfigData\", expectedConfigData);\n",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "process",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 529.122376382463,
+          "y": 512.3915254584864
+        },
+        "selected": false,
+        "resizable": false
+      }
+    ],
+    "viewport": {
+      "x": 277.41998044523723,
+      "y": -68.66636978974952,
+      "zoom": 0.5
+    }
+  },
+  "config_flow": true,
+  "workflow_type": "change",
+  "metadata": {
+    "vendor": "Cisco",
+    "device": "IOS",
+    "type": "change",
+    "tags": ["banner", "show run | in banner", "banner motd"]
+  }
+}
