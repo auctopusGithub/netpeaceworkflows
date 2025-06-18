@@ -1,0 +1,1033 @@
+{
+  "id": "b2725dd6-52d6-4331-a3b2-14c07968e0fe",
+  "required_variables": [
+    "changeNumber",
+    "snmp"
+  ],
+  "is_deleted": false,
+  "date_created": "Wed 18, Jun 2025, 05:24 PM",
+  "last_modified": "Wed 18, Jun 2025, 05:24 PM",
+  "slug": null,
+  "name": "fs_fs_remove_snmp_string",
+  "description": [
+    {
+      "name": "changeNumber",
+      "type": "String",
+      "label": "Change Number"
+    },
+    {
+      "name": "snmp",
+      "type": "String",
+      "label": "SNMP String"
+    }
+  ],
+  "workflow_data": {
+    "edges": [
+      {
+        "id": "6720df1a-28f7-4ad0-bcf7-e88698581ac4",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "36208bb1-8193-4ba8-829b-faf98e8829ec",
+        "target": "0e188506-d667-43bf-81b8-367376d069fa",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "c3b1f570-4840-4b15-acae-3a8377de17e2",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "0e188506-d667-43bf-81b8-367376d069fa",
+        "target": "f49dbe6b-84c8-4aff-8820-fac67e934634",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "fae355a2-2bb3-4112-b69a-24469637c990",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "f49dbe6b-84c8-4aff-8820-fac67e934634",
+        "target": "57ce55b0-5701-470a-9112-9294152cd1ab",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "yes",
+        "targetHandle": "target"
+      },
+      {
+        "id": "75b0f8b1-b797-4e99-af63-e11fc8417229",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "57ce55b0-5701-470a-9112-9294152cd1ab",
+        "target": "c7f7e7b8-444e-430f-8171-571f14079f2c",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "253c9f3d-69b2-4ff2-bc97-a84d9dcdf1f9",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "c7f7e7b8-444e-430f-8171-571f14079f2c",
+        "target": "f448338d-5bb6-49c0-851a-4e12396ac43c",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "47628628-d536-4f57-9989-d11b218ca96a",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "f448338d-5bb6-49c0-851a-4e12396ac43c",
+        "target": "51037e0e-6ea7-486e-baf1-445aaca1a0d0",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "no",
+        "targetHandle": "start-end"
+      },
+      {
+        "id": "ff81c887-e93a-4cf8-b0bd-ecf118df29ff",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "60e9783e-b4fa-4ad4-9a43-d3bea640013c",
+        "target": "df9f1d9a-5236-454c-8dc1-090361ecf02c",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "6f160b32-0280-4915-83af-b0906d2586cc",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "df9f1d9a-5236-454c-8dc1-090361ecf02c",
+        "target": "3bcb5aa7-c028-444a-b73f-9857d6c40d7a",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "no",
+        "targetHandle": "target"
+      },
+      {
+        "id": "c25de1e7-a7b2-4e7f-8c14-bca58b3d51cf",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "df9f1d9a-5236-454c-8dc1-090361ecf02c",
+        "target": "57da987a-1b58-42df-864b-52653cbc1281",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "yes",
+        "targetHandle": "target"
+      },
+      {
+        "id": "9106cd5d-1702-4904-b145-73d7179d9f53",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "57da987a-1b58-42df-864b-52653cbc1281",
+        "target": "aca81a06-1c2d-4805-8798-a12ddc384729",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "e8bc7f2a-cd91-410b-b483-f6d6a8981d76",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "aca81a06-1c2d-4805-8798-a12ddc384729",
+        "target": "4bf72f6c-3373-4b28-aef7-48e1005da6a6",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "df89c295-577a-445f-adca-b5eb92f1ea0b",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "4bf72f6c-3373-4b28-aef7-48e1005da6a6",
+        "target": "d577cc5c-dece-42fc-a64e-d9de2b2afdae",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "start-end"
+      },
+      {
+        "id": "2b163394-36de-4499-a0bf-55f1e39f5262",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "3bcb5aa7-c028-444a-b73f-9857d6c40d7a",
+        "target": "8cdb144d-2873-467f-bbe0-b898e1c625a4",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "106d993e-042e-4c17-a6fa-b318ae89f32a",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "8cdb144d-2873-467f-bbe0-b898e1c625a4",
+        "target": "b4c52074-fed8-4a3c-b81e-3d6961b67604",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "start-end"
+      },
+      {
+        "id": "15f1f374-8198-4966-a0c9-384780d38f30",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "start",
+        "target": "adab355f-52cd-4cd3-a355-2c504624c54e",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "start-end",
+        "targetHandle": "target"
+      },
+      {
+        "id": "c2f17da6-6e62-40c0-b0fd-2a27f209f42f",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "adab355f-52cd-4cd3-a355-2c504624c54e",
+        "target": "36208bb1-8193-4ba8-829b-faf98e8829ec",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "target"
+      },
+      {
+        "id": "e15942ca-3477-4e3e-bae6-612648d63787",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "f448338d-5bb6-49c0-851a-4e12396ac43c",
+        "target": "60e9783e-b4fa-4ad4-9a43-d3bea640013c",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "yes",
+        "targetHandle": "target"
+      },
+      {
+        "id": "ccef2452-be28-4afd-9422-90507dde7257",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "f49dbe6b-84c8-4aff-8820-fac67e934634",
+        "target": "bf30269a-4f04-4378-9352-630a6325132e",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "no",
+        "targetHandle": "target"
+      },
+      {
+        "id": "741f9337-ac1a-4b78-80d9-60dbe4eae504",
+        "type": "smoothstep",
+        "style": {
+          "stroke": "grey",
+          "transition": "all 0.5s ease-in-out"
+        },
+        "source": "bf30269a-4f04-4378-9352-630a6325132e",
+        "target": "d4585a66-43be-4c9b-b1c1-be44adbaf8f2",
+        "markerEnd": {
+          "type": "arrowclosed",
+          "color": "grey",
+          "width": 20,
+          "height": 20
+        },
+        "sourceHandle": "source",
+        "targetHandle": "start-end"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "start",
+        "data": {
+          "type": "start",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "start",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 52
+        },
+        "position": {
+          "x": 766.5,
+          "y": -120.6875
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "adab355f-52cd-4cd3-a355-2c504624c54e",
+        "data": {
+          "type": "commands",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "show_steps": [
+            "show running-config | include community"
+          ],
+          "config_steps": [
+            "no snmp-server community {{snmp}} RO"
+          ]
+        },
+        "type": "commands",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 707.329621927081,
+          "y": -22.120686052613976
+        },
+        "selected": true,
+        "resizable": false
+      },
+      {
+        "id": "36208bb1-8193-4ba8-829b-faf98e8829ec",
+        "data": {
+          "type": "show-commands",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "show-commands",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 707.5,
+          "y": 97.96875
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "0e188506-d667-43bf-81b8-367376d069fa",
+        "data": {
+          "type": "job-report",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "reportData": [
+            {
+              "id": "1d38ec28-29e4-47cf-ae20-7ab08e310355",
+              "job_id": "a66eb21e-28f5-4bc9-bf28-f646c98ad02b",
+              "jobName": "job_30/5/2025 6:12:02 pm",
+              "hostname": "nexus9kv-01",
+              "job_type": "Show Commands",
+              "UserJobID": "a66eb21e-28f5-4bc9-bf28-f646c98ad02b",
+              "ip_address": "192.168.85.160",
+              "date_created": "Fri 30, May 2025, 06:12 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "snmp-server community public group network-operator\n"
+                  ],
+                  "command_name": "show running-config | include community",
+                  "command_output": "snmp-server community public group network-operator\n",
+                  "command_status": "Success"
+                }
+              ]
+            },
+            {
+              "id": "1f4fef52-48b1-4ce8-8aa3-986107bfb5a0",
+              "job_id": "a66eb21e-28f5-4bc9-bf28-f646c98ad02b",
+              "jobName": "job_30/5/2025 6:12:02 pm",
+              "hostname": "nexus9kv-02",
+              "job_type": "Show Commands",
+              "UserJobID": "a66eb21e-28f5-4bc9-bf28-f646c98ad02b",
+              "ip_address": "192.168.85.161",
+              "date_created": "Fri 30, May 2025, 06:12 PM",
+              "data_dump_pre": null,
+              "device_status": "Reachable",
+              "data_dump_post": null,
+              "data_dump_config": null,
+              "authentication_status": "Succesful",
+              "data_dump_show_commands": [
+                {
+                  "error": "False",
+                  "json_output": [
+                    "snmp-server community public group network-operator\n"
+                  ],
+                  "command_name": "show running-config | include community",
+                  "command_output": "snmp-server community public group network-operator\n",
+                  "command_status": "Success"
+                }
+              ]
+            }
+          ]
+        },
+        "type": "job-report",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 707.5,
+          "y": 221.46875
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "f49dbe6b-84c8-4aff-8820-fac67e934634",
+        "data": {
+          "type": "decision",
+          "error": false,
+          "value": "",
+          "script": "const configCommand = getVariable(\"configCommands\");\nconst showCommands = getVariable(\"showCommands\");\nconst snmp = getVariable(\"snmp\");\nconst jobReportJsonData = getVariable(\"rawShowOutput\");\n\n// Replace vars with actual values\nconst configCommandOutput = configCommand.replace(/{{(.*?)}}/g, (_, varName) => getVariable(varName));\n\nconsole.log(\"Config Command: \", configCommandOutput);\nconsole.log(\"Show Commands: \", showCommands);\nconsole.log(\"SNMP: \", snmp);\nconsole.log(\"Job Report JSON Data: \", jobReportJsonData);\n\nlet devicesToConfigure = {};\nlet allDevices = {};\nlet reportAvailable = true;\nlet resultList = {};\nlet errorList = {};\nerrorList.errors = [];\n\nif (\n  !jobReportJsonData ||\n  !jobReportJsonData ||\n  !Array.isArray(jobReportJsonData)\n) {\n  reportAvailable = false;\n  errorList.errors = [\"No report available\"];\n  console.error(\"Invalid JSON data format.\");\n} else {\n  jobReportJsonData.forEach((dataItem) => {\n    if (!dataItem) {\n      reportAvailable = false;\n      errorList.errors = [\"No data available\"];\n      return;\n    }\n\n    const deviceIP = dataItem.ip_address;\n    const reachability_status = dataItem.device_status === \"Reachable\";\n    let change_required = true;\n    let current_config = \"\";\n    let authentication = false;\n\n    if (dataItem.device_status === \"Reachable\") {\n      authentication = true;\n    }\n\n    allDevices[deviceIP] = true;\n\n    if (\n      !dataItem.data_dump_show_commands ||\n      !Array.isArray(dataItem.data_dump_show_commands) ||\n      dataItem.data_dump_show_commands.length < 1\n    ) {\n      change_required = null;\n      current_config = \"NA\";\n\n      resultList[deviceIP] = {\n        reachability_status,\n        authentication,\n        change_required,\n        current_config,\n      };\n\n      reportAvailable = false;\n      errorList.errors = [`No data available for ${deviceIP}`];\n      return;\n    }\n\n    let data_found = false;\n    let jobOutputNotAvailable = false;\n\n    dataItem.data_dump_show_commands.forEach((command) => {\n      if (\n        command &&\n        command.json_output &&\n        Array.isArray(command.json_output) &&\n        command.command_name === `${showCommands}`\n      ) {\n        const array = command.json_output;\n\n        for (let i = 0; i < array.length; i++) {\n          if (array[i].includes(snmp)) {\n            change_required = false;\n            data_found = true;\n            break;\n          }\n        }\n        current_config = command.command_output;\n      } else if (\n        command &&\n        command.error === \"False\" &&\n        command.command_status === \"Success\" &&\n        command.command_output === \"No output received\" &&\n        command.command_name === `${showCommands}`\n      ) {\n        change_required = true;\n        data_found = false;\n        current_config = command.command_output;\n      } else {\n        jobOutputNotAvailable = true;\n        change_required = null;\n        current_config = \"No output available\";\n        errorList.errors.push(`No output available for ${deviceIP}`);\n      }\n    });\n\n    resultList[deviceIP] = {\n      reachability_status,\n      authentication,\n      change_required,\n      current_config,\n    };\n\n    if (!data_found && !jobOutputNotAvailable) {\n      devicesToConfigure[deviceIP] = true;\n      resultList[deviceIP][\"config_command\"] = configCommandOutput;\n      resultList[deviceIP][\"show_command\"] = showCommands;\n    } else {\n      resultList[deviceIP][\"config_command\"] = \"NA\";\n    }\n  });\n}\n\nsetVariable(\"expectedConfigData\", resultList);\n\nconsole.log(\"Devices to configure: \", devicesToConfigure);\nconsole.log(\"All devices: \", allDevices);\nconsole.log(\"Report available: \", reportAvailable);\nconsole.log(\"Result list: \", resultList);\nconsole.log(\"Error list: \", errorList);\nconsole.log(\"Move Further: \", Object.keys(devicesToConfigure).length > 0);\n\n\n\n// Log current_config for debugging\n// Object.entries(resultList).forEach(([ip, device]) => {\n//   console.log(`Device ${ip} current_config:`, JSON.stringify(device.current_config));\n// });\n\n// Check if all resultList entries have \"No output received\"\n// const allNoOutput = Object.values(resultList).every(device =>\n//   device.current_config?.trim().toLowerCase() === \"no output received\"\n// );\n\n// setVariable(\"allNoOutput\", allNoOutput);\n// console.log(\"All devices in resultList have 'No output received':\", allNoOutput);\n\n// // If ALL devices have \"No output received\", don't move forward\n// if (allNoOutput) {\n//   console.log(\"Halting flow due to all devices having 'No output received'\");\n//   return false;\n// }\n\n// Otherwise, use the original logic\nreturn Object.keys(devicesToConfigure).length > 0;",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "decision",
+        "dragging": false,
+        "measured": {
+          "width": 48,
+          "height": 48
+        },
+        "position": {
+          "x": 758.5,
+          "y": 339.46875
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "d4585a66-43be-4c9b-b1c1-be44adbaf8f2",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 52
+        },
+        "position": {
+          "x": 899.4584778724281,
+          "y": 561.7629637580949
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "57ce55b0-5701-470a-9112-9294152cd1ab",
+        "data": {
+          "type": "ai-opinion",
+          "error": false,
+          "value": "",
+          "success": false,
+          "aiOpinion": "{\"Problem_Found\":\"Changing the SNMP community string from 'public' to 'public_new' may affect monitoring tools and scripts that rely on the old community string for access to SNMP data.\",\"Category\":\"SNMP Configuration\",\"Outage_Potentials\":{\"Data_Plane\":false,\"Control_Plane\":true},\"Possible_Solution\":\"Ensure that all network management systems and monitoring tools are updated to use the new SNMP community string 'public_new' before applying the configuration change.\"}",
+          "isLoading": false
+        },
+        "type": "ai-opinion",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 570.5692281212222,
+          "y": 437.24992797645876
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "df9f1d9a-5236-454c-8dc1-090361ecf02c",
+        "data": {
+          "type": "decision",
+          "error": false,
+          "value": "",
+          "script": "const finalConfigOutput = getVariable(\"finalConfigOutput\");\nconst snmp = getVariable(\"snmp\");\n\nlet devicesToConfigure = {};\nlet allDevices = {};\nlet reportAvailable = true;\nlet resultList = {};\nlet errorList = {};\nerrorList.errors = [];\n\nfor (const [deviceIP, jobOutput] of Object.entries(finalConfigOutput)) {\n  if (!jobOutput) {\n    reportAvailable = false;\n    errorList.errors = [\"No data available\"];\n    continue;\n  }\n  const showCommand = jobOutput.show_command;\n  const jobReportJsonData = jobOutput.job_report;\n\n  if (\n    !jobReportJsonData ||\n    !jobReportJsonData ||\n    !Array.isArray(jobReportJsonData)\n  ) {\n    reportAvailable = false;\n    errorList.errors = [\"No report available\"];\n  } else {\n    jobReportJsonData.forEach((dataItem) => {\n      if (!dataItem) {\n        reportAvailable = false;\n        return;\n      }\n\n      const deviceIp = dataItem.ip_address;\n      const reachabilityStatus = dataItem.device_status === \"Reachable\";\n      let changeRequired = true;\n      let currentConfig = \"\";\n      let authentication = false;\n\n      if (dataItem.device_status === \"Reachable\") {\n        authentication = true;\n      }\n\n      allDevices[deviceIp] = true;\n\n      if (\n        !dataItem.data_dump_post ||\n        !Array.isArray(dataItem.data_dump_post) ||\n        dataItem.data_dump_post.length < 1\n      ) {\n        changeRequired = null;\n        currentConfig = \"NA\";\n\n        resultList[deviceIp] = {\n          reachability_status: reachabilityStatus,\n          authentication: authentication,\n          change_required: changeRequired,\n          current_config: currentConfig,\n        };\n\n        reportAvailable = false;\n        errorList.errors = [`No data available for ${deviceIp}`];\n        return;\n      }\n\n      let dataFound = false;\n      let jobOutputNotAvailable = false;\n\n      dataItem.data_dump_post.forEach((command) => {\n        if (\n          command &&\n          command.json_output &&\n          Array.isArray(command.json_output) &&\n          command.command_name === `${showCommand}`\n        ) {\n          const array = command.json_output;\n\n          for (let i = 0; i < array.length; i++) {\n            if (array[i].includes(snmp)) {\n              dataFound = true;\n              changeRequired = false;\n              break;\n            } else {\n              changeRequired = true;\n            }\n          }\n\n          currentConfig = command.command_output;\n        } else {\n          changeRequired = null;\n          jobOutputNotAvailable = true;\n          currentConfig = \"No output available\";\n          errorList.errors.push(`No output available for ${deviceIp}`);\n        }\n      });\n      \n      // let postOutputWasNoOutput = false;\n      // // Check data_dump_post here:\n      // if (Array.isArray(dataItem.data_dump_post)) {\n      //   for (let postCmd of dataItem.data_dump_post) {\n      //     if (\n      //       postCmd.command_name === showCommand && typeof postCmd.command_output === \"string\" &&\n      //       postCmd.command_output?.trim().toLowerCase() === finalConfigOutput\n      //     ) {\n      //       postOutputWasNoOutput = true;\n      //       break;\n      //     }\n      //   }\n      // }\n\n      // if (postOutputWasNoOutput) {\n      //   // Nothing to remove, config didn't exist\n      //   console.log(\"postoutputwasnoouput\")\n      //   changeRequired = false;\n      //   devicesToConfigure[deviceIp] = false;\n      // }\n\n      if (!dataFound && !jobOutputNotAvailable) {\n        devicesToConfigure[deviceIp] = true;\n      }\n\n      resultList[deviceIp] = {\n        reachability_status: reachabilityStatus,\n        authentication: authentication,\n        change_required: changeRequired,\n        current_config: currentConfig,\n      };\n    });\n  }\n}\n\nfunction formatResultListPlainText(resultList) {\n  let text = \"Device Configuration Report\\n\\n\";\n\n  for (const [ip, data] of Object.entries(resultList)) {\n    text += `Device IP: ${ip}\n  Reachable: ${data.reachability_status ? \"Yes\" : \"No\"}\n  Authenticated: ${data.authentication ? \"Yes\" : \"No\"}\n  Change Required: ${data.change_required === null\n        ? \"Unknown\"\n        : data.change_required\n          ? \"Yes\"\n          : \"No\"\n      }\n  Current Config:\n${data.current_config}\n------------------------------------------------------------\n`;\n  }\n\n  return text;\n}\n\nconst plainTextOutput = formatResultListPlainText(resultList);\n\nsetVariable(\"plainTextOutput\", plainTextOutput);\n\nreturn (\n  Object.keys(devicesToConfigure).length !== Object.keys(allDevices).length\n);\n",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "decision",
+        "dragging": false,
+        "measured": {
+          "width": 48,
+          "height": 48
+        },
+        "position": {
+          "x": 502.2702832386858,
+          "y": 842.0589203332673
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "60e9783e-b4fa-4ad4-9a43-d3bea640013c",
+        "data": {
+          "type": "multi-config",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "multi-config",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 451.4404213331094,
+          "y": 727.4403453003504
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "c7f7e7b8-444e-430f-8171-571f14079f2c",
+        "data": {
+          "type": "expected-config",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "expected-config",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 570.774318140112,
+          "y": 541.9744914906408
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "51037e0e-6ea7-486e-baf1-445aaca1a0d0",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 52
+        },
+        "position": {
+          "x": 743.5674144071447,
+          "y": 732.2167781867832
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "f448338d-5bb6-49c0-851a-4e12396ac43c",
+        "data": {
+          "type": "boolean-box",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "variableNodeType": "expected-config"
+        },
+        "type": "boolean-box",
+        "dragging": false,
+        "measured": {
+          "width": 48,
+          "height": 48
+        },
+        "position": {
+          "x": 621.578932671674,
+          "y": 646.2577599676575
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "b4c52074-fed8-4a3c-b81e-3d6961b67604",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 52
+        },
+        "position": {
+          "x": 632.494148860977,
+          "y": 1179.6422002898516
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "3bcb5aa7-c028-444a-b73f-9857d6c40d7a",
+        "data": {
+          "type": "mail",
+          "error": false,
+          "value": "",
+          "message": "{{ plainTextOutput }}",
+          "payload": {
+            "message": "{{ plainTextOutput }}",
+            "subject": "Cisco IOS Add SNMP string Workflow Report",
+            "email_group": "5f8d4b50-3b66-4c0e-ba1d-e06b1edb3519"
+          },
+          "subject": "Cisco IOS Add SNMP string Workflow Report",
+          "success": false,
+          "isLoading": false,
+          "email_group": {
+            "id": "5f8d4b50-3b66-4c0e-ba1d-e06b1edb3519",
+            "group_name": "Default",
+            "is_deleted": false
+          }
+        },
+        "type": "mail",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 573.9417735729464,
+          "y": 936.4657041273508
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "8cdb144d-2873-467f-bbe0-b898e1c625a4",
+        "data": {
+          "type": "itsm-worknotes",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "event_type": "Change",
+          "work_notes": "{{plainTextOutput}}"
+        },
+        "type": "itsm-worknotes",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 573.7309769650367,
+          "y": 1052.541818048617
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "57da987a-1b58-42df-864b-52653cbc1281",
+        "data": {
+          "type": "configuration-output",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "reportData": {
+            "192.168.85.160": {
+              "device_ip": "192.168.85.160",
+              "job_report": [
+                {
+                  "id": "6d36ec82-2ad5-400b-9fd5-147e56e19d96",
+                  "job_id": "9793c2c8-c266-4860-9fae-1c6bb1c322d8",
+                  "jobName": "CHG0030002_30/5/2025 6:13:02 pm_config",
+                  "hostname": "nexus9kv-01",
+                  "job_type": "Configuration",
+                  "UserJobID": "9793c2c8-c266-4860-9fae-1c6bb1c322d8",
+                  "ip_address": "192.168.85.160",
+                  "date_created": "Fri 30, May 2025, 06:13 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "snmp-server community public group network-operator\n"
+                      ],
+                      "command_name": "show running-config | include community",
+                      "command_output": "snmp-server community public group network-operator\n",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "snmp-server community public_new group network-operator\nsnmp-server community public group network-operator\n"
+                      ],
+                      "command_name": "show running-config | include community",
+                      "command_output": "snmp-server community public_new group network-operator\nsnmp-server community public group network-operator\n",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": [
+                        "snmp-server community public_new RO"
+                      ],
+                      "command_output": " configure terminal\nEnter configuration commands, one per line. End with CNTL/Z.\n\nnexus9kv-01(config)#  snmp-server community public_new RO\n\nnexus9kv-01(config)#  end\n\nnexus9kv-01# ",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "show running-config | include community",
+              "authentication": true,
+              "config_command": "snmp-server community public_new RO",
+              "current_config": "snmp-server community public group network-operator\n",
+              "change_required": true,
+              "device_group_id": "d03dfde9-5ed7-4677-b616-f270f84e8173",
+              "config_template_id": "6e2e5006-5197-4bcd-920b-44a3bac94dbc",
+              "reachability_status": true
+            },
+            "192.168.85.161": {
+              "device_ip": "192.168.85.161",
+              "job_report": [
+                {
+                  "id": "d5e3f11c-fdd8-4668-a5ba-62bd0fe44ac5",
+                  "job_id": "7e45085f-5956-4310-885e-e17482199c9c",
+                  "jobName": "CHG0030002_30/5/2025 6:13:01 pm_config",
+                  "hostname": "nexus9kv-02",
+                  "job_type": "Configuration",
+                  "UserJobID": "7e45085f-5956-4310-885e-e17482199c9c",
+                  "ip_address": "192.168.85.161",
+                  "date_created": "Fri 30, May 2025, 06:13 PM",
+                  "data_dump_pre": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "snmp-server community public group network-operator\n"
+                      ],
+                      "command_name": "show running-config | include community",
+                      "command_output": "snmp-server community public group network-operator\n",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "device_status": "Reachable",
+                  "command_output": "",
+                  "data_dump_post": [
+                    {
+                      "error": "False",
+                      "json_output": [
+                        "snmp-server community public_new group network-operator\nsnmp-server community public group network-operator\n"
+                      ],
+                      "command_name": "show running-config | include community",
+                      "command_output": "snmp-server community public_new group network-operator\nsnmp-server community public group network-operator\n",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "data_dump_config": [
+                    {
+                      "command_name": [
+                        "snmp-server community public_new RO"
+                      ],
+                      "command_output": " configure terminal\nEnter configuration commands, one per line. End with CNTL/Z.\n\nnexus9kv-02(config)#  snmp-server community public_new RO\n\nnexus9kv-02(config)#  end\nnexus9kv-02# ",
+                      "command_status": "Success"
+                    }
+                  ],
+                  "authentication_status": "Succesful",
+                  "data_dump_show_commands": null
+                }
+              ],
+              "show_command": "show running-config | include community",
+              "authentication": true,
+              "config_command": "snmp-server community public_new RO",
+              "current_config": "snmp-server community public group network-operator\n",
+              "change_required": true,
+              "device_group_id": "9ed4827a-6b60-4c08-aacd-4c9dd5067903",
+              "config_template_id": "e800eb8a-00f9-48b9-9b8b-50175d5c3eb5",
+              "reachability_status": true
+            }
+          }
+        },
+        "type": "configuration-output",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 335.9774495492645,
+          "y": 934.9353996086684
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "aca81a06-1c2d-4805-8798-a12ddc384729",
+        "data": {
+          "type": "mail",
+          "error": false,
+          "value": "",
+          "message": "{{ plainTextOutput }}",
+          "payload": {
+            "message": "{{ plainTextOutput }}",
+            "subject": "Cisco IOS Add SNMP string Workflow Report",
+            "email_group": "5f8d4b50-3b66-4c0e-ba1d-e06b1edb3519"
+          },
+          "subject": "Cisco IOS Add SNMP string Workflow Report",
+          "success": false,
+          "isLoading": false,
+          "email_group": {
+            "id": "5f8d4b50-3b66-4c0e-ba1d-e06b1edb3519",
+            "group_name": "Default",
+            "is_deleted": false
+          }
+        },
+        "type": "mail",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 336.18824615717415,
+          "y": 1051.6986316169784
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "4bf72f6c-3373-4b28-aef7-48e1005da6a6",
+        "data": {
+          "type": "itsm-worknotes",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false,
+          "event_type": "Change",
+          "work_notes": "{{plainTextOutput}}"
+        },
+        "type": "itsm-worknotes",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 336.3990427650838,
+          "y": 1169.0395251857026
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "d577cc5c-dece-42fc-a64e-d9de2b2afdae",
+        "data": {
+          "type": "end",
+          "error": false,
+          "value": "",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "end",
+        "dragging": false,
+        "measured": {
+          "width": 32,
+          "height": 52
+        },
+        "position": {
+          "x": 395.56911693756285,
+          "y": 1285.638572404069
+        },
+        "selected": false,
+        "resizable": false
+      },
+      {
+        "id": "bf30269a-4f04-4378-9352-630a6325132e",
+        "data": {
+          "type": "process",
+          "error": false,
+          "value": "",
+          "script": "handleError(\"Configuration already exists.\");",
+          "success": false,
+          "isLoading": false
+        },
+        "type": "process",
+        "dragging": false,
+        "measured": {
+          "width": 150,
+          "height": 50
+        },
+        "position": {
+          "x": 840.5019837841745,
+          "y": 436.86677900481436
+        },
+        "selected": false,
+        "resizable": false
+      }
+    ],
+    "viewport": {
+      "x": -13.149921107293352,
+      "y": 98.07708696521308,
+      "zoom": 0.5060763290747842
+    }
+  },
+  "config_flow": true,
+  "workflow_type": "change",
+  "metadata": {},
+  "created_by": "kartikey",
+  "updated_by": "kartikey"
+}
