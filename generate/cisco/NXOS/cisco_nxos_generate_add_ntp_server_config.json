@@ -878,6 +878,6 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change",
+  "workflow_type": "generate",
   "metadata": {}
 }

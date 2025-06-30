@@ -643,12 +643,8 @@
           "value": "",
           "success": false,
           "isLoading": false,
-          "show_steps": [
-            "show vlan"
-          ],
-          "config_steps": [
-            ""
-          ]
+          "show_steps": ["show vlan"],
+          "config_steps": [""]
         },
         "type": "show-commands-input",
         "dragging": false,
@@ -1038,15 +1034,9 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change",
+  "workflow_type": "verify",
   "metadata": {
-    "tags": [
-      "VLAN",
-      "show vlan",
-      "vlan id",
-      "vlan name",
-      "VLAN configuration"
-    ],
+    "tags": ["VLAN", "show vlan", "vlan id", "vlan name", "VLAN configuration"],
     "type": "verify",
     "device": "FS",
     "vendor": "FS"

@@ -307,9 +307,7 @@
           "value": "",
           "success": false,
           "isLoading": false,
-          "show_steps": [
-            "show ip interface brief"
-          ],
+          "show_steps": ["show ip interface brief"],
           "config_steps": [
             "interface {{interface}}",
             "ip address {{ip_address}} {{subnet_mask}}",
@@ -355,9 +353,7 @@
               "data_dump_show_commands": [
                 {
                   "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
+                  "json_output": ["ntp server 192.168.10.163"],
                   "command_name": "show running-config | include ntp",
                   "command_output": "ntp server 192.168.10.163",
                   "command_status": "Success"
@@ -407,9 +403,7 @@
               "data_dump_show_commands": [
                 {
                   "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
+                  "json_output": ["ntp server 192.168.10.163"],
                   "command_name": "show running-config | include ntp",
                   "command_output": "ntp server 192.168.10.163",
                   "command_status": "Success"
@@ -433,9 +427,7 @@
               "data_dump_show_commands": [
                 {
                   "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
+                  "json_output": ["ntp server 192.168.10.163"],
                   "command_name": "show running-config | include ntp",
                   "command_output": "ntp server 192.168.10.163",
                   "command_status": "Success"
@@ -459,9 +451,7 @@
               "data_dump_show_commands": [
                 {
                   "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
+                  "json_output": ["ntp server 192.168.10.163"],
                   "command_name": "show running-config | include ntp",
                   "command_output": "ntp server 192.168.10.163",
                   "command_status": "Success"
@@ -485,9 +475,7 @@
               "data_dump_show_commands": [
                 {
                   "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
+                  "json_output": ["ntp server 192.168.10.163"],
                   "command_name": "show running-config | include ntp",
                   "command_output": "ntp server 192.168.10.163",
                   "command_status": "Success"
@@ -537,9 +525,7 @@
               "data_dump_show_commands": [
                 {
                   "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
+                  "json_output": ["ntp server 192.168.10.163"],
                   "command_name": "show running-config | include ntp",
                   "command_output": "ntp server 192.168.10.163",
                   "command_status": "Success"
@@ -563,9 +549,7 @@
               "data_dump_show_commands": [
                 {
                   "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
+                  "json_output": ["ntp server 192.168.10.163"],
                   "command_name": "show running-config | include ntp",
                   "command_output": "ntp server 192.168.10.163",
                   "command_status": "Success"
@@ -589,9 +573,7 @@
               "data_dump_show_commands": [
                 {
                   "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
+                  "json_output": ["ntp server 192.168.10.163"],
                   "command_name": "show running-config | include ntp",
                   "command_output": "ntp server 192.168.10.163",
                   "command_status": "Success"
@@ -885,6 +867,6 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change",
+  "workflow_type": "generate",
   "metadata": {}
 }

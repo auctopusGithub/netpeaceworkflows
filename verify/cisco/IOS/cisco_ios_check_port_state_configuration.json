@@ -1,8 +1,6 @@
 {
   "id": "43a6a801-6edb-4bab-9e25-7b3012684084",
-  "required_variables": [
-    "port_name"
-  ],
+  "required_variables": ["port_name"],
   "is_deleted": false,
   "date_created": "Mon 16, Jun 2025, 03:39 PM",
   "last_modified": "Mon 16, Jun 2025, 05:36 PM",
@@ -655,9 +653,7 @@
             "show ip int bri | in {{port_name}}",
             "show run int {{port_name}}"
           ],
-          "config_steps": [
-            ""
-          ]
+          "config_steps": [""]
         },
         "type": "show-commands-input",
         "dragging": false,
@@ -1047,7 +1043,7 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change",
+  "workflow_type": "verify",
   "metadata": {
     "tags": [
       "check port state",

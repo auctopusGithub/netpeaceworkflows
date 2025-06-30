@@ -284,9 +284,7 @@
           "value": "",
           "success": false,
           "isLoading": false,
-          "show_steps": [
-            "show ip interface brief"
-          ],
+          "show_steps": ["show ip interface brief"],
           "config_steps": [
             "interface {{interface}}",
             "no switchport",
@@ -1317,6 +1315,6 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change",
+  "workflow_type": "generate",
   "metadata": {}
 }

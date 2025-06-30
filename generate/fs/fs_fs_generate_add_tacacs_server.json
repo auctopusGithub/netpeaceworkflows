@@ -698,9 +698,7 @@
           "value": "",
           "success": false,
           "isLoading": false,
-          "show_steps": [
-            "show tacacs-server"
-          ],
+          "show_steps": ["show tacacs-server"],
           "config_steps": [
             "aaa authentication login default group tacacs+ local",
             "tacacs-server host {{tacacs_ip}} key {{key}}"
@@ -1325,5 +1323,5 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change"
+  "workflow_type": "generate"
 }

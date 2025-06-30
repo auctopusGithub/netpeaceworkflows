@@ -1,8 +1,6 @@
 {
   "id": "86116624-ab3b-48f7-985e-605dd36fb704",
-  "required_variables": [
-    "bgp_as_number"
-  ],
+  "required_variables": ["bgp_as_number"],
   "is_deleted": false,
   "date_created": "Mon 16, Jun 2025, 11:40 AM",
   "last_modified": "Mon 16, Jun 2025, 11:56 AM",
@@ -651,12 +649,8 @@
           "value": "",
           "success": false,
           "isLoading": false,
-          "show_steps": [
-            "show run | in bgp"
-          ],
-          "config_steps": [
-            ""
-          ]
+          "show_steps": ["show run | in bgp"],
+          "config_steps": [""]
         },
         "type": "show-commands-input",
         "dragging": false,
@@ -1046,7 +1040,7 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change",
+  "workflow_type": "verify",
   "metadata": {
     "tags": [
       "check eBGP",

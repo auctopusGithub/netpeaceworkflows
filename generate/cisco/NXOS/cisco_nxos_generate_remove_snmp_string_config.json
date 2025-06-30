@@ -302,12 +302,8 @@
           "value": "",
           "success": false,
           "isLoading": false,
-          "show_steps": [
-            "show running-config | include community"
-          ],
-          "config_steps": [
-            "no snmp-server community {{snmp}} RO"
-          ]
+          "show_steps": ["show running-config | include community"],
+          "config_steps": ["no snmp-server community {{snmp}} RO"]
         },
         "type": "commands",
         "dragging": false,
@@ -878,6 +874,6 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change",
+  "workflow_type": "generate",
   "metadata": {}
 }

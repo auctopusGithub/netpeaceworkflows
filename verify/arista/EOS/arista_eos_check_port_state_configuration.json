@@ -652,9 +652,7 @@
             "show ip int bri | in {{port_name}}",
             "show run int {{port_name}}"
           ],
-          "config_steps": [
-            ""
-          ]
+          "config_steps": [""]
         },
         "type": "show-commands-input",
         "dragging": false,
@@ -1044,7 +1042,7 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change",
+  "workflow_type": "verify",
   "metadata": {
     "tags": [
       "check port state",

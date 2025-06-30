@@ -317,9 +317,7 @@
           "value": "",
           "success": false,
           "isLoading": false,
-          "show_steps": [
-            "show running-config | include user"
-          ],
+          "show_steps": ["show running-config | include user"],
           "config_steps": [
             "username {{username}} password {{password}} pbkdf2 role {{role_name}}"
           ]
@@ -606,6 +604,6 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change",
+  "workflow_type": "generate",
   "metadata": {}
 }

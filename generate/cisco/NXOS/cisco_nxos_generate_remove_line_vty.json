@@ -306,9 +306,7 @@
             "show ip int bri | in {{port_name}}",
             "show run int {{port_name}}"
           ],
-          "config_steps": [
-            ""
-          ]
+          "config_steps": [""]
         },
         "type": "commands",
         "dragging": false,
@@ -349,9 +347,7 @@
               "data_dump_show_commands": [
                 {
                   "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
+                  "json_output": ["ntp server 192.168.10.163"],
                   "command_name": "show running-config | include ntp",
                   "command_output": "ntp server 192.168.10.163",
                   "command_status": "Success"
@@ -401,9 +397,7 @@
               "data_dump_show_commands": [
                 {
                   "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
+                  "json_output": ["ntp server 192.168.10.163"],
                   "command_name": "show running-config | include ntp",
                   "command_output": "ntp server 192.168.10.163",
                   "command_status": "Success"
@@ -427,9 +421,7 @@
               "data_dump_show_commands": [
                 {
                   "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
+                  "json_output": ["ntp server 192.168.10.163"],
                   "command_name": "show running-config | include ntp",
                   "command_output": "ntp server 192.168.10.163",
                   "command_status": "Success"
@@ -453,9 +445,7 @@
               "data_dump_show_commands": [
                 {
                   "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
+                  "json_output": ["ntp server 192.168.10.163"],
                   "command_name": "show running-config | include ntp",
                   "command_output": "ntp server 192.168.10.163",
                   "command_status": "Success"
@@ -479,9 +469,7 @@
               "data_dump_show_commands": [
                 {
                   "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
+                  "json_output": ["ntp server 192.168.10.163"],
                   "command_name": "show running-config | include ntp",
                   "command_output": "ntp server 192.168.10.163",
                   "command_status": "Success"
@@ -531,9 +519,7 @@
               "data_dump_show_commands": [
                 {
                   "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
+                  "json_output": ["ntp server 192.168.10.163"],
                   "command_name": "show running-config | include ntp",
                   "command_output": "ntp server 192.168.10.163",
                   "command_status": "Success"
@@ -557,9 +543,7 @@
               "data_dump_show_commands": [
                 {
                   "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
+                  "json_output": ["ntp server 192.168.10.163"],
                   "command_name": "show running-config | include ntp",
                   "command_output": "ntp server 192.168.10.163",
                   "command_status": "Success"
@@ -583,9 +567,7 @@
               "data_dump_show_commands": [
                 {
                   "error": "False",
-                  "json_output": [
-                    "ntp server 192.168.10.163"
-                  ],
+                  "json_output": ["ntp server 192.168.10.163"],
                   "command_name": "show running-config | include ntp",
                   "command_output": "ntp server 192.168.10.163",
                   "command_status": "Success"
@@ -879,6 +861,6 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change",
+  "workflow_type": "generate",
   "metadata": {}
 }

@@ -393,12 +393,8 @@
           "value": "",
           "success": false,
           "isLoading": false,
-          "show_steps": [
-            "show vlan"
-          ],
-          "config_steps": [
-            "no vlan {{vlan_number}}"
-          ]
+          "show_steps": ["show vlan"],
+          "config_steps": ["no vlan {{vlan_number}}"]
         },
         "type": "commands",
         "dragging": false,
@@ -818,9 +814,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "snmp-server community public_new RO"
-                      ],
+                      "command_name": ["snmp-server community public_new RO"],
                       "command_output": " configure terminal\nEnter configuration commands, one per line. End with CNTL/Z.\n\nnexus9kv-01(config)#  snmp-server community public_new RO\n\nnexus9kv-01(config)#  end\n\nnexus9kv-01# ",
                       "command_status": "Success"
                     }
@@ -876,9 +870,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "snmp-server community public_new RO"
-                      ],
+                      "command_name": ["snmp-server community public_new RO"],
                       "command_output": " configure terminal\nEnter configuration commands, one per line. End with CNTL/Z.\n\nnexus9kv-02(config)#  snmp-server community public_new RO\n\nnexus9kv-02(config)#  end\nnexus9kv-02# ",
                       "command_status": "Success"
                     }
@@ -1022,5 +1014,5 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change"
+  "workflow_type": "generate"
 }

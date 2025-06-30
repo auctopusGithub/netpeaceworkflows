@@ -653,12 +653,8 @@
           "value": "",
           "success": false,
           "isLoading": false,
-          "show_steps": [
-            "show running-config | include snmp-server"
-          ],
-          "config_steps": [
-            ""
-          ]
+          "show_steps": ["show running-config | include snmp-server"],
+          "config_steps": [""]
         },
         "type": "show-commands-input",
         "dragging": false,
@@ -1048,7 +1044,7 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change",
+  "workflow_type": "verify",
   "metadata": {
     "tags": [
       "SNMP",

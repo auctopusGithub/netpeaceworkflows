@@ -648,12 +648,8 @@
           "value": "",
           "success": false,
           "isLoading": false,
-          "show_steps": [
-            "show ip interface brief"
-          ],
-          "config_steps": [
-            ""
-          ]
+          "show_steps": ["show ip interface brief"],
+          "config_steps": [""]
         },
         "type": "show-commands-input",
         "dragging": false,
@@ -1043,12 +1039,9 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change",
+  "workflow_type": "verify",
   "metadata": {
-    "tags": [
-      "check interface",
-      "show ip interface brief"
-    ],
+    "tags": ["check interface", "show ip interface brief"],
     "type": "verify",
     "device": "FS",
     "vendor": "FS"

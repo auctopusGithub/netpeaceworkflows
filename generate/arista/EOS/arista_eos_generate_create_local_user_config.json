@@ -317,9 +317,7 @@
           "value": "",
           "success": false,
           "isLoading": false,
-          "show_steps": [
-            "show running-config | include user"
-          ],
+          "show_steps": ["show running-config | include user"],
           "config_steps": [
             "username {{username}} secret{{password}} role {{role_name}} privilege {{privilege_level}}"
           ]
@@ -606,7 +604,7 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change",
+  "workflow_type": "generate",
   "metadata": {
     "tags": [
       "add user",

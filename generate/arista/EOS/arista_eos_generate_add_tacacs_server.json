@@ -307,9 +307,7 @@
           "value": "",
           "success": false,
           "isLoading": false,
-          "show_steps": [
-            "sh run | in tacacs"
-          ],
+          "show_steps": ["sh run | in tacacs"],
           "config_steps": [
             "tacacs-server host {{tacacs_ip}} port {{port}} key {{key}}",
             "aaa authentication login default group tacacs+ local",
@@ -852,7 +850,7 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change",
+  "workflow_type": "generate",
   "metadata": {
     "tags": [
       "TACACS",

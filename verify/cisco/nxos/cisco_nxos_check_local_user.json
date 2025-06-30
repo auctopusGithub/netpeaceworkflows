@@ -1039,7 +1039,7 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change",
+  "workflow_type": "verify",
   "metadata": {
     "tags": [
       "check user",

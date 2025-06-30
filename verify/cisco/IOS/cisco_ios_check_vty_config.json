@@ -643,12 +643,8 @@
           "value": "",
           "success": false,
           "isLoading": false,
-          "show_steps": [
-            "show ip int bri"
-          ],
-          "config_steps": [
-            ""
-          ]
+          "show_steps": ["show ip int bri"],
+          "config_steps": [""]
         },
         "type": "show-commands-input",
         "dragging": false,
@@ -1038,11 +1034,9 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change",
+  "workflow_type": "verify",
   "metadata": {
-    "tags": [
-      "check VTY"
-    ],
+    "tags": ["check VTY"],
     "type": "verify",
     "device": "IOS",
     "vendor": "Cisco"

@@ -1,9 +1,6 @@
 {
   "id": "99452130-57d1-498c-8d10-4ff49561da66",
-  "required_variables": [
-    "changeNumber",
-    "ntp_ip"
-  ],
+  "required_variables": ["changeNumber", "ntp_ip"],
   "is_deleted": false,
   "date_created": "Fri 06, Jun 2025, 06:21 PM",
   "last_modified": "Fri 06, Jun 2025, 06:21 PM",
@@ -311,12 +308,8 @@
           "value": "",
           "success": false,
           "isLoading": false,
-          "show_steps": [
-            "show running-config | include community"
-          ],
-          "config_steps": [
-            "no snmp-server community {{snmp}} RO"
-          ]
+          "show_steps": ["show running-config | include community"],
+          "config_steps": ["no snmp-server community {{snmp}} RO"]
         },
         "type": "commands",
         "dragging": false,
@@ -887,7 +880,7 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change",
+  "workflow_type": "generate",
   "metadata": {},
   "created_by": "kartikey",
   "updated_by": null

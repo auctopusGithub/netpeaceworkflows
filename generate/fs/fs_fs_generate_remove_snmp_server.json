@@ -1102,9 +1102,7 @@
           "value": "",
           "success": false,
           "isLoading": false,
-          "show_steps": [
-            "show running-config | include snmp-server"
-          ],
+          "show_steps": ["show running-config | include snmp-server"],
           "config_steps": [
             "no snmp-server host {{snmp_server}} traps version {{version}} {{snmp_string}}"
           ]
@@ -1153,5 +1151,5 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change"
+  "workflow_type": "generate"
 }

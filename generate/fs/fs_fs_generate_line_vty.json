@@ -702,9 +702,7 @@
             "show ip int bri | in {{port_name}}",
             " show run int {{port_name}}"
           ],
-          "config_steps": [
-            ""
-          ]
+          "config_steps": [""]
         },
         "type": "commands",
         "dragging": false,
@@ -946,9 +944,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "no tacacs server 192.168.67.11"
-                      ],
+                      "command_name": ["no tacacs server 192.168.67.11"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_011(config)#no tacacs server 192.168.67.11\ncisco_cat8k_011(config)#end\ncisco_cat8k_011#",
                       "command_status": "Success"
                     }
@@ -1004,9 +1000,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "no tacacs server 192.168.67.11"
-                      ],
+                      "command_name": ["no tacacs server 192.168.67.11"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_012(config)#no tacacs server 192.168.67.11\ncisco_cat8k_012(config)#end\ncisco_cat8k_012#",
                       "command_status": "Success"
                     }
@@ -1062,9 +1056,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "no tacacs server 192.168.67.11"
-                      ],
+                      "command_name": ["no tacacs server 192.168.67.11"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_013(config)#no tacacs server 192.168.67.11\ncisco_cat8k_013(config)#end\ncisco_cat8k_013#",
                       "command_status": "Success"
                     }
@@ -1120,9 +1112,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "no tacacs server 192.168.67.11"
-                      ],
+                      "command_name": ["no tacacs server 192.168.67.11"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_014(config)#no tacacs server 192.168.67.11\ncisco_cat8k_014(config)#end\ncisco_cat8k_014#",
                       "command_status": "Success"
                     }
@@ -1178,9 +1168,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "no tacacs server 192.168.67.11"
-                      ],
+                      "command_name": ["no tacacs server 192.168.67.11"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_015(config)#no tacacs server 192.168.67.11\ncisco_cat8k_015(config)#end\ncisco_cat8k_015#",
                       "command_status": "Success"
                     }
@@ -1236,9 +1224,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "no tacacs server 192.168.67.11"
-                      ],
+                      "command_name": ["no tacacs server 192.168.67.11"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_016(config)#no tacacs server 192.168.67.11\ncisco_cat8k_016(config)#end\ncisco_cat8k_016#",
                       "command_status": "Success"
                     }
@@ -1294,9 +1280,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "no tacacs server 192.168.67.11"
-                      ],
+                      "command_name": ["no tacacs server 192.168.67.11"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_017(config)#no tacacs server 192.168.67.11\ncisco_cat8k_017(config)#end\ncisco_cat8k_017#",
                       "command_status": "Success"
                     }
@@ -1352,9 +1336,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "no tacacs server 192.168.67.11"
-                      ],
+                      "command_name": ["no tacacs server 192.168.67.11"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_018(config)#no tacacs server 192.168.67.11\ncisco_cat8k_018(config)#end\ncisco_cat8k_018#",
                       "command_status": "Success"
                     }
@@ -1410,9 +1392,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "no tacacs server 192.168.67.11"
-                      ],
+                      "command_name": ["no tacacs server 192.168.67.11"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\niosv-01(config)#no tacacs server 192.168.67.11\niosv-01(config)#end\niosv-01#",
                       "command_status": "Success"
                     }
@@ -1468,9 +1448,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "no tacacs server 192.168.67.11"
-                      ],
+                      "command_name": ["no tacacs server 192.168.67.11"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\niosv-02(config)#no tacacs server 192.168.67.11\niosv-02(config)#end\niosv-02#",
                       "command_status": "Success"
                     }
@@ -1526,9 +1504,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "no tacacs server 192.168.67.11"
-                      ],
+                      "command_name": ["no tacacs server 192.168.67.11"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\niosvl2-01(config)#no tacacs server 192.168.67.11\niosvl2-01(config)#end\niosvl2-01#",
                       "command_status": "Success"
                     }
@@ -1774,5 +1750,5 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change"
+  "workflow_type": "generate"
 }

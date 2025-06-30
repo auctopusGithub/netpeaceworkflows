@@ -420,9 +420,7 @@
           "value": "",
           "success": false,
           "isLoading": false,
-          "show_steps": [
-            "show running-config | include user"
-          ],
+          "show_steps": ["show running-config | include user"],
           "config_steps": [
             "username {{username}} password {{password}} role {{role_name}}"
           ]
@@ -1082,9 +1080,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "username undefined password undefined"
-                      ],
+                      "command_name": ["username undefined password undefined"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_011(config)#username undefined password undefined\ncisco_cat8k_011(config)#end\ncisco_cat8k_011#",
                       "command_status": "Success"
                     }
@@ -1140,9 +1136,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "username undefined password undefined"
-                      ],
+                      "command_name": ["username undefined password undefined"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_012(config)#username undefined password undefined\ncisco_cat8k_012(config)#end\ncisco_cat8k_012#",
                       "command_status": "Success"
                     }
@@ -1198,9 +1192,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "username undefined password undefined"
-                      ],
+                      "command_name": ["username undefined password undefined"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_013(config)#username undefined password undefined\ncisco_cat8k_013(config)#end\ncisco_cat8k_013#",
                       "command_status": "Success"
                     }
@@ -1256,9 +1248,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "username undefined password undefined"
-                      ],
+                      "command_name": ["username undefined password undefined"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_014(config)#username undefined password undefined\ncisco_cat8k_014(config)#end\ncisco_cat8k_014#",
                       "command_status": "Success"
                     }
@@ -1314,9 +1304,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "username undefined password undefined"
-                      ],
+                      "command_name": ["username undefined password undefined"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_015(config)#username undefined password undefined\ncisco_cat8k_015(config)#end\ncisco_cat8k_015#",
                       "command_status": "Success"
                     }
@@ -1372,9 +1360,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "username undefined password undefined"
-                      ],
+                      "command_name": ["username undefined password undefined"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_016(config)#username undefined password undefined\ncisco_cat8k_016(config)#end\ncisco_cat8k_016#",
                       "command_status": "Success"
                     }
@@ -1430,9 +1416,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "username undefined password undefined"
-                      ],
+                      "command_name": ["username undefined password undefined"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_017(config)#username undefined password undefined\ncisco_cat8k_017(config)#end\ncisco_cat8k_017#",
                       "command_status": "Success"
                     }
@@ -1488,9 +1472,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "username undefined password undefined"
-                      ],
+                      "command_name": ["username undefined password undefined"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\ncisco_cat8k_018(config)#username undefined password undefined\ncisco_cat8k_018(config)#end\ncisco_cat8k_018#",
                       "command_status": "Success"
                     }
@@ -1546,9 +1528,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "username undefined password undefined"
-                      ],
+                      "command_name": ["username undefined password undefined"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\niosv-01(config)#username undefined password undefined\n WARNING: Command has been added to the configuration using a type 0 password. However, type 0 passwords will soon be deprecated. Migrate to a supported password type\niosv-01(config)#end\niosv-01#",
                       "command_status": "Success"
                     }
@@ -1604,9 +1584,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "username undefined password undefined"
-                      ],
+                      "command_name": ["username undefined password undefined"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\niosv-02(config)#username undefined password undefined\n WARNING: Command has been added to the configuration using a type 0 password. However, type 0 passwords will soon be deprecated. Migrate to a supported password type\niosv-02(config)#end\niosv-02#",
                       "command_status": "Success"
                     }
@@ -1662,9 +1640,7 @@
                   ],
                   "data_dump_config": [
                     {
-                      "command_name": [
-                        "username undefined password undefined"
-                      ],
+                      "command_name": ["username undefined password undefined"],
                       "command_output": "configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\niosvl2-01(config)#username undefined password undefined\niosvl2-01(config)#end\niosvl2-01#",
                       "command_status": "Success"
                     }
@@ -1783,5 +1759,5 @@
     }
   },
   "config_flow": true,
-  "workflow_type": "change"
+  "workflow_type": "generate"
 }
